@@ -32,6 +32,7 @@ A massive, categorized catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templa
 22. [Commercial / Pro Fab Frameworks (Reference)](#22-commercial--pro-fab-frameworks-reference)
 23. [Giant Indexes, Blueprint Paste-Bins & Free Hubs](#23-giant-indexes-blueprint-paste-bins--free-hubs)
 24. [Recommended Commercial-Safe Open-Source Stack (MIT / Apache-2.0)](#24-recommended-commercial-safe-open-source-stack-mit--apache-20)
+25. [Blender ↔ UE 5.8 Modular Character, Full-Joint Rigging, Hair/Cloth & Mocap Pipeline](#25-blender--ue-58-modular-character-full-joint-rigging-haircloth--mocap-pipeline)
 
 ---
 
@@ -433,3 +434,61 @@ If you want a drop-in, closed-source-safe UE 5.8 production stack:
 - **Save & Serialization:** `SPUD` (MIT) + `DataConfig` (MIT)
 - **AI, Crowds & 3D Nav:** Native StateTree + `CTRL.StateTree` (MIT) + `DLL Mass Units` (Apache-2.0) + `Gunfire3DNavigation`
 - **Pooling, Audio, Validation & Crash Telemetry:** `PoolManager` (MIT) + `DLL Audio` (Apache-2.0) + `Netflix UnrealValidationFramework` (Apache-2.0) + `sentry-unreal` (MIT)
+
+---
+
+## 25. Blender ↔ UE 5.8 Modular Character, Full-Joint Rigging, Hair/Cloth & Mocap Pipeline
+
+End-to-end open-source tooling for bringing **modular 3D assets (swappable limbs, clothing, hair cards/grooms)** and **full-joint animated skeletons (30 finger bones, ankles/toes, limb twists, hair/cloth chains)** from Blender or generative 3D pipelines (TRELLIS.2, HairDeck, GEM-X/SOMA, 3DGS) into Unreal Engine 5.8.
+
+```mermaid
+flowchart LR
+  A[3D / AI Part Gen<br/>Separate GLB Parts · Hair Cards · Full-Body Mocap · 3DGS] --> B[Blender Master Rig<br/>1 Shared Skeleton · Swappable Parts · Twist/Fingers/Toes]
+  B -->|Send2UE / Rig Bridges / FBX| M[UE 5.8 Mutable + MutableGraphToolset<br/>Cooked Swappable Limbs / Clothes / Hair]
+  B -->|Unbaked GLB at Runtime| G[glTFRuntime<br/>Live Swap Without Recook]
+  M --> L[GASP-ALS-R / ALS-Refactored<br/>Motion Matching · Foot IK · Clip Layering]
+  G --> L
+  L --> K[KawaiiPhysics / AnimVerlet<br/>Hair Chains · Skirts · Sleeves]
+  L --> F[LiveLink Face / Lipsync<br/>52 ARKit Blendshapes]
+  K --> R[UE_CelLit / MooaToon<br/>Anime Cel Look Without Shader-to-RGB]
+  A -->|3DGS .ply| GS[MLSLabs 3DGS Renderer<br/>Direct UE5 / Sequencer Splats]
+```
+
+### Blender ↔ Unreal Engine Bridges, Modular Rigs & Retargeters
+
+| Tool | Side | UE / License | Highlights | Link |
+|---|---|---|---|---|
+| **BlenderTools (Send to Unreal)** | Blender → UE | MIT | One-click static/skeletal mesh & animation export from Blender straight into Unreal Engine (Epic original + active community fork) | [Poly-Hammer Fork](https://github.com/poly-hammer/BlenderTools) · [Epic Original](https://github.com/EpicGames/BlenderTools) |
+| **Blender-For-UnrealEngine-Addons** | Blender → UE | Open Source | Battle-tested batch exporter for skeletal meshes, modular parts, sockets, collisions, LODs, and actions | [GitHub](https://github.com/xavier150/Blender-For-UnrealEngine-Addons) |
+| **Rig-Bridge** | Blender | Open Source | One-click **Unreal Modular Control Rig-style** rigs in Blender supporting UE4/UE5, Mixamo, Daz, AccuRIG, and 16+ skeleton standards | [GitHub](https://github.com/MondRubberduck/Rig-Bridge) |
+| **Bulletproof-Retarget** | Blender 5.0+ | Open Source | One-click animation retargeting across UE5, Rigify, Mixamo, OptiTrack, Auto-Rig Pro, Daz, and VRM | [GitHub](https://github.com/MondRubberduck/Bulletproof-Retarget) |
+| **rigify-ue-bridge** | Blender → UE | Open Source | Exports Rigify characters and rebuilds editable Unreal Control Rigs | [GitHub](https://github.com/daim1993/rigify-ue-bridge) |
+| **BVH-Motion-Retargeter** | Blender | Open Source | Retargets `.bvh` mocap (e.g., SOMA/optical clips) onto UE5, Mixamo, and VRM skeletons with production FBX export | [GitHub](https://github.com/BacteriaJun/BVH-Motion-Retargeter) |
+| **uefn-blender-bridge** | Blender ↔ UEFN | Open Source | Live two-way FBX, material, texture, and save-triggered sync between Blender and UEFN | [GitHub](https://github.com/KiKoZl1/uefn-blender-bridge) |
+| **Unreal-LiveLink-for-Blender** | Blender → UE | Open Source | Stream Blender armatures & animations live into Unreal Engine via LiveLink | [GitHub](https://github.com/W-Nabe/Unreal-LiveLink-for-Blender) |
+| **blender-unreal-rig-utils** | Blender | GPL-3.0 | Character rigging helper utilities targeting Unreal Engine skeletons | [GitHub](https://github.com/greenpau/blender-unreal-rig-utils) |
+| **Blender_to_UE_Plugin** | Blender → UE | Open Source | Clean static/skeletal/animation export with UE scale, normals, and materials | [GitHub](https://github.com/DanTheLion-git/Blender_to_UE_Plugin) |
+
+### UE 5.8 Modular Assembly, Control Rig, Hair/Cloth Physics & LiveLink
+
+| Tool | Role in Pipeline | UE / License | Highlights | Link |
+|---|---|---|---|---|
+| **UE 5.8 `Mutable` + MutableGraphToolset** | Modular character assembly | **UE 5.8** | Keep head, limbs, boots, garments, and hair separate on **one shared skeleton**, cull hidden body faces under clothing, merge draw calls; 22 MCP tools for automated Customizable Object graph building | [MutableGraphToolset](https://github.com/ITemre/MutableGraphToolset) · [Fab](https://www.fab.com/listings/aa935747-f923-4d4f-aa23-1b2a8e8a196d) |
+| **glTFRuntime** | Runtime unbaked part swapping | UE5 · MIT | Load `.glb`/`.gltf` limbs, outfits, hair, skeletons, and morphs at runtime without offline editor recook | [GitHub](https://github.com/rdeioris/glTFRuntime) |
+| **KawaiiPhysics** | Hair & loose cloth bone chains | UE4/5 · MIT | Drives hair-card spring chains, skirts, ribbons, and sleeves in AnimGraph with capsule collision against neck, shoulders, and thighs | [GitHub](https://github.com/pafuhana1213/KawaiiPhysics) |
+| **AnimVerlet** | Cloth/hair/string Verlet dynamics | UE4/5 | Alternative AnimGraph Verlet dynamics solver for hair, cloth, strings, and soft attachments | [GitHub](https://github.com/chonjay21/AnimVerlet) |
+| **unreal-groom-alembic-exporter** | Groom ↔ Blender round-trip | UE5 | Byte-identical UE5 Groom (hair, eyebrows, beard) export to Alembic `.abc` for Blender & Maya | [GitHub](https://github.com/effectustasi/unreal-groom-alembic-exporter) |
+| **TwistedBytes Control Rig (TBCR)** | Control Rig reference | UE5 | Production Control Rig sample project for full-body/foot IK and procedural rig setups | [GitHub](https://github.com/twistedbytes-net/TBCR) |
+| **Unreal-VBG_EditorRigTools** | Auto IK Rig setup | UE5 | Automatically generates IK Rig assets for compatible humanoid skeletons | [GitHub](https://github.com/Vortex-Basis-LLC/Unreal-VBG_EditorRigTools) |
+| **MOVIN LiveLink Plugin V3** | Full-body LiveLink streaming | **UE 5.3–5.8** | Streams body motion and optional point clouds into UE5 via LiveLink | [GitHub](https://github.com/MOVIN3D/MOVIN-UELiveLink-Plugin-V3) |
+| **Rokoko Studio Live** | Mocap LiveLink streaming | UE4/5 | Streams full-body, finger, and facial mocap live into Unreal Engine | [GitHub](https://github.com/Rokoko/rokoko-studio-live-unreal-engine) |
+| **ACL Plugin** | High-joint animation compression | UE4/5 · MIT | Preserves finger, wrist, ankle, and toe precision on 65–95+ bone rigs while shrinking animation memory | [GitHub](https://github.com/nfrechette/acl-ue4-plugin) |
+| **UE_CelLit / MooaToon** | Stylized anime lookdev in UE5 | UE5 · MIT / OS | Replaces Blender `Shader to RGB` cel nodes (which do not export over FBX/GLB) with native UE5 cel-shading and outlines | [UE_CelLit](https://github.com/shjh3117/UE_CelLit) · [MooaToon](https://github.com/JasonMa0012/MooaToon) |
+| **unreal-audio2lipsync / MediaPipe4U** | 52-ARKit facial animation | UE5 | Drives facial morphs/blinks/lipsync from audio or webcam over LiveLink on top of body mocap | [audio2lipsync](https://github.com/aaryansachdeva/unreal-audio2lipsync) · [unreal-motion](https://github.com/althropic/unreal-motion) |
+| **MLSLabs 3DGS Renderer** | Direct 3D Gaussian Splatting | UE5 | Renders `.ply` 3DGS/4DGS captures directly inside UE5 & Sequencer without lossy mesh conversion | [GitHub](https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE) |
+
+### Minimal 4-Plugin Starter Kit (Modular Blender/AI Characters in UE 5.8)
+1. **UE 5.8 `Mutable`** (built-in) + **`glTFRuntime`** — cooked wardrobe/limb swaps + fast unbaked `.glb` iteration
+2. **`KawaiiPhysics`** — hair-card spring chains, skirts, sleeves, and accessories with body collision
+3. **`GASP-ALS-R`** (with Epic's Game Animation Sample) — Motion Matching locomotion, foot/ankle IK, and mocap layering
+4. **`UE_CelLit`** — clean anime/stylized shading in vanilla UE 5.8 without custom engine builds
