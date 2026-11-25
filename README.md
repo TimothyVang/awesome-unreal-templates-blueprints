@@ -403,11 +403,23 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **MooaToon** | GitHub | UE5 | Studio-grade cinematic anime/cel-shading renderer (custom shading model, hair/skin/rim/outline controls) | [GitHub](https://github.com/JasonMa0012/MooaToon) |
 | **UE_CelLit** | GitHub | UE5 · MIT | Plug-in toon/cel shader for vanilla UE5 | [GitHub](https://github.com/shjh3117/UE_CelLit) |
 | **UE5-StylizedPostProcess** | GitHub | UE5 | Stylized anime/painterly post-process pass | [GitHub](https://github.com/ymt3d/UE5-StylizedPostProcess) |
+| **UE5-PSX-Game-Template** | GitHub | UE5 | Modular PSX retro graphics template (FPS movement, inventory, audio, sky/light) | [GitHub](https://github.com/AnastasisMarinos/UE5-PSX-Game-Template) |
+| **Advanced-Outline-Shader-UE5** | GitHub | UE5 · HLSL | Edge-detection outline post-process shader in custom HLSL | [GitHub](https://github.com/Arystos/Advanced-Outline-Shader-UE5) |
+| **CompushadyUnreal** | GitHub | UE5 · MIT | Easy GPU compute shader plugin for UE5 | [GitHub](https://github.com/rdeioris/CompushadyUnreal) |
+| **UE5_ComputeShader / UnrealRDGLearning** | GitHub | UE5 · MIT | Global compute shaders, Render Dependency Graph (RDG) textures & GPU instancing examples | [UE5_ComputeShader](https://github.com/933yee/UE5_ComputeShader) · [UnrealRDGLearning](https://github.com/Ardaurum/UnrealRDGLearning) |
+| **SceneViewExtensionTemplate** | GitHub | UE5 | Clean plugin template for custom UE5 rendering passes via `FSceneViewExtension` | [GitHub](https://github.com/A57R4L/SceneViewExtensionTemplate) |
+| **UE5-Marching-Cubes** | GitHub | UE5 · MIT | GPU Marching Cubes via Render Dependency Graph (RDG) | [GitHub](https://github.com/Russell-Newton/UE5-Marching-Cubes) |
+| **UnrealPostProcessingShaders / Retroreflections** | GitHub | UE4/5 · Apache-2.0 / MIT | Collection of post-processing & retroreflection shaders | [PostProcessing](https://github.com/UnrealVFX/UnrealPostProcessingShaders) · [Retroreflections](https://github.com/RDTG/UnrealEngineRetroreflections) |
+| **ue5_custom_ssgi** | GitHub | UE5 | Custom SSGI implementation & profiling optimizations | [GitHub](https://github.com/whlee503/ue5_custom_ssgi) |
 | **DLL Audio** | GitHub | UE5 · Apache-2.0 | Gameplay-tag driven audio events, sound definitions & listener-local budgets | [GitHub](https://github.com/DigiLogicLabs/dll-audio) |
 | **Metagrain** | GitHub | UE5 · MIT | Granular synthesis nodes for UE5 MetaSounds | [GitHub](https://github.com/MaksymKokoiev/Metagrain) |
 | **conv-reverb-plugin-ue5** | GitHub | UE5 | Real-time FFT overlap-add convolution reverb exposed as a native MetaSounds node | [GitHub](https://github.com/Raffiesaurus/conv-reverb-plugin-ue5) |
 | **MetaSoundsSynthRepo** | GitHub | UE5 · MIT | Collection of open-source MetaSounds synthesizers | [GitHub](https://github.com/msp/MetaSoundsSynthRepo) |
 | **RuntimeAudioImporter** *(UE5 fork)* | GitHub | UE5 · MIT | Load `.wav`/`.mp3`/`.ogg`/`.flac` at runtime | [Original (Archived)](https://github.com/gtreshchev/RuntimeAudioImporter) · [UE5 Fork](https://github.com/burhanaftab1/RuntimeAudioImporter) |
+| **unreal-audio-dsp-template-UE5** | GitHub | UE5 | Template for custom MetaSound, SourceEffect & SubmixEffect C++ audio DSP plugins | [GitHub](https://github.com/alexirae/unreal-audio-dsp-template-UE5) |
+| **MetaSound Branches** | GitHub | UE5 | Custom MetaSounds node pack for Windows & Mac | [GitHub](https://github.com/matthewscharles/metasound-branches) |
+| **UE5 Wwise Footsteps** | GitHub | UE5 · Wwise | Surface-aware footstep audio system in Wwise + Blueprints/C++ | [GitHub](https://github.com/abovenoisestudios/ANE_Blog_UE5_Wwise_Footsteps) |
+| **UE-AUDIO-MCP** | GitHub | UE5 | Natural-language Wwise + MetaSounds + Blueprint audio workflow automation | [GitHub](https://github.com/koshimazaki/UE-AUDIO-MCP) |
 
 ---
 
@@ -423,6 +435,16 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Unreal5-ImGui / VesCodes ImGui** | GitHub | UE 5.4+ · MIT | Dear ImGui in-game debug menus & live telemetry inspectors | [Unreal5-ImGui](https://github.com/SLSNe/Unreal5-ImGui) · [VesCodes/imgui](https://github.com/VesCodes/imgui) |
 | **PoolManager / UnrealObjectPooler** | GitHub | UE 5.7+ · MIT | World-subsystem actor/object pooling (bullets, enemies, VFX) | [PoolManager](https://github.com/JanSeliv/PoolManager) · [UnrealObjectPooler](https://github.com/FadeOutcast/UnrealObjectPooler) |
 | **GameplayCameraToolset / Advanced-Camera-Manager** | GitHub | UE5 · MIT | Modular gameplay camera rigs & camera manager components | [GameplayCameraToolset](https://github.com/iEclisse/GameplayCameraToolset) · [Advanced-Camera-Manager](https://github.com/oivio/Advanced-Camera-Manager) |
+| **ArcUI** | GitHub | UE5 · UMG | Context-based UI & Model-View-Presenter framework for UMG | [GitHub](https://github.com/ArcstoneGames/ArcUI) |
+| **LazyGenericUIFramework** | GitHub | UE5 · CommonUI | Lyra-inspired layer stacking, gameplay tags & auto-discovering slot injection on CommonUI | [GitHub](https://github.com/Lazy-Jason/LazyGenericUIFramework) |
+| **CaptionCue** | GitHub | UE5 · C++ | Certification-ready subtitles & closed captions (speaker colors, directional arrows, reading time, accessibility) | [GitHub](https://github.com/SimulatedFlow/ue-plugin-CaptionCue) |
+| **QuickMenu-Plugin** | GitHub | UE 5.0–5.7 | Graph-powered customizable radial pie menu plugin | [GitHub](https://github.com/Bassounet/QuickMenu-Plugin) |
+| **ModernUI_UE5 / Unreal-MVVM-Pattern-Examples** | GitHub | UE5 | Clean C++ CommonUI + Enhanced Input + MVVM UI reference implementations | [ModernUI_UE5](https://github.com/kosowskie/ModernUI_UE5) · [MVVM Examples](https://github.com/mab09/Unreal-MVVM-Pattern-Examples) |
+| **DialogueTree (unraed)** | GitHub | UE5 · MIT | Lightweight free dialogue tree plugin for UE5 | [GitHub](https://github.com/unraed/DialogueTree) |
+| **PhotoModePlugin_UE5** | GitHub | UE5 | Complete in-game Photo Mode with camera controls & customizable filter presets | [GitHub](https://github.com/KampaiRaptor/PhotoModePlugin_UE5) |
+| **MP4Exporter / UnrealOtioExporter** | GitHub | UE5 · MRQ | Direct MP4 video export & OpenTimelineIO (OTIO) export plugins for Movie Render Queue | [MP4Exporter](https://github.com/sasmaster/MP4Exporter) · [OtioExporter](https://github.com/mvanneutigem/UnrealOtioExporter) |
+| **RecordAnimEUWSample** | GitHub | UE5 · MIT | Record animations in Sequencer using an Editor Utility Widget | [GitHub](https://github.com/pafuhana1213/RecordAnimEUWSample) |
+| **EA IRIS Photosensitivity Plugin** | GitHub | UE5 · BSD-3 | Electronic Arts' open-source photosensitivity analysis plugin for UE5 | [GitHub](https://github.com/electronicarts/IRIS-Unreal-Plugin) |
 | **SPUD / SaveExtension** | GitHub | UE4/5 · MIT / Apache-2.0 | Persistent streaming-world & async slot save/load frameworks | [SPUD](https://github.com/sinbad/SPUD) · [SaveExtension](https://github.com/PipeRift/SaveExtension) |
 | **DataConfig** | GitHub | UE4/5 · MIT | JSON & MsgPack serialization over Unreal's Property System (241★) | [GitHub](https://github.com/slowburn-dev/DataConfig) |
 | **Netflix UnrealValidationFramework** | GitHub | UE5 · Apache-2.0 | Studio-grade automated asset validation framework | [GitHub](https://github.com/Netflix-Skunkworks/UnrealValidationFramework) |
@@ -430,6 +452,17 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Sentry Unreal SDK** | GitHub | UE5 · MIT | Production crash reporting & error telemetry SDK | [GitHub](https://github.com/getsentry/sentry-unreal) |
 | **mod.io UE Plugin** | GitHub | UE5 | In-game UGC/mod browser, download & mount pipeline | [GitHub](https://github.com/modio/modio-ue) |
 | **EnhancedUnrealSpecs** | GitHub | UE5 · MIT | BDD/unit test macros on top of Unreal's Automation & `CQTest` | [GitHub](https://github.com/OpenPF2/EnhancedUnrealSpecs) |
+| **ElgEditorScripting / BlueprintMessageLog** | GitHub | UE5 | Editor Utility Widget scripting extensions & Blueprint → Message Log bridge | [ElgEditorScripting](https://github.com/ElgSoft/ElgEditorScripting) · [BlueprintMessageLog](https://github.com/aquanox/BlueprintMessageLogPlugin) |
+| **UE5_DataTableGenerator** | GitHub | UE5 | Generate & append UE5 DataTables from natural language using local Ollama | [GitHub](https://github.com/mboard8070/UE5_DataTableGenerator) |
+| **UnrealSharp (.NET 10 C#)** | GitHub | UE5 | Write UE5 games in C# (.NET 10) with Hot Reload | [GitHub](https://github.com/UnrealSharp/UnrealSharp) |
+| **UnLua / Puerts / unreal-rust** | GitHub | UE4/5 | High-performance Lua, TypeScript & Rust scripting runtimes for Unreal Engine | [UnLua](https://github.com/Tencent/UnLua) · [Puerts](https://github.com/Tencent/puerts) · [unreal-rust](https://github.com/MaikKlein/unreal-rust) |
+| **RE-UE4SS** | GitHub | UE4/5 | Injectable Lua modding framework, SDK generator & live property inspector | [GitHub](https://github.com/UE4SS-RE/RE-UE4SS) |
+| **UE5 AI / MCP Automation Plugins** | GitHub | UE 5.4–5.8 | Open-source MCP & CLI bridges for agent-driven Blueprint/editor automation | [Unreal-MCP](https://github.com/IvanMurzak/Unreal-MCP) · [BlueprintEngine](https://github.com/Blueprint-Engine/BlueprintEngine) · [mcp-unreal](https://github.com/remiphilippe/mcp-unreal) · [NexusLink](https://github.com/bytepine/NexusLink) · [uemcp (MIT)](https://github.com/ATDev-Inc/uemcp) · [soft-ue-cli](https://github.com/softdaddy-o/soft-ue-cli) |
+| **UnrealJolt (Jolt Physics)** | GitHub | UE5 · MIT | Jolt Physics engine integration plugin for UE5 | [GitHub](https://github.com/Yadhu-S/UnrealJolt) |
+| **KinetiForge Vehicle System** | GitHub | UE5 · C++ | High-performance modular C++ vehicle physics with real-time parameter tuning | [GitHub](https://github.com/myoozy/KinetiForge-Vehicle-System) |
+| **Async Chaos Suspension & Kinematics** | GitHub | UE5 · C++ | Async `FSimCallback` MacPherson & double-wishbone vehicle suspension physics | [Suspension](https://github.com/fgrenoville/Async-Physics-Suspension) · [Kinematics](https://github.com/fgrenoville/Async-Physics-Suspension-Kinematics) |
+| **NetworkedPhysics** | GitHub | UE5 | Replicated physics pawn reference project | [GitHub](https://github.com/cem-akkaya/NetworkedPhysics) |
+| **Deep-Cut Open-Source Genre Projects** | GitHub | UE5 | Football (LAN/Steam MP), Local MP Golf, Skateboarding Sim, 2.5D Metroidvania, Cozy Open World, Fighting Template | [ProVisionFootball](https://github.com/Voit89/ProVisionFootball) · [Golf-Mania](https://github.com/ChaseZardezed/Golf-Mania-Case-Study) · [Skateboard-Sim](https://github.com/omar94hamza/Skateboard-Sim-Prototype) · [ProjectLux](https://github.com/TinyAlmonds/ProjectLux) · [CozyTales](https://github.com/AndromeDIE/CozyTales) · [FightingTemplate](https://github.com/TanushKrashak/Ue5.0_FightingGameTemplate) |
 
 ---
 
