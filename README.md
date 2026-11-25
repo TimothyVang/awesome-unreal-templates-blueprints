@@ -76,6 +76,13 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **EssentialUE5BPs** | Open Source | UE5 · BP | Modular third-person Blueprints collection | [GitHub](https://github.com/lostcrowdev/EssentialUE5BPs) |
 | **UE5 Game Starter Template** | Open Source | UE5 | General-purpose project starter | [GitHub](https://github.com/motionforge/Unreal-Engine-5-Game-Starter-Template) |
 | **Nano** | Open Source | UE | Minimalist starter template for small/jam games | [GitHub](https://github.com/pfist/Nano) |
+| **ProjectCallisto** | Open Source | **UE 5.8** · C++/BP | Action-RPG Gameplay Ability System technical showcase & event-driven combat architecture | [GitHub](https://github.com/ramzelsuarez/ProjectCallisto) |
+| **UE5-GAS-Multiplayer-Framework** | Open Source | UE5 · C++ | Multiplayer GAS template with client prediction & AAA-style replication patterns | [GitHub](https://github.com/NickMC05/UE5-GAS-Multiplayer-Framework) |
+| **ElementalArsenal** | Open Source | UE5 · C++/BP | Modular GAS equipment pipelines, automated elemental reactions (e.g., Fire + Oil = Explosion) & asset generation tools | [GitHub](https://github.com/hemalpatel2990/ElementalArsenal) |
+| **GameplayActionFramework** | Open Source | UE5 · C++ | Lightweight GAS-inspired ability framework designed for single-player games with zero replication overhead | [GitHub](https://github.com/Viktor-Antonyak/GameplayActionFramework) |
+| **ModularGameplayAbilities** | Open Source | UE5 · C++ | Lyra-inspired GAS boilerplate & modular ability extension plugin | [GitHub](https://github.com/MajorTomAW/ModularGameplayAbilities) |
+| **ue5-gas-prototype** | Open Source | UE 5.6 · C++ | Dual ASC ownership patterns, native Gameplay Tags, Enhanced Input & reactive UI | [GitHub](https://github.com/nbertoa/ue5-gas-prototype) |
+| **ue5-rpg-ability-system** | Open Source | UE5 · GAS | Skill book, action bar, cooldowns & animation-driven ability casting reference | [GitHub](https://github.com/Mustafa-Kum/ue5-rpg-ability-system) |
 
 ---
 
@@ -203,6 +210,9 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **KawaiiPhysics** | GitHub | UE4/5 · MIT | Secondary AnimGraph bone physics for hair, skirts, sleeves, capes, and accessories | [GitHub](https://github.com/pafuhana1213/KawaiiPhysics) |
 | **MallangPhysics** | GitHub | **UE 5.6–5.8** · MIT | GPU soft-body deformation on skeletal & static meshes | [GitHub](https://github.com/wjsekrud/MallangPhysics) |
 | **ACL Plugin** | GitHub | UE4/5 · MIT | Animation Compression Library plugin (higher precision, lower RAM) | [GitHub](https://github.com/nfrechette/acl-ue4-plugin) |
+| **motionmatchingreplicated** | GitHub | UE5 · MIT | Replicated UE5 Motion Matching locomotion sample (198★) | [GitHub](https://github.com/cenairaclub/motionmatchingreplicated) |
+| **DaftMover** | GitHub | UE5 · MIT | Custom movement built on Unreal Engine 5's modern **Mover** framework | [GitHub](https://github.com/daftsoftware/DaftMover) |
+| **ALSLyra** | GitHub | UE5 · C++ | Advanced Locomotion System V4 Refactored integrated into Lyra | [GitHub](https://github.com/UnrealEnginePersonal/ALSLyra) |
 
 ---
 
@@ -301,6 +311,15 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Open World Server (OWS)** | GitHub | UE5 · MMO | Dedicated multi-zone MMO instance server backend | [GitHub](https://github.com/Dartanlla/OWS) |
 | **VaRest / unreal-fetch** | GitHub | UE4/5 · MIT | Blueprint & C++ REST/JSON HTTP clients | [VaRest](https://github.com/ufna/VaRest) · [unreal-fetch](https://github.com/GameDev4K/unreal-fetch) |
 | **Packt UE5 Multiplayer Samples** | GitHub | UE5 | Complete multiplayer book sample projects | [GitHub](https://github.com/PacktPublishing/Multiplayer-Game-Development-with-Unreal-Engine-5) |
+| **Rollback-Core** | GitHub | UE5 · MIT | Deterministic GGPO-style rollback netcode: fixed-step sim, SaveGame-reflection state capture & UDP input redundancy | [GitHub](https://github.com/gregorik/Rollback-Core) |
+| **Lyra Edgegap Dedicated Server Sample** | GitHub | **UE 5.8** | Epic's Lyra wired for EOS sessions, matchmaking & container dedicated servers | [GitHub](https://github.com/edgegap/game-sample-unreal-engine-lyra) |
+| **EasyMatchmaking (EOS)** | GitHub | UE 5.6 · BP/C++ | EOS lobbies, sessions & dedicated servers with full Blueprint support | [GitHub](https://github.com/DanielKocan/EasyMatchmaking) |
+| **ue5-steam-session-plugin** | GitHub | UE 5.6 · C++ | Steam listen-server lobby with seamless dedicated server travel on match start | [GitHub](https://github.com/dooyeonk/ue5-steam-session-plugin) |
+| **Epic EOS Getting Started** | GitHub | UE5 · MIT | Official Epic Online Services integration samples | [GitHub](https://github.com/EpicGames/EOS-Getting-Started) |
+| **Nakama Unreal SDK** | GitHub | UE4/5 · Apache-2.0 | Official open-source Nakama server SDK (accounts, chat, social, matchmaker, realtime multiplayer) | [GitHub](https://github.com/heroiclabs/nakama-unreal) |
+| **Replication_Graph_UE5** | GitHub | UE5 · C++ | Network Replication Graph setup tuned for 100+ players | [GitHub](https://github.com/droganaida/Replication_Graph_UE5) |
+| **NetworkReplication-UE5** | GitHub | UE 5.6+ · BP | Blueprint-friendly multiplayer networking & replication monitor without manual RPCs | [GitHub](https://github.com/straywriter/NetworkReplication-UE5) |
+| **AccelByte EOS Voice / 4Players ODIN** | GitHub | UE5 | Real-time voice chat & spatialized 3D multiplayer voice SDK plugins | [EOS Voice](https://github.com/AccelByte/accelbyte-eos-voice-unreal) · [ODIN Voice](https://github.com/4Players/odin-unreal-demo) |
 
 ---
 
@@ -340,6 +359,12 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Reasonable Planning AI** | GitHub | UE4/5 · MIT | Designer-driven Utility AI + GOAP extension for `AIModule` | [GitHub](https://github.com/hollsteinm/ReasonablePlanningAI) |
 | **ParallelBehaviorUnreal** | GitHub | UE5 · C++ | Run multiple independent Behavior Trees in parallel on one AI pawn (combat + locomotion + dialogue) | [GitHub](https://github.com/ArtemIyX/ParallelBehaviorUnreal) |
 | **Modular AI Framework / Combat EQS AI** | Fab | UE5 · BP | Blueprint data-driven enemy & EQS combat AI starters | [Modular AI](https://www.fab.com/listings/68dd9da0-80d0-4686-a8d6-92e0a3b5badd?lang=en) · [Combat EQS](https://www.fab.com/listings/517b6789-19bf-47db-9f55-facfa417559f?lang=en) |
+| **Tactix** | GitHub | UE5 · C++ | Full tactical AI plugin: Utility AI, GOAP, HTN planning, cover system, influence maps, squads & formations integrated with BT/EQS | [GitHub](https://github.com/CanReader/Tactix) |
+| **TacticalSquadAI** | GitHub | UE 5.7 · C++ | Coordinated tactical squad AI behaviors | [GitHub](https://github.com/eren-pekdemir/TacticalSquadAI) |
+| **SmartObjectAI** | GitHub | UE5 | Smart Objects AI interaction template | [GitHub](https://github.com/AsmundSchei/SmartObjectAI) |
+| **MassAIExample** | GitHub | UE5 | Mass Entity + Smart Objects + StateTree crowd interaction sample | [GitHub](https://github.com/Ji-Rath/MassAIExample) |
+| **BTUtility** | GitHub | UE5 · MIT | Lightweight Utility AI response-curve nodes for Behavior Trees | [GitHub](https://github.com/ric-fm/BTUtility) |
+| **HTN Example Project** | GitHub | UE4/5 | Hierarchical Task Network (HTN) planning plugin demo | [GitHub](https://github.com/maksmaisak/htn-example-project) |
 
 ---
 
@@ -355,6 +380,19 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **VoxelPlugin** | GitHub | UE4/5 | Real-time procedural & destructible voxel worlds | [GitHub](https://github.com/Phyronnaz/VoxelPlugin) |
 | **OpenLand** | GitHub | UE4/5 | Open-source landscape auto-material | [GitHub](https://github.com/GameDev4K/unreal-open-land) |
 | **MLSLabs 3D Gaussian Splatting (3DGS / 4DGS)** | GitHub | UE5 | High-performance real-time 3DGS & dynamic 4D volumetric video renderer with Sequencer playback | [GitHub](https://github.com/mlslabs/MLSLabsGaussianSplattingRenderer-UE) |
+| **PCGProTools** | GitHub | **UE 5.7–5.8** · C++ | Custom C++ PCG nodes, presets & debug utilities for placement, scattering & filtering | [GitHub](https://github.com/eXeViruZ/PCGProTools) |
+| **PCGLayeredBiomes** | GitHub | UE5 | Multi-layered procedural biome generator built on UE5 PCG | [GitHub](https://github.com/lazycatsdev/PCGLayeredBiomes) |
+| **RoadForge OSM Procedural City** | GitHub | UE 5.7 | OpenStreetMap-based procedural city road network generator | [GitHub](https://github.com/YuuhenR/roadforge-osm-ue5-procedural-city) |
+| **Flow-Field City Generation** | GitHub | UE 5.6 · Python/EUW | HISM-accelerated procedural city generator via UE5 Python API & Editor Utility Widgets | [GitHub](https://github.com/Coi-Zhi/-Unreal-Engine-5.6-Flow-Field-City-Generation) |
+| **ArcGIS CityEngine for Unreal** | GitHub | UE5 | Procedural urban/architecture modeling rules directly in Unreal | [GitHub](https://github.com/Esri/cityengine_for_unreal) |
+| **WFCPlugin / Wave-Function-Collapse-UE5** | GitHub | UE5 · MIT | C++ Wave Function Collapse tile/environment procedural generators | [WFCPlugin](https://github.com/bohdon/WFCPlugin) · [WFC-UE5](https://github.com/DNL-22/Wave-Function-Collapse-UE5) |
+| **Niagara Destruction Driver** | GitHub | UE5 | Converts Chaos Geometry Collections into high-FPS GPU Niagara-simulated destructibles | [GitHub](https://github.com/eanticev/niagara-destruction-driver) |
+| **Vapor (Nubis Clouds)** | GitHub | UE5 | Physically-based volumetric cloud rendering plugin based on Horizon's Nubis | [GitHub](https://github.com/mxcop/vapor) |
+| **WeatherEnvironmentSystem** | GitHub | UE5 | Persistent world clock, moving weather fronts, local wind, rain/snow, clouds & foliage response | [GitHub](https://github.com/James-Joslin/WeatherEnvironmentSystem) |
+| **DynamicSkySystem / WeatherX** | GitHub | UE5 · BP/Niagara | Spatial & temporal weather transition plugins and dynamic sky rigs | [DynamicSkySystem](https://github.com/alexmegahat/DynamicSkySystem) · [WeatherX](https://github.com/fer0072/WeatherX) |
+| **UE5NiagaraComputeShaderIntegration** | GitHub | UE5 | Niagara + Compute Shader GPU boids integration example | [GitHub](https://github.com/Shadertech/UE5NiagaraComputeShaderIntegration) |
+| **VolumetricCloudsUnreal** | GitHub | UE5 | Ray-marching volumetric shader & cloud techniques | [GitHub](https://github.com/cavallimarko/VolumetricCloudsUnreal) |
+| **AINiagara** | GitHub | UE5 | Natural-language Niagara particle system authoring inside Unreal Editor | [GitHub](https://github.com/andrehrferreira/AINiagara) |
 
 ---
 
