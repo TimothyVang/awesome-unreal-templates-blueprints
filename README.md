@@ -34,6 +34,12 @@ A massive, categorized catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templa
 24. [Recommended Commercial-Safe Open-Source Stack (MIT / Apache-2.0)](#24-recommended-commercial-safe-open-source-stack-mit--apache-20)
 25. [Blender ↔ UE 5.8 Modular Character, Full-Joint Rigging, Hair/Cloth & Mocap Pipeline](#25-blender--ue-58-modular-character-full-joint-rigging-haircloth--mocap-pipeline)
 26. [Multi-GPU Compute Routing Pipeline (DGX Spark GB10 + RTX 5070 Ti + RTX 3090 + RTX 3070)](#26-multi-gpu-compute-routing-pipeline-dgx-spark-gb10--rtx-5070-ti--rtx-3090--rtx-3070)
+27. [Free CC0 & Open-Source 3D Models, PBR Textures, HDRIs, Animations & Audio Hubs](#27-free-cc0--open-source-3d-models-pbr-textures-hdris-animations--audio-hubs)
+28. [Blender 3D — Rigging, Weight Painting, Modular Characters & Game Rigs](#28-blender-3d--rigging-weight-painting-modular-characters--game-rigs)
+29. [Blender 3D — Retopology, UV Unwrapping, Baking, LODs & Mesh Cleanup](#29-blender-3d--retopology-uv-unwrapping-baking-lods--mesh-cleanup)
+30. [Blender 3D — Hard-Surface Modeling, CAD, Kitbashing & Add-on Indexes](#30-blender-3d--hard-surface-modeling-cad-kitbashing--add-on-indexes)
+31. [Blender 3D — Hair Cards, Grooming, Cloth, Anime/NPR Shaders, Geometry Nodes & 3D Texturing](#31-blender-3d--hair-cards-grooming-cloth-animenpr-shaders-geometry-nodes--3d-texturing)
+32. [Open-Source AI 3D Generation, Auto-Rigging, Hair Cards & Video-to-Mocap Repositories](#32-open-source-ai-3d-generation-auto-rigging-hair-cards--video-to-mocap-repositories)
 
 ---
 
@@ -633,3 +639,92 @@ flowchart TB
 - **Serialize Spark GPU jobs + zero retention:** Guard Spark inference behind a single `GPU_LOCK`, verify `MemAvailable >= 12 GiB` before execution, unload model weights after each job, and sweep ephemeral artifacts so co-resident services stay healthy.
 - **Keep Blender cycles/optix off Spark:** Use Spark for PyTorch/CUDA ML + headless mesh prep, and route all Cycles GPU bakes/renders to the **RTX 3090** (OptiX) or **RTX 5070 Ti** (when UE Editor is closed).
 - **Blender 4.5 vs 5.x EEVEE compatibility:** Detect version dynamically (`'BLENDER_EEVEE'` on Blender 5.0+, `'BLENDER_EEVEE_NEXT'` on Blender 4.5 LTS) and always run headless scripts with `--python-exit-code 1`.
+
+---
+
+## 27. Free CC0 & Open-Source 3D Models, PBR Textures, HDRIs, Animations & Audio Hubs
+
+| Library / Hub | License | Best For | Link |
+|---|---|---|---|
+| **Poly Haven** | CC0 | 1K–8K PBR textures, unclipped 16K+ HDRIs & realistic Blend/glTF/USD/FBX models | [polyhaven.com](https://polyhaven.com/) |
+| **ambientCG** | CC0 | Huge library of free PBR materials, HDRIs & 3D assets | [ambientcg.com](https://ambientcg.com/) |
+| **Kenney** | CC0 | 200+ consistent low-poly 3D kits, UI packs, sprites & SFX (GLB/FBX/PNG/WAV) | [kenney.nl/assets](https://kenney.nl/assets) |
+| **KayKit (Kay Lousberg)** | CC0 | Stylized modular characters, dungeons & game-ready animation kits | [kaylousberg.com/game-assets](https://kaylousberg.com/game-assets) |
+| **Quaternius** | CC0 | Free animated modular characters, creatures, nature, medieval, sci-fi & FPS packs | [quaternius.com](https://quaternius.com/) |
+| **Poly Pizza** | CC0 / CC-BY | 10,700+ searchable free low-poly 3D models (characters, weapons, props, vehicles) | [poly.pizza](https://poly.pizza/) |
+| **itch.io CC0 Free Game Assets** | CC0 | Massive filterable directory of public-domain 3D kits, textures, sprites & audio | [itch.io CC0](https://itch.io/game-assets/assets-cc0/free) |
+| **Free Game Dev Assets (TMHSDigital)** | Verified Licenses | 450+ curated free 3D, 2D, character, animation, audio & shader sources with license audit | [Catalog](https://tmhsdigital.github.io/Free-Game-Dev-Assets) |
+| **JackLuguibin/GameAssets** | Curated Index | Categorized GitHub index of free character, environment, PBR, UI, audio & VFX sources | [GitHub](https://github.com/JackLuguibin/GameAssets) |
+
+---
+
+## 28. Blender 3D — Rigging, Weight Painting, Modular Characters & Game Rigs
+
+| Tool / Add-on | License | Highlights | Link |
+|---|---|---|---|
+| **gret (Game Rig & Export Toolkit)** | GPL-3.0 | Daily-driver Blender 4.1+ → UE toolkit (480★): **Mesh Graft** (seamless fur/part normal transfer), **RBF Mesh Retarget** (transfer outfits/shape keys across characters), **UE Collision Hulls**, **Vertex Group Bleed & Smooth Loops**, Apply Modifiers with Shape Keys, Static Mesh Morph UV encoding & batch Export Jobs | [GitHub](https://github.com/greisane/gret) |
+| **MPFB2 (MakeHuman for Blender 2)** | AGPL / Open Source | Procedural human character generator directly inside Blender with modular clothing, skins, morphs & Rigify/game rigs | [GitHub](https://github.com/makehumancommunity/mpfb2) |
+| **BlenRig** | GPL-3.0 | Studio-grade biped & facial rigging system with corrective cage deformation for Blender | [GitHub](https://github.com/jpbouza/BlenRig) |
+| **GameRig** | Open Source | Game-engine-friendly auto-rigging built on top of Rigify (metarigs + clean deform hierarchies) | [GitHub](https://github.com/Arminando/GameRig) |
+| **BlenderGameRig** | GPL-3.0 | Rigging framework for game development (hard fork of Rigify tuned for engine export) | [GitHub](https://github.com/SAM-tak/BlenderGameRig) |
+| **Rigger** | Open Source | Generates full-control rigs, retargets, exports to game engines & animates from video | [GitHub](https://github.com/asu37/Rigger) |
+| **vrm-addon-rigify-custom / vrm-rigify** | MIT | Generate Blender Rigify armatures & facial expression tools for VRM characters | [vrm-addon-rigify-custom](https://github.com/SYLQW/vrm-addon-rigify-custom) · [vrm-rigify](https://github.com/nanoskript/vrm-rigify) |
+| **jd_rigging_tools** | GPL-3.0 | General-purpose Blender rigging helper utilities | [GitHub](https://github.com/jaldoyle/jd_rigging_tools) |
+
+---
+
+## 29. Blender 3D — Retopology, UV Unwrapping, Baking, LODs & Mesh Cleanup
+
+| Tool / Add-on | License | Highlights | Link |
+|---|---|---|---|
+| **QRemeshify** | GPL-3.0 | Free open-source **QuadWild Bi-MDF** quad remesher extension for Blender 4.2+ (1.2k+★): symmetry, sharp/seam-guided edge flow, zero external installs | [GitHub](https://github.com/ksami/QRemeshify) |
+| **TexTools for Blender** | GPL-3.0 | Industry-favorite Blender UV layout, texel density, straighten/rectify & texture map baking suite | [GitHub](https://github.com/franMarz/TexTools-Blender) |
+| **Mio3 UV** | Open Source | Modern Blender UV unwrapping, gridify, alignment, sorting & packing toolkit | [GitHub](https://github.com/mio3io/mio3_uv) |
+| **Instant Meshes** | BSD | Standalone interactive field-aligned quad/tri remesher for decimation & retopo | [GitHub](https://github.com/wjakob/instant-meshes) |
+| **flow-lod** | Open Source | Automated LOD generation workflow add-on for Blender | [GitHub](https://github.com/solid-state-games/flow-lod) |
+| **quadami / retopology_tool / remi** | Open Source | Lightweight Blender retopology & quad-flow utilities | [quadami](https://github.com/KajetanMuczynski/quadami) · [retopology_tool](https://github.com/postsilver/retopology_tool) · [remi](https://github.com/shaderko/remi-blender-addon) |
+| **blender-meshtools-addon / CurioMesh** | Open Source | Mesh cleanup, editing & topology helper add-ons | [meshtools](https://github.com/sysoutch/blender-meshtools-addon) · [CurioMesh](https://github.com/CurioCrafter/CurioMesh) |
+
+---
+
+## 30. Blender 3D — Hard-Surface Modeling, CAD, Kitbashing & Add-on Indexes
+
+| Tool / Add-on | License | Highlights | Link |
+|---|---|---|---|
+| **ARMORED-Toolkit** | Open Source | Fast hard-surface modeling, bevel, mirror & viewport productivity toolkit for Blender | [GitHub](https://github.com/ArmoredColony/ARMORED-Toolkit) |
+| **rmKit** | Open Source | Precision mesh modeling & hard-surface utilities for game artists | [GitHub](https://github.com/roosterMAP/rmKit) |
+| **hardflow** | Open Source | Hard-surface boolean & modeling workflow add-on | [GitHub](https://github.com/ugulay/hardflow) |
+| **wanderer-cad / blender-cad-tools** | Open Source | Precision CAD-style snapping, dimensions & hard-surface tools in Blender | [wanderer-cad](https://github.com/Impressivetravel/wanderer-cad) · [blender-cad-tools](https://github.com/EleotleCram/blender-cad-tools) |
+| **BlenderKit** | Open Source Client | In-Blender asset library client (free & pro models, materials, HDRIs, brushes) | [GitHub](https://github.com/BlenderKit/Blendkit) |
+| **awesome-blender / awesome-3d-blender-addons** | Open Source | Massive curated master directories of free & open-source Blender add-ons | [awesome-blender](https://github.com/agmmnn/awesome-blender) · [awesome-3d-blender-addons](https://github.com/naranyala/awesome-3d-blender-addons) |
+
+---
+
+## 31. Blender 3D — Hair Cards, Grooming, Cloth, Anime/NPR Shaders, Geometry Nodes & 3D Texturing
+
+| Tool / Add-on | License | Highlights | Link |
+|---|---|---|---|
+| **BlenderGBHTool** | Open Source | Procedural hair card & curve hair generator add-on for Blender | [GitHub](https://github.com/GixoXYZ/BlenderGBHTool) |
+| **GroomLab** | Open Source | Universal procedural hair, fur & feather groom system for Blender & standalone | [GitHub](https://github.com/thekesslereffect/groomlab) |
+| **Blender_APX_Addon** | MIT | Import/export `.apx` cloth, hair & destruction simulation files for Blender 5.0+ | [GitHub](https://github.com/ArdCarraigh/Blender_APX_Addon) |
+| **BreathfangGeoNodes (DragonGraph)** | Free Commercial | Commercial-safe Geometry Nodes & shader node toolset pack | [GitHub](https://github.com/Breathfang/BreathfangGeoNodes) |
+| **Anime-Tools** | Open Source | Anime character & shading utilities targeting Blender 4.5 LTS | [GitHub](https://github.com/AtomaHuro/Anime-Tools) |
+| **NprEevee / npr-face-shader** | GPL-3.0 / OS | Non-photorealistic cel/toon shaders & Grease-Pencil-guided smooth anime face lighting | [NprEevee](https://github.com/kents00/NprEevee) · [npr-face-shader](https://github.com/EmuMan/npr-face-shader) |
+| **Material Maker** | MIT | Free open-source node-based procedural PBR material & 3D painting studio (5.9k★, Substance Designer alternative) | [GitHub](https://github.com/RodZill4/material-maker) |
+| **ArmorPaint + Blender Add-on** | Open Source | GPU-accelerated standalone 3D PBR texture painting tool + Blender live bridge | [ArmorPaint](https://github.com/armory3d/armorpaint) · [Blender Add-on](https://github.com/armory3d/armorpaint_blender) |
+
+---
+
+## 32. Open-Source AI 3D Generation, Auto-Rigging, Hair Cards & Video-to-Mocap Repositories
+
+| Repository | License | Highlights | Link |
+|---|---|---|---|
+| **TRELLIS.2 / TRELLIS (Microsoft)** | MIT | State-of-the-art image-to-3D PBR mesh generation with structured 3D latents (world-aligned parts) | [TRELLIS.2](https://github.com/microsoft/TRELLIS.2) · [TRELLIS](https://github.com/microsoft/TRELLIS) |
+| **TripoSG (VAST AI)** | MIT | High-fidelity 3D shape synthesis using large-scale rectified flow models | [GitHub](https://github.com/VAST-AI-Research/TripoSG) |
+| **Hunyuan3D-2.1 / Hunyuan3D-Omni** | Open Source | High-fidelity image-to-3D assets with production-ready PBR materials & controllable generation | [Hunyuan3D-2.1](https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1) · [Hunyuan3D-Omni](https://github.com/Tencent-Hunyuan/Hunyuan3D-Omni) |
+| **HairDeck** | Apache-2.0 | Single-image → stylized colored UV hair cards + spring-bone physics chains (`.glb` + JSON) | [GitHub](https://github.com/hyz317/HairDeck) |
+| **UniRig (VAST AI)** | Open Source | SIGGRAPH 2025 diverse skeleton auto-rigging & skinning foundation model (successor: SkinTokens) | [GitHub](https://github.com/VAST-AI-Research/UniRig) |
+| **BiRefNet** | MIT | High-resolution dichotomous alpha matting & foreground segmentation for clean 2D-to-3D inputs | [GitHub](https://github.com/ZhengPeng7/BiRefNet) |
+| **GVHMR** | Open Source | SIGGRAPH Asia world-grounded 3D human motion recovery from monocular video | [Official](https://github.com/zju3dv/GVHMR) · [Modernized Fork](https://github.com/ryanrudes/gvhmr) |
+| **ComfyUI-3D-Pack** | Open Source | Extensive ComfyUI node suite for 3D meshes, UV textures, 3DGS & multi-view generation | [GitHub](https://github.com/MrForExample/ComfyUI-3D-Pack) |
+| **awesome-comfyui** | GPL-3.0 | Curated directory of ComfyUI custom nodes & generative pipelines | [GitHub](https://github.com/ComfyUI-Workflow/awesome-comfyui) |
