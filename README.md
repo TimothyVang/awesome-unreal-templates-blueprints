@@ -33,6 +33,7 @@ A massive, categorized catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templa
 23. [Giant Indexes, Blueprint Paste-Bins & Free Hubs](#23-giant-indexes-blueprint-paste-bins--free-hubs)
 24. [Recommended Commercial-Safe Open-Source Stack (MIT / Apache-2.0)](#24-recommended-commercial-safe-open-source-stack-mit--apache-20)
 25. [Blender ↔ UE 5.8 Modular Character, Full-Joint Rigging, Hair/Cloth & Mocap Pipeline](#25-blender--ue-58-modular-character-full-joint-rigging-haircloth--mocap-pipeline)
+26. [Multi-GPU Compute Routing Pipeline (DGX Spark GB10 + RTX 5070 Ti + RTX 3090 + RTX 3070)](#26-multi-gpu-compute-routing-pipeline-dgx-spark-gb10--rtx-5070-ti--rtx-3090--rtx-3070)
 
 ---
 
@@ -492,3 +493,72 @@ flowchart LR
 2. **`KawaiiPhysics`** — hair-card spring chains, skirts, sleeves, and accessories with body collision
 3. **`GASP-ALS-R`** (with Epic's Game Animation Sample) — Motion Matching locomotion, foot/ankle IK, and mocap layering
 4. **`UE_CelLit`** — clean anime/stylized shading in vanilla UE 5.8 without custom engine builds
+
+---
+
+## 26. Multi-GPU Compute Routing Pipeline (DGX Spark GB10 + RTX 5070 Ti + RTX 3090 + RTX 3070)
+
+Reference workload-routing architecture for a 4-GPU home/indie studio running **AI 3D modular asset generation, full-joint mocap, Blender OptiX baking/rigging, and Unreal Engine 5.8** in parallel without VRAM OOMs or Windows commit crashes.
+
+```mermaid
+flowchart TB
+  subgraph SPARK["DGX Spark — NVIDIA GB10 (128 GB Unified · Linux ARM64 · CUDA 13)"]
+    S1[Qwen-Image-2.1 Part Splits + BiRefNet Matting]
+    S2[TRELLIS.2 / Pixal3D / Direct3D-V3 / Hi3D-v1.0 1536³]
+    S3[HairDeck Hair Cards + Spring Chains]
+    S4[GEM-X 77-Joint SOMA Mocap + FAB Contacts + Idol 3DGS + RelayVSR]
+  end
+
+  subgraph R3090["RTX 3090 Node (24 GB GDDR6X · OptiX / CUDA)"]
+    B1[Blender Cycles OptiX 4K High→Low Bakes & Turntable QA Renders]
+    B2[Secondary ComfyUI / Flux / LoRA Training / Texture Upscaling]
+    B3[Headless UE 5.8 Batch Cooking, Shader Compile & MRQ Renders]
+  end
+
+  subgraph R5070TI["RTX 5070 Ti Primary Workstation (16 GB Blackwell · Windows DX12)"]
+    W1[Interactive Blender 4.5 / 5.2 Master Rig, Seams & Weight QA]
+    W2[Unreal Engine 5.8 Editor + Mutable + KawaiiPhysics + GASP-ALS-R]
+    W3[Lumen / Nanite Lookdev, PIE Playtesting & UBT C++ Builds]
+  end
+
+  subgraph R3070["RTX 3070 Companion / QA Node (8 GB · NVENC / LiveLink)"]
+    C1[Real-Time LiveLink: audio2lipsync 52-ARKit & MediaPipe4U Face]
+    C2[NVENC Video QA Encodes, Side-by-Side Comparisons & Contact Sheets]
+    C3[Dedicated Multiplayer Test Client / Server & Automated Asset CI]
+  end
+
+  S1 --> S2 --> B1
+  S3 --> W1
+  S4 --> W1
+  B1 --> W1
+  B2 --> W1
+  W1 -->|Shared Skeleton FBX / GLB| W2
+  W2 --> B3
+  C1 -->|LiveLink UDP| W2
+  B3 --> C2
+  W3 <-->|LAN / Listen Server| C3
+```
+
+### Per-GPU Role & VRAM Budget Matrix
+
+| Node | Hardware | Route Here (Best Fit) | Avoid Routing Here (Bottleneck) |
+|---|---|---|---|
+| **DGX Spark** | NVIDIA GB10 (**128 GB unified**, Linux ARM64, CUDA 13) | Heavy multi-stage AI 3D & ML that OOM 16–24 GB cards: Qwen-Image-2.1 part splits, TRELLIS.2 / Pixal3D, Direct3D-V3 / Hi3D-v1.0 (`1024³–1536³`), HairDeck, GEM-X 77-joint SOMA mocap, FAB contacts, Depth Pro 2, Idol 3DGS, RelayVSR 2×/4× video SR | Interactive UE 5.8 DX12 Editor; Blender Cycles GPU rendering (Linux ARM64 `sm_121` lacks Cycles CUDA/OptiX — falls back to CPU) |
+| **RTX 3090** | **24 GB GDDR6X** (Ampere, CUDA + OptiX) | **Blender Cycles OptiX** baking (4K high→low Normal/AO/BaseColor, turntable & clay QA renders, dance stage renders); parallel ComfyUI/Flux/LoRA training; headless UE 5.8 batch cook, shader compilation, and Movie Render Queue (MRQ) | Interactive desktop editor work if already saturated by batch bakes/renders |
+| **RTX 5070 Ti** | **16 GB GDDR7** (Blackwell, Windows DX12 SM6) | **Primary interactive workstation:** Unreal Engine 5.8 Editor, Mutable Customizable Object authoring, Lumen/Nanite lookdev, PIE gameplay testing, interactive Blender rigging/weight painting, UBT C++ compilation | Running local TRELLIS.2 / Flux (~14 GB peak) while UE 5.8 Editor (~6–8 GB) is open — offload AI inference to Spark or 3090 |
+| **RTX 3070** | **8 GB GDDR6** (Ampere, NVENC) | **Always-on lightweight sidecar:** real-time LiveLink (`unreal-audio2lipsync`, `MediaPipe4U` webcam face capture), voice isolation / Whisper STT, FFmpeg NVENC side-by-side QA encodes, lightweight BiRefNet/2D tasks, dedicated multiplayer client/server & asset-validation CI | TRELLIS.2, Flux, 1536³ voxel refinement, heavy Lumen scenes, or large 4K GPU bakes |
+
+### End-to-End 6-Stage Execution Flow (Modular Character + Full-Joint Animation)
+
+1. **Stage 1 — Part Splitting & 3D Generation (`DGX Spark`):** Run Qwen-Image-2.1 splits (head, torso, left/right limbs, garments, boots) → TRELLIS.2/Pixal3D per-part `.glb` + Direct3D-V3/Hi3D refinement + HairDeck hair cards & spring-chain JSON. Runs with **0 MB VRAM used on Windows**.
+2. **Stage 2 — 77-Joint Mocap & Audio Prep (`DGX Spark` + `RTX 3070`):** Extract 77-joint SOMA motion + FAB foot/hand contacts on **DGX Spark**; run voice isolation + `unreal-audio2lipsync` (52 ARKit blendshapes) on **RTX 3070**.
+3. **Stage 3 — High→Low Baking & Texture Refinement (`RTX 3090`):** Offload Blender Cycles **OptiX** 4K Normal/AO/BaseColor bakes, retopo/UV cleanup, and clay/beauty turntable sheets to the **RTX 3090** (10×+ faster than CPU Cycles on Spark).
+4. **Stage 4 — Shared-Skeleton Rigging & Modular Verification (`RTX 5070 Ti`):** Assemble all parts onto **one shared skeleton** in Blender (30 finger bones, fingertip/toe-tip markers, ankles, limb twists, HairDeck spring chains) while preserving separate swappable part objects; export `.blend` + modular `.fbx`/`.glb`.
+5. **Stage 5 — UE 5.8 Assembly & Gameplay Integration (`RTX 5070 Ti` + `RTX 3070`):** Load parts via UE 5.8 **Mutable** (or `glTFRuntime` for unbaked live iteration), attach `KawaiiPhysics` for hair/cloth chains, layer mocap onto `GASP-ALS-R`, stream facial LiveLink from the **RTX 3070**, and test multiplayer/PIE against the **RTX 3070** client.
+6. **Stage 6 — Batch Rendering, Packaging & Video QA (`RTX 3090` + `RTX 3070`):** Queue headless UE 5.8 MRQ renders / `BuildCookRun` packaging on the **RTX 3090**, then encode final H.264/HEVC comparisons & contact sheets via NVENC on the **RTX 3070**.
+
+### Scheduling & Anti-OOM Guardrails
+- **One heavy GPU/compile job per Windows card:** Never run UBT C++ builds, UE 5.8 MRQ, and local ComfyUI simultaneously on the **RTX 5070 Ti** (enforce RAM + Windows commit headroom + `nvidia-smi` VRAM floor checks before launch).
+- **Serialize Spark GPU jobs + zero retention:** Guard Spark inference behind a single `GPU_LOCK`, verify `MemAvailable >= 12 GiB` before execution, unload model weights after each job, and sweep ephemeral artifacts so co-resident services stay healthy.
+- **Keep Blender cycles/optix off Spark:** Use Spark for PyTorch/CUDA ML + headless mesh prep, and route all Cycles GPU bakes/renders to the **RTX 3090** (OptiX) or **RTX 5070 Ti** (when UE Editor is closed).
+- **Blender 4.5 vs 5.x EEVEE compatibility:** Detect version dynamically (`'BLENDER_EEVEE'` on Blender 5.0+, `'BLENDER_EEVEE_NEXT'` on Blender 4.5 LTS) and always run headless scripts with `--python-exit-code 1`.
