@@ -1,17 +1,37 @@
 # Awesome Unreal Engine Game Templates, Blueprints & Pro Open-Source Frameworks
 
-A massive, categorized catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templates, Blueprint kits, official Epic samples, and production-grade free & open-source frameworks across every major game genre and engine subsystem.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Engine](https://img.shields.io/badge/Unreal%20Engine-5.0%E2%80%935.8-0E1128?logo=unrealengine&logoColor=white)](https://www.unrealengine.com/)
+[![License: CC0-1.0](https://img.shields.io/badge/Catalog%20License-CC0%201.0-brightgreen.svg)](LICENSE)
+[![Validate Catalog](https://github.com/TimothyVang/awesome-unreal-templates-blueprints/actions/workflows/validate.yml/badge.svg)](https://github.com/TimothyVang/awesome-unreal-templates-blueprints/actions/workflows/validate.yml)
 
-> **Note on versions & licenses:** UE4 / UE 5.0–5.5 Blueprint projects typically upgrade cleanly to UE 5.8; C++ plugins/projects may require minor API updates on compile. Always check each repository's `LICENSE` before shipping a closed-source commercial game (GPL-2.0/3.0 repos are marked explicitly).
+A massive, source-verified catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templates, Blueprint kits, official Epic Games samples, production-grade open-source C++/GAS frameworks, editor DevOps tools, Blender ↔ UE5 character pipelines, CC0 asset hubs, and open-source AI 3D tools (**36 sections · 900+ verified links**).
+
+> **Note on versions & licenses:** UE4 / UE 5.0–5.5 Blueprint projects typically upgrade cleanly to UE 5.8; C++ plugins/projects may require minor API updates on compile. Always inspect each repository's `LICENSE` (and any bundled third-party asset notices) before shipping a closed-source commercial game — `MIT` / `Apache-2.0` / `BSD` vs `GPL-2.0/3.0` and `*(Archived)*` repositories are labeled explicitly.
 
 ---
 
-## 20-loop catalog updates
+## Companion Catalogs & Source-Audited Architecture Notes
 
-- [Unreal Engine](catalogs/UNREAL.md) — new gameplay samples, networking frameworks, and development tools.
-- [Blender](https://github.com/TimothyVang/awesome-blender-tools) — modeling, rigging, rendering, asset interchange, and automation.
-- [Godot](https://github.com/TimothyVang/awesome-godot-templates-demos) — playable 2D/3D demos and reusable Godot 4 recipes.
-- [Unity](https://github.com/TimothyVang/awesome-unity-templates-samples) — game samples, Unity 6 templates, and package workflows.
+- **[Unreal Engine Deep-Dive Notes](catalogs/UNREAL.md)** — 40 source-checked `.uproject`/`.uplugin` architecture reviews, dependency caveats, and UE 5.8 adoption notes.
+- **[Awesome Blender Tools](https://github.com/TimothyVang/awesome-blender-tools)** — standalone companion catalog for modeling, rigging, rendering, asset interchange, and automation.
+- **[Awesome Godot Templates & Demos](https://github.com/TimothyVang/awesome-godot-templates-demos)** — standalone companion catalog of playable 2D/3D demos and reusable Godot 4 recipes.
+- **[Awesome Unity Templates & Samples](https://github.com/TimothyVang/awesome-unity-templates-samples)** — standalone companion catalog of Unity 6 templates, netcode samples, and package workflows.
+
+---
+
+## Quick-Jump Pillars
+
+| Pillar | Sections |
+|---|---|
+| **Official & Core Architecture** | [1. Epic Samples](#1-official-epic-games-built-in-templates--free-fab-samples) · [2. Core & GAS](#2-production-grade-free--open-source-core-frameworks) · [22. Pro Fab Ref](#22-commercial--pro-fab-frameworks-reference) · [23. Indexes & Guides](#23-giant-indexes-blueprint-paste-bins--free-hubs) · [24. MIT/Apache Stack](#24-recommended-commercial-safe-open-source-stack-mit--apache-20) |
+| **Action, Shooter & RPG Genres** | [3. FPS & Tactical](#3-fps-arena-tactical--extraction-shooters) · [4. Souls-like & Fighting](#4-third-person-action-souls-like-stealth-parry--fighting) · [5. ARPG, cRPG & Roguelike](#5-action-rpg-top-down-arpg-diablo-like-crpg--roguelikes) · [6. MOBA](#6-moba--hero-arena) · [7. Inventory, Quests & VN](#7-inventory-equipment-quests-dialogue--visual-novels) · [8. Survival & Horror](#8-survival-crafting-base-building--horror) |
+| **Strategy, 2D, Vehicles & Casual** | [11. 2D / 2.5D & PaperZD](#11-platformer-side-scroller-metroidvania--2d--25d) · [12. RTS, Tactics & City](#12-rts-turn-based-strategy-tower-defense--cityfarm-builders) · [13. Vehicles, Space & Flight](#13-racing-vehicles-6dof-space-flight--drone-simulators) · [14. Cards, Board, Puzzle & Rhythm](#14-card-games-board-games--puzzles) · [17. Portals, Voxels & Dungeons](#17-portals-physics-sandboxes-chaos-destruction--level-builders) |
+| **Characters, Locomotion & XR** | [9. Locomotion, Mover & Ragdoll](#9-locomotion-animation-parkour--secondary-haircloth-physics) · [10. Mutable, glTF & LipSync](#10-modular-character-creators-mutable-ue-58-runtime-gltfvrm--facial-mocap) · [16. VR, Quest 3 MR & OpenXR](#16-vr--xr--ar) · [25. Blender ↔ UE 5.8 Pipeline](#25-blender--ue-58-modular-character-full-joint-rigging-haircloth--mocap-pipeline) |
+| **Multiplayer, World, AI & Engine Tech** | [15. Multiplayer, EOS/Steam & Backends](#15-multiplayer-party-co-op-online-services-ossv2steamplayfab--mmo-backends) · [18. AI, StateTree, Crowds & LLMs](#18-ai-statetree-3d-navigation--mass-entity-crowds) · [19. PCG, Cesium, Water & 3DGS](#19-world-pcg-ue-58-weather-gpu-water-foliage--3d-gaussian-splatting) · [20. Shaders, Toon & Audio DSP](#20-stylized--anime-toon-rendering--audio--metasounds-dsp) · [21. UI, MVVM, Save & Scripting](#21-ui-settings-menus-loading-screens-pooling-validation-telemetry--testing) |
+| **Editor DevOps, VP, Robotics & 3D/AI** | [26. Multi-GPU Routing](#26-multi-gpu-compute-routing-pipeline-dgx-spark-gb10--rtx-5070-ti--rtx-3090--rtx-3070) · [27. CC0 Hubs](#27-free-cc0--open-source-3d-models-pbr-textures-hdris-animations--audio-hubs) · [28–31. Blender Add-ons](#28-blender-3d--rigging-weight-painting-modular-characters--game-rigs) · [32. AI 3D & Mocap](#32-open-source-ai-3d-generation-auto-rigging-hair-cards--video-to-mocap-repositories) · [33. Editor & CI/CD](#33-blueprint-graph-formatters-editor-productivity-source-control--buildci-devops) · [34. Virtual Production](#34-cinematics-virtual-production-sequencer-spoutosc--cloud-render-farms) · [35. Robotics & Sim](#35-robotics-autonomous-vehicles-drones-ros2--synthetic-vision-simulation) · [36. AI Agents & MCP](#36-ai-coding-agents-unreal-mcp-servers--editor-co-pilots-ue-5458) |
+
+---
 
 ## Table of Contents
 
@@ -47,6 +67,10 @@ A massive, categorized catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templa
 30. [Blender 3D — Hard-Surface Modeling, CAD, Kitbashing & Add-on Indexes](#30-blender-3d--hard-surface-modeling-cad-kitbashing--add-on-indexes)
 31. [Blender 3D — Hair Cards, Grooming, Cloth, Anime/NPR Shaders, Geometry Nodes & 3D Texturing](#31-blender-3d--hair-cards-grooming-cloth-animenpr-shaders-geometry-nodes--3d-texturing)
 32. [Open-Source AI 3D Generation, Auto-Rigging, Hair Cards & Video-to-Mocap Repositories](#32-open-source-ai-3d-generation-auto-rigging-hair-cards--video-to-mocap-repositories)
+33. [Blueprint Graph Formatters, Editor Productivity, Source Control & Build/CI DevOps](#33-blueprint-graph-formatters-editor-productivity-source-control--buildci-devops)
+34. [Cinematics, Virtual Production, Sequencer, Spout/OSC & Cloud Render Farms](#34-cinematics-virtual-production-sequencer-spoutosc--cloud-render-farms)
+35. [Robotics, Autonomous Vehicles, Drones, ROS2 & Synthetic Vision Simulation](#35-robotics-autonomous-vehicles-drones-ros2--synthetic-vision-simulation)
+36. [AI Coding Agents, Unreal MCP Servers & Editor Co-Pilots (UE 5.4–5.8)](#36-ai-coding-agents-unreal-mcp-servers--editor-co-pilots-ue-5458)
 
 ---
 
@@ -72,6 +96,18 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Epic Blueprints Showcase** | Level design tools, security systems, and AI Blueprint demos | [Fab](https://www.fab.com/listings/720af3f1-cd24-40a3-a881-ee695a7c9779?lang=en) |
 | **A-COM Animation Sample** | Stylized biped & quadruped animation rigs/blueprints | [Fab](https://www.fab.com/listings/7a019296-852d-47b8-86ed-ddcf2835a352?lang=en) |
 | **City Sample / Electric Dreams / Valley of the Ancient** | Open-world traffic/crowds, PCG, Substrate, Nanite/Lumen showcases | [Feature Examples](https://dev.epicgames.com/documentation/unreal-engine/engine-feature-examples-for-unreal-engine) · [Sample Games](https://dev.epicgames.com/documentation/unreal-engine/sample-game-projects-for-unreal-engine) |
+| **Parrot Game Sample** | Pirate 2.5D platformer (UE 5.6+ C++/BP, Enhanced Input, CommonUI, Sequencer; cross-engine Unity parity guide) | [Announcement & Guide](https://www.unrealengine.com/news/parrot-game-sample-a-new-practical-resource-for-game-devs-switching-to-unreal-engine) |
+| **Mutable Sample Project** | Official Customizable Object showcase: modular clothing, MetaHumans, weapon swaps, stickers & crowd stress tests | [Docs](https://dev.epicgames.com/documentation/unreal-engine/mutable-skeletal-mesh-generation-in-unreal-engine?lang=en-US) · [Tutorials](https://dev.epicgames.com/community/learning/tutorials/yjw9/unreal-engine-mutable-tutorials) |
+| **City Sample (Direct Docs)** | *The Matrix Awakens* urban open world: Mass AI/Traffic, World Partition, PCG, Nanite & Lumen | [Docs](https://dev.epicgames.com/documentation/unreal-engine/city-sample-project-unreal-engine-demonstration?lang=en-US) |
+| **Electric Dreams Environment** | Procedural Content Generation (PCG) jungle, Substrate materials & Chaos physics showcase | [Docs](https://dev.epicgames.com/documentation/unreal-engine/electric-dreams-environment-in-unreal-engine?lang=en-US) |
+| **Valley of the Ancient** | Nanite, Lumen, World Partition, Chaos destruction & modular gameplay feature showcase | [Docs](https://dev.epicgames.com/documentation/unreal-engine/valley-of-the-ancient-sample-game-for-unreal-engine) |
+| **Slay Animation Sample** | Mold3D virtual production, Sequencer lighting, camera rigs & Windwalker Echo cinematic sample | [Docs](https://dev.epicgames.com/documentation/unreal-engine/slay-sample-project-for-unreal-engine?lang=en-US) |
+| **Meerkat Demo (Weta Digital)** | Real-time strand hair/fur grooms, Control Rig & cinematic Sequencer short-film sample | [Docs](https://dev.epicgames.com/documentation/unreal-engine/meerkat-sample-project-for-unreal-engine?lang=en-US) |
+| **Epic MetaHuman DNA & OpenRigLogic** | Official Epic Games open-source MetaHuman `.dna` calibration tools, RigLogic runtime & MotionBuilder LiveLink | [DNA Calibration](https://github.com/EpicGames/MetaHuman-DNA-Calibration) · [OpenRigLogic](https://github.com/EpicGames/OpenRigLogic) · [MobuLiveLink](https://github.com/EpicGames/MobuLiveLink) |
+| **Sample-PersistenceLab (Epic Dev)** | **UE 5.8+** examples & reusable utilities for saving/reloading actors and instanced world state | [GitHub](https://github.com/ZKShao-EpicGames/Sample-PersistenceLab) |
+| **Epic Unreal Engine Agent Skills** | Official Epic Games open-source Unreal Engine coding & workflow skills plugin (MIT, 2k+★) | [GitHub](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -96,6 +132,24 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **ModularGameplayAbilities** | Open Source | UE5 · C++ | Lyra-inspired GAS boilerplate & modular ability extension plugin | [GitHub](https://github.com/MajorTomAW/ModularGameplayAbilities) |
 | **ue5-gas-prototype** | Open Source | UE 5.6 · C++ | Dual ASC ownership patterns, native Gameplay Tags, Enhanced Input & reactive UI | [GitHub](https://github.com/nbertoa/ue5-gas-prototype) |
 | **ue5-rpg-ability-system** | Open Source | UE5 · GAS | Skill book, action bar, cooldowns & animation-driven ability casting reference | [GitHub](https://github.com/Mustafa-Kum/ue5-rpg-ability-system) |
+| **Narxim-GAS-Example** | MIT | UE5 · C++/BP | Clean, well-documented starter setup for Epic's Gameplay Ability System (attributes, replication, effects) | [GitHub](https://github.com/Narxim/Narxim-GAS-Example) |
+| **SimpleGameplayAbilitySystem** | MIT | UE5 · C++/BP | Streamlined, lightweight alternative to GAS with minimal boilerplate | [GitHub](https://github.com/strayTrain/SimpleGameplayAbilitySystem) |
+| **UltimateStarterKit** | MIT | UE5 · C++/BP | All-in-one starter plugin: menus, audio, save data, input glyphs, dialogue & interaction helpers | [GitHub](https://github.com/hfjooste/UltimateStarterKit) |
+| **Debloated StarterProject** | MIT | UE5 · `.uproject` | Stripped-down `.uproject` baseline disabling unused engine bloat for smaller packages & faster boot | [GitHub](https://github.com/daftsoftware/StarterProject) |
+| **Perfectly-Optimized Template** | MIT | UE5 · `.uproject` | Performance-tuned UE5 project starter engineered for high baseline FPS | [GitHub](https://github.com/Imloopdev/Perfectly-Optimized) |
+| **PipeRift Attributes & Actions** | Apache-2.0 | UE4/5 · C++/BP | Lightweight reflection-friendly attribute modifiers & async gameplay action tasks | [Attributes](https://github.com/PipeRift/AttributesExtension) · [Actions](https://github.com/PipeRift/ActionsExtension) |
+| **TheEmidee GameBase & GAS Suite** | MIT | UE5 · C++ | Studio-proven modular game framework, GAS extensions & core C++ libraries | [GameBaseFramework](https://github.com/TheEmidee/UEGameBaseFramework) · [GASExtensions](https://github.com/TheEmidee/UEGASExtensions) · [CoreExtensions](https://github.com/TheEmidee/UECoreExtensions) |
+| **RemAbilityUtility** | MIT | UE5 · C++ | Modern C++ utilities & extensions for Gameplay Ability System | [GitHub](https://github.com/RemRemRemRe/RemAbilityUtility) |
+| **Splash Damage FutureExtensions** | BSD-3-Clause | UE5 · C++ | Async task chaining, cancellation & `TFuture` extensions for Unreal C++ | [GitHub](https://github.com/splash-damage/future-extensions) |
+| **UE4EnhancedCodeFlow** | MIT | UE4/5 · C++ | Coroutine-style delays, tickers, time-sliced loops & async wait helpers in C++ | [GitHub](https://github.com/zompi2/UE4EnhancedCodeFlow) |
+| **UE5Coro** *(Archived)* | BSD-3-Clause | UE4/5 · C++20 | Deeply integrated C++20 coroutine plugin for latent Blueprint actions, async loads & GAS tasks (1.1k+★) | [GitHub](https://github.com/landelare/ue5coro) |
+| **PsData (Reactive Data Model)** | MIT | UE5 · C++/BP | Typed reactive game state, configs & protocol models with change events bound to UMG | [GitHub](https://github.com/PushkinStudio/PsData) |
+| **ScriptableFramework** | MIT | UE5 · C++/BP | Designer-friendly data-driven logic sequences, conditions & modular actions | [GitHub](https://github.com/kirzo/ScriptableFramework) |
+| **GlobalEventSystem-Unreal** | MIT | UE4/5 · C++/BP | Loosely coupled pub/sub event bus across actors and Blueprints | [GitHub](https://github.com/getnamo/GlobalEventSystem-Unreal) |
+| **Rama's Victory BP Plugin & Blueprint Helpers** | MIT | UE4/5 · C++/BP | Iconic 300+ extra Blueprint math, file I/O, system & utility nodes (880+★) + CSV/math helpers | [VictoryPlugin](https://github.com/EverNewJoy/VictoryPlugin) · [RyHelpfulHelpers](https://github.com/rfsheffer/RyHelpfulHelpers) · [StevesUEHelpers](https://github.com/sinbad/StevesUEHelpers) · [BP CSV Parsing](https://github.com/Incanta/unreal-bp-csv-parsing) · [MathVM](https://github.com/rdeioris/MathVM) |
+| **ZipUtility & RuntimeArchiver** | MIT / OS | UE4/5 · C++/BP | Event-driven 7zip/ZIP/TAR runtime archive compression & extraction in Blueprints | [ZipUtility-Unreal](https://github.com/getnamo/ZipUtility-Unreal) · [RuntimeArchiver (Archived)](https://github.com/gtreshchev/RuntimeArchiver) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -117,6 +171,22 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Project Isolation** | GitHub | UE · MIT | Open-source single-player FPS C++ codebase | [GitHub](https://github.com/whoisEllie/Project-Isolation) |
 | **Free FPS Template & Tutorial** | Fab | UE5 · Free | Free starter FPS Blueprint project & tutorial | [Fab](https://www.fab.com/listings/6a0af880-2b74-480c-a82c-8e597918dffe?lang=en) |
 | **Realistic FP Movement V1** | itch.io | UE5 · Free | Free realistic first-person movement template | [itch.io](https://treetygames.itch.io/realistic-first-person-movement-template-v1-in-unreal-engine-5-free-download) |
+| **PBCharacterMovement** | GitHub | UE4/5 · MIT | HL2 / Source-style classic FPS C++ movement (bunnyhop, air-strafe, surfing, friction tuning; 1.5k+★) | [GitHub](https://github.com/ProjectBorealis/PBCharacterMovement) |
+| **EternalCrusadeResurrection** | GitHub | UE5 · C++ | Large-scale multiplayer third/first-person shooter C++ codebase following modern UE5 best practices | [GitHub](https://github.com/JediKnightChan/EternalCrusadeResurrection) |
+| **UE5-CrystalRecoil** | GitHub | UE5 · MIT | Patterned firearm recoil plugin with dedicated in-editor recoil pattern GUI | [GitHub](https://github.com/CrystalVapor/UE5-CrystalRecoil) |
+| **ProceduralFPSAnimationsPlugin** | GitHub | UE4/5 · MIT | Curve-driven procedural FPS weapon sway, walk bob, ADS & recoil animations | [GitHub](https://github.com/gerlogu/ProceduralFPSAnimationsPlugin) |
+| **WeaponFOVAndClippingFix** | GitHub | UE4/5 · MIT | Solves first-person weapon wall clipping and separate viewmodel FOV scaling | [GitHub](https://github.com/gerlogu/WeaponFOVAndClippingFix) |
+| **FPSCore** | GitHub | UE5 · MIT | Open-source C++ plugin kickstarting tactical/modern first-person shooters | [GitHub](https://github.com/whoisEllie/FPSCore) |
+| **Advanced Dual Weapon System** | GitHub | UE5 · C++ | C++ primary/secondary weapon pickup, holstering, swapping & ammo management | [GitHub](https://github.com/unrealroshan/Advanced-Dual-Weapon-System-UE5) |
+| **OnAllFronts (MilSim FPS/RTS)** | GitHub | UE5 · MIT | Combined-arms tactical MilSim FPS + RTS hybrid codebase | [GitHub](https://github.com/HaywireInteractive/OnAllFronts-Public) |
+| **CheekyFPS** | GitHub | UE4/5 · MIT | Clean, minimal pure-Blueprint first-person controller starter | [GitHub](https://github.com/DaveFace/CheekyFPS) |
+| **U5_FPS_Multiplayer** | GitHub | UE5 · BP | Counter-Strike-inspired round-based multiplayer FPS in Blueprints | [GitHub](https://github.com/AlvaroBishop/U5_FPS_Multiplayer) |
+| **FPS-template-with-shooting-AI** | GitHub | UE5 · BP/C++ | First-person shooter starter paired with ranged combat enemy AI | [GitHub](https://github.com/AsmundSchei/FPS-template-with-shooting-AI) |
+| **UE5 Multiplayer Shooter (C++)** | GitHub | UE5 · C++ | Dedicated multiplayer shooter C++ samples (lag compensation, replication, HUD) | [DruidMech](https://github.com/DruidMech/UE5_Multiplayer_FPS) · [intrxx TPS](https://github.com/intrxx/Multiplayer-Shooter) |
+| **Lyra Capture the Flag** | GitHub | UE5 · GameFeature | Modular `GameFeatures` plugin adding Capture the Flag mode to Epic's Lyra | [GitHub](https://github.com/Amirans/LyraGameCaptureTheFlag) |
+| **Angelscript FPS Starter** | GitHub | UE5 · Angelscript | UE5 C++ FPS starter ported cleanly to Hazelight Unreal Angelscript | [GitHub](https://github.com/zuru33/UnrealEngine-Angelscript-FpsStarter) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -137,6 +207,16 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **TargetSystemPlugin** | GitHub | UE4/5 | Dark Souls-style camera lock-on / targeting plugin | [GitHub](https://github.com/mklabs/ue4-targetsystemplugin) |
 | **WeaponTrace-Unreal** | GitHub | UE · Plugin | Reliable melee weapon socket/sweep hit tracing | [GitHub](https://github.com/getnamo/WeaponTrace-Unreal) |
 | **Enhanced Third Person Template** | Fab | UE5 · BP | Modernized drop-in third-person starter | [Fab](https://www.fab.com/listings/90517cb6-120b-4d8c-b8b3-1f9a74b91104?lang=en) |
+| **ComboGraph** | GitHub | UE5 · MIT | Custom graph editor plugin for authoring branching melee/action combo chains | [GitHub](https://github.com/apokrif6/ComboGraph) |
+| **MeleeTrace** | GitHub | UE5 · MIT | Frame-accurate interpolated socket melee hit-tracing component | [GitHub](https://github.com/rlewicki/MeleeTrace) |
+| **Dismemberment / SKMeshDismemberment** | GitHub | UE5 · MIT | Dynamic limb separation, weapon dropping & recursive skeletal mesh damage breaking | [Thyke Dismemberment](https://github.com/Thyke/Dismemberment) · [SKMeshDismemberment](https://github.com/Cutter-H/SKMeshDismemberment) · [SkeletalMeshDestruction](https://github.com/Lim-Young/SkeletalMeshDestruction) |
+| **sekiro-genichiro-ue5** | GitHub | **UE 5.8** · C++/BP | Three-phase Sekiro boss combat showcase: deflect/posture, perilous Mikiri counter & lightning reversal | [GitHub](https://github.com/volieteven-end/sekiro-genichiro-ue5) |
+| **ue5-warrior** | GitHub | UE5 · C++ (GAS) | Advanced third-person melee warrior combat built on C++ Gameplay Ability System | [GitHub](https://github.com/bp-shirai/ue5-warrior) |
+| **ThirdPersonShooter (DanialKama)** | GitHub | UE5 · BP/C++ | Clean third-person cover/aim shooter sample project | [GitHub](https://github.com/DanialKama/ThirdPersonShooter) |
+| **MeleeWander** | GitHub | UE5 | Third-person melee combat combined with parkour traversal | [GitHub](https://github.com/liulong1994/MeleeWander) |
+| **FightingGame-UE5 / FighterGame** | GitHub | UE5 · C++ | C++ 3D/2.5D hand-to-hand & multiplayer fighting game prototypes | [FightingGame-UE5](https://github.com/stackOverflower92/FightingGame-UE5) · [FighterGame](https://github.com/tkclef/FighterGame) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -151,12 +231,23 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **cRPG-Project** | GitHub | UE5 · C++/BP | Multiplayer turn-based cRPG: data-driven Gameplay Action System, encounter manager, inventory, DFS GOAP AI | [GitHub](https://github.com/e-oneill/cRPG-Project) |
 | **ActionRPG-UE5** | GitHub | UE5 · C++/BP | Epic's official ActionRPG sample upgraded to UE5 | [GitHub](https://github.com/BoilTask/ActionRPG-UE5) |
 | **ActionRPGV5** | GitHub | UE5 · MIT | Clean Action RPG sample for UE5 | [GitHub](https://github.com/dahlgrenmartin/ActionRPGV5) |
-| **Open RPG Template** | GitHub | UE 5.4 · MIT | Open-source RPG starter template | [GitHub](https://github.com/polygonvariable/open-rpg-template) |
+| **Open RPG Template** *(Archived)* | GitHub | UE 5.4 · MIT | Open-source RPG starter template | [GitHub](https://github.com/polygonvariable/open-rpg-template) |
 | **RPGTemplate** | GitHub | UE5 | Modular RPG project template | [GitHub](https://github.com/eren-pekdemir/RPGTemplate) |
 | **ParagonGAS** | GitHub | UE5 · GAS | GAS combat system using free Fab Paragon assets | [GitHub](https://github.com/realchrisparker/ParagonGAS) |
 | **UE5 C++ GAS Code Samples** | GitHub | UE5 · C++ | GAS abilities, attributes, effects, AI & RPG progression | [GitHub](https://github.com/jessebr2/UE5-Cpp-GAS-Code-Samples) |
 | **GASDocumentation** | GitHub | UE4/5 · MIT | Definitive GAS documentation + multiplayer sample project | [GitHub](https://github.com/tranek/GASDocumentation) |
 | **Solo-Leveling-ARPG** | GitHub | UE 5.7.2 · C++ | Large ARPG foundation: procedural dungeons (10 biomes / 6 ranks), world events, quests, guilds, NPC schedules (WIP) | [GitHub](https://github.com/clarkstone/Solo-Leveling-ARPG) |
+| **ActionRPG_UE5 (Upgraded)** | GitHub | UE 5.3+ · C++/BP | Community-maintained port of Epic's ActionRPG sample updated for modern UE5 GAS (400+★) | [GitHub](https://github.com/vahabahmadvand/ActionRPG_UE5) |
+| **ActionRPGGame (iniside)** | GitHub | UE4/5 · C++ | Modular Action RPG starter kit with ability, attribute & inventory architecture (1k+★) | [GitHub](https://github.com/iniside/ActionRPGGame) |
+| **OpenPF2 Framework & Playground** | GitHub | UE5 · C++/GAS | Open-source RPG ruleset framework implementing Pathfinder 2e tactical turn/action rules on GAS | [Plugin](https://github.com/OpenPF2/Plugin) · [Playground](https://github.com/OpenPF2/Playground) |
+| **unreal-pokemon** | GitHub | UE5 · C++/BP | Modular plugin suite & starter kit for monster-taming / creature-battler RPGs in UE5 | [GitHub](https://github.com/retroandchill/unreal-pokemon) |
+| **UE5_HybridRPG (HD-2D)** | GitHub | UE5 · MIT | HD-2D hybrid RPG combining PaperZD 2D sprites with 3D environments, dialogue & quests | [GitHub](https://github.com/FahimKamal/UE5_HybridRPG) |
+| **UE5_DungeonAdvanture** | GitHub | UE5 · MIT | Top-down 2D wave-based roguelite arena survivor built with Blueprints & PaperZD | [GitHub](https://github.com/FahimKamal/UE5_DungeonAdvanture) |
+| **Embermere RPG** | GitHub | **UE 5.8** | Classic high-fantasy tab-target RPG prototype built on UE 5.8 | [GitHub](https://github.com/disbitski/embermere-rpg) |
+| **elysium-unreal** | GitHub | **UE 5.8** · MIT | Immersive Vampire RPG engine reimplementation in UE 5.8 C++ (BYO assets) | [GitHub](https://github.com/jlagedo/elysium-unreal) |
+| **mirchd/ActionRPG & AngelScript RPG** | GitHub | UE5 · MIT / AS | Lightweight C++ and AngelScript UE5 RPG starter projects | [mirchd/ActionRPG](https://github.com/mirchd/ActionRPG) · [AngelScript UE5RPG](https://github.com/btarg/UE5RPG) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -165,6 +256,16 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | Name | Source | UE / License | Highlights | Link |
 |---|---|---|---|---|
 | **Tartarus Arena** | GitHub | **UE 5.8** · MIT | Full 5v5 MOBA (Smite-style Arena + 3-lane Conquest), GAS, 11 Paragon hero configs, 27-item shop, smart bots, LAN multiplayer, plus a Hades-style action prototype | [GitHub](https://github.com/BartekZawadzki/TartarusArena) |
+| **OpenMOBA** | GitHub | UE4/5 · MIT | Pure-Blueprint open-source MOBA project (lanes, towers, minions, abilities, shop; zero C++ required) | [GitHub](https://github.com/yasgamesdev/OpenMOBA) |
+| **OpenRTSVision (MOBA Line-of-Sight)** | GitHub | UE5 · MIT | High-performance customizable RTS/MOBA Fog-of-War and elevation-aware Line-of-Sight plugin | [GitHub](https://github.com/HeyZoos/OpenRTSVision) |
+| **EnhancedCamera (RTS/MOBA)** | GitHub | UE5 · MIT | Edge-panning, hero lock, zoom & bounds-clamped RTS/MOBA camera plugin | [GitHub](https://github.com/XpycT/EnhancedCamera) |
+| **Hero AI: Orders & Abilities** | GitHub | UE4/5 · MIT | Daedalic Entertainment's Unreal Fest sample pairing GAS hero abilities with Behavior Tree orders | [GitHub](https://github.com/DaedalicEntertainment/ue4-orders-abilities) |
+| **RealmOfWar** | GitHub | UE5 | Third-person/top-down MOBA prototype built in Unreal Engine 5 | [GitHub](https://github.com/zerodaycode/RealmOfWar) |
+| **Project_MOBA (Paragon GAS)** | GitHub | UE5 · GAS | Gameplay Ability System MOBA architecture designed around free Fab Paragon heroes | [GitHub](https://github.com/CuNhatHoang/Project_MOBA) |
+| **Swashbucklers** | GitHub | UE5 | Naval team-vs-team high-seas MOBA project in Unreal Engine 5 | [GitHub](https://github.com/odysseuskelton/Swashbucklers) |
+| **Mythos-Realm / CommissarYarrick MOBA** | GitHub | UE4/5 · MIT | RTS-hybrid MOBA project & modular MOBA mechanics plugin | [Mythos-Realm](https://github.com/weelcheel/Mythos-Realm) · [MOBA Plugin](https://github.com/CommissarYarrick/MOBA) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -184,6 +285,20 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **OpenRPG Modules** | GitHub | UE4/5 · BP | Modular Inventory, Quests, Stats, and 360° Radar | [Inventory](https://github.com/angelhodar/OpenRPG_Inventory) · [Quests](https://github.com/angelhodar/OpenRPG_Quest) · [Stats](https://github.com/angelhodar/OpenRPG_Stats) · [Radar](https://github.com/angelhodar/OpenRPG_RadarSystem) |
 | **Shiden Visual Novel Editor** | GitHub | **UE 5.3–5.8** · MIT | Complete VN/narrative editor with live preview, 41 commands, branching, save/load, backlog, gallery, CSV/JSON I/O | [GitHub](https://github.com/HANON-games/Shiden) |
 | **KaedeVN** | GitHub | **UE 5.8** · MIT | Script-driven visual novel runtime (Slate UI, KSC VM, shaders, sample 2D novel) | [GitHub](https://github.com/kaedeasset/kaedevn) |
+| **Inkpot (The Chinese Room)** | GitHub | UE5 · MIT | Studio-grade Inkle **`ink`** narrative scripting integration for Unreal Engine 5 + playable demo project | [Inkpot](https://github.com/The-Chinese-Room/Inkpot) · [InkpotDemo](https://github.com/The-Chinese-Room/InkpotDemo) |
+| **SUDS (Steve's Unreal Dialogue System)** | GitHub | UE5 · MIT | Text-scripted branching dialogue plugin with variables, speaker cameras, localization & companion sample | [SUDS](https://github.com/sinbad/SUDS) · [SUDSExample](https://github.com/sinbad/SUDSExample) |
+| **NotYetGames DlgSystem (GitHub)** | GitHub | UE4/5 · MIT | Official GitHub repository for the graph-based branching Dialogue Plugin System (640+★) | [GitHub](https://github.com/NotYetGames/DlgSystem) |
+| **Articy3ImporterForUnreal** | GitHub | UE4/5 · MIT | Official Articy:Draft narrative/dialogue database importer plugin for Unreal Engine | [GitHub](https://github.com/ArticySoftware/Articy3ImporterForUnreal) |
+| **GenericGraph** | GitHub | UE4/5 · MIT | Foundational node-graph asset & Slate editor plugin for building custom quest, skill, or dialogue trees (775★) | [GitHub](https://github.com/jinyuliao/GenericGraph) |
+| **HeartGraph** | GitHub | UE5 · MIT | Generic **runtime** and editor node-graph framework for skill trees, narrative & gameplay graphs | [GitHub](https://github.com/Drakynfly/HeartGraph) |
+| **GenericItemization** | GitHub | UE5 · MIT | Flexible ARPG item, loot table & affix generator powered by DataTables and `FInstancedStruct` | [GitHub](https://github.com/mattyman174/GenericItemization) |
+| **Synock UE5Inventory** | GitHub | UE5 · MIT | Clean network-replicated inventory plugin for Unreal Engine 5 | [GitHub](https://github.com/Synock/UE5Inventory) |
+| **benolimits InventorySystem** | GitHub | UE5 · MIT | Lightweight drag-and-drop hotbar & inventory starter for UE5 | [GitHub](https://github.com/benolimits/InventorySystem) |
+| **UE5_CommonConversationSample** | GitHub | UE5 · Unlicense | Working reference project for Epic's built-in `CommonConversation` dialogue graph plugin | [GitHub](https://github.com/pafuhana1213/UE5_CommonConversationSample) |
+| **UEMissionSystem & Sequential Interaction** | GitHub | UE5 · MIT | Modular mission objective tracking & multi-step actor interaction sequence plugins | [UEMissionSystem](https://github.com/TheEmidee/UEMissionSystem) · [Sequential-Interaction](https://github.com/EvelynSchwab/Sequential-Interaction-Plugin) |
+| **YarnSpinner-Unreal** *(Archived)* | GitHub | UE5 · MIT | Yarn Spinner narrative dialogue prototype plugin for Unreal Engine | [GitHub](https://github.com/YarnSpinnerTool/YarnSpinner-Unreal-Prototype) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -204,6 +319,13 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Budget-Backrooms** | GitHub | UE · GPL-3.0 | Single-player Backrooms atmospheric horror | [GitHub](https://github.com/dabardibid/Budget-Backrooms) |
 | **FREE Complete Horror Template** | Fab | UE5 · Free | Free horror jumpstart template | [Fab](https://www.fab.com/listings/e7196401-afca-474d-88b8-537606c8c1ad?lang=en) |
 | **Free Horror Game Template [UE5]** | itch.io | UE5 · Free | Free downloadable UE5 horror template | [itch.io](https://visq.itch.io/free-horror-game-template-ue5) |
+| **SurvivalMechanics (UE5)** | GitHub | UE5 · MIT | Clean modular survival stats, hunger/stamina, interaction & crafting mechanics | [GitHub](https://github.com/DanialKama/SurvivalMechanics) |
+| **Zombie Survivor FPS (UE5)** | GitHub | UE5 · MIT | Complete Packt wave-based zombie survival FPS codebase | [GitHub](https://github.com/PacktPublishing/Unreal-Engine-5-Create-A-Zombie-Survivor-FPS-Game) |
+| **LifePlay** | GitHub | UE · MIT | Open-source modular life-simulation & sandbox RPG framework | [GitHub](https://github.com/Vinfamy-New/LifePlay) |
+| **Edmund and Eliza** | GitHub | UE5 | Medieval story-driven atmospheric horror action-adventure with puzzles & combat | [GitHub](https://github.com/avikshenoy/UE5-Edmund-And-Eliza) |
+| **dark-ue4 & UnrealApocalypse** | GitHub | UE · C++ / MIT | Procedurally generated horror escape & post-apocalyptic survival horror projects | [dark-ue4](https://github.com/dan-singer/dark-ue4) · [UnrealApocalypse](https://github.com/StenBone/UnrealApocalypse) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -226,6 +348,18 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **motionmatchingreplicated** | GitHub | UE5 · MIT | Replicated UE5 Motion Matching locomotion sample (198★) | [GitHub](https://github.com/cenairaclub/motionmatchingreplicated) |
 | **DaftMover** | GitHub | UE5 · MIT | Custom movement built on Unreal Engine 5's modern **Mover** framework | [GitHub](https://github.com/daftsoftware/DaftMover) |
 | **ALSLyra** | GitHub | UE5 · C++ | Advanced Locomotion System V4 Refactored integrated into Lyra | [GitHub](https://github.com/UnrealEnginePersonal/ALSLyra) |
+| **ALS-Community & ALSV4-Metahumans** | GitHub | UE 5.4+ | Replicated, optimized community ALS V4 (2.6k+★) + ready-made MetaHuman retarget integration | [ALS-Community](https://github.com/PanicPetal/ALS-Community) · [ALSV4-Metahumans](https://github.com/NxRoot/ALSV4-Metahumans) |
+| **Foothold-Core (UE 5.8 Mover)** | GitHub | **UE 5.8** · MIT | Networked **Mover** traversal modes: mantling, ledge hang & ladders built natively on UE 5.8 Mover | [GitHub](https://github.com/gregorik/Foothold-Core) |
+| **UE5 Mover Physics Tutorial** | GitHub | UE5 · MIT | Physics-driven character locomotion examples built on Epic's Mover framework | [GitHub](https://github.com/ENC3LL/UnrealEngine5_MoverTutorial) |
+| **SMN2 (Networked Movement Prediction)** | GitHub | UE5 · MIT | Character Movement Network Prediction exposed cleanly to UE5 Blueprints | [GitHub](https://github.com/Reddy-dev/SMN2) |
+| **ClimbingSystem & Climbing CMC** | GitHub | UE4/5 · MIT | Freeform surface/ledge third-person climbing systems | [DanialKama UE5](https://github.com/DanialKama/ClimbingSystem) · [Climbing-Movement-Component](https://github.com/Deema35/Climbing-Movement-Component) |
+| **Active Ragdoll & Physical Reflexes** | GitHub | UE5 | Floating-capsule physical animation active ragdoll & Euphoria-inspired procedural balance reflex engine | [UE5 Active Ragdoll](https://github.com/tigershan1130/UE5-active-ragdoll-with-floating-capsule) · [ARSA](https://github.com/thecapibara/ARSA) |
+| **ThreepeatAnimTools (Tatools)** | GitHub | UE 5.4+ | Production animation authoring, curve & root-motion helper suite for UE 5.4+ (520+★) | [GitHub](https://github.com/threepeatgames/ThreepeatAnimTools) |
+| **Mocara-Unreal (Text-to-Motion)** | GitHub | **UE 5.8** · Apache-2.0 | Direct text-to-character-motion authoring inside Unreal Engine 5.8 | [GitHub](https://github.com/Conalh/Mocara-Unreal) |
+| **MorphsPlayer & NewAnimSystems** | GitHub | UE 5.7 · MIT / Unlicense | Play morph-target curves via Anim Notify States + UE5 Warping/Distance Matching locomotion samples | [MorphsPlayer](https://github.com/JanSeliv/MorphsPlayer) · [UE5_NewAnimSystemsSample](https://github.com/pafuhana1213/UE5_NewAnimSystemsSample) |
+| **Learned Motion Matching Training** | GitHub | UE5 · MIT | Neural network training pipeline for UE5 Learned Motion Matching | [GitHub](https://github.com/E1P3/Learned_Motion_Matching_Training) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -234,13 +368,22 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | Name | Source | UE / License | Highlights | Link |
 |---|---|---|---|---|
 | **glTFRuntime** | GitHub | UE5 · MIT | Load `.glb`/`.gltf` meshes, skeletons, morph targets & animations **at runtime** for swappable modular limbs, outfits & hair | [GitHub](https://github.com/rdeioris/glTFRuntime) · [Docs](https://github.com/rdeioris/glTFRuntime-docs) |
-| **Mutable Graph Toolset** | GitHub / Fab | **UE 5.8** | 22 native MCP tools to build Epic **Mutable** Customizable Object graphs (clothing, hair/grooms, body options), compile & preview | [GitHub](https://github.com/ITemre/MutableGraphToolset) · [Fab](https://www.fab.com/listings/aa935747-f923-4d4f-aa23-1b2a8e8a196d) |
+| **Mutable Graph Toolset** | GitHub / Fab | **UE 5.8** | 22 native MCP tools to build Epic **Mutable** Customizable Object graphs (clothing, hair/grooms, body options), compile & preview | [GitHub](https://github.com/ITemre/MutableGraphToolset) |
 | **FORMA Lite** | GitHub (Docs) | **UE 5.8** · BP | Blueprint character creator studio built on Mutable with third-person gameplay handoff (docs repo; project on Fab) | [GitHub](https://github.com/ITemre/FORMA-Lite) |
 | **Project Phoenix (RTFKT)** | GitHub | UE5 · MIT | Open-source UE5 modular trait & wearable equip/edit studio + lighting maps | [GitHub](https://github.com/RTFKT-Ltd/ProjectPhoenix-UE5) |
 | **VRM4U** | GitHub | UE5 · MIT | Runtime VRM anime character importer (skeleton retarget, spring bones, morphs, toon shaders) | [GitHub](https://github.com/ruyo/VRM4U) |
 | **ue5-mmd-toolkit (AMAP5 V2)** | GitHub | UE5 | PMX/VMD model & motion pipeline generating native UE5 Skeletal Meshes and AnimSequences | [GitHub](https://github.com/AMAP-N/ue5-mmd-toolkit) |
 | **unreal-audio2lipsync** | GitHub | UE5 | Audio-driven lipsync (HuBERT + Transformer → 52 ARKit blendshapes via LiveLink) | [GitHub](https://github.com/aaryansachdeva/unreal-audio2lipsync) |
 | **unreal-motion (MediaPipe4U)** | GitHub | UE5 | Real-time webcam 52-ARKit facial tracking into UE5 over LiveLink | [GitHub](https://github.com/althropic/unreal-motion) |
+| **Ready Player Me Unreal SDK** | GitHub | UE5 · MIT | Runtime modular 3D avatar loader, morph/outfit caching & in-game avatar creator samples | [SDK](https://github.com/readyplayerme/rpm-unreal-sdk) · [Examples](https://github.com/readyplayerme/UnrealExamples) |
+| **glTFRuntime Extensions (FBX / Draco / VOX / Collisions)** | GitHub | UE5 · MIT | Official modular add-ons for `glTFRuntime`: runtime FBX, Draco compression, WebP textures, MagicaVoxel & convex hulls | [FBX](https://github.com/rdeioris/glTFRuntimeFBX) · [Draco](https://github.com/rdeioris/glTFRuntimeDraco) · [WebP](https://github.com/rdeioris/glTFRuntimeWebP) · [VOX](https://github.com/rdeioris/glTFRuntimeVox) · [Collisions](https://github.com/rdeioris/glTFRuntimeConvexCollisions) |
+| **RuntimeMeshLoader / UE4_Assimp** | GitHub | UE4/5 · MIT | Runtime `.obj`/`.fbx`/`.dae`/`.stl` 3D model importers powered by Assimp | [RuntimeMeshLoader](https://github.com/Chrizey91/RuntimeMeshLoader) · [UE4_Assimp](https://github.com/irajsb/UE4_Assimp) · [UnrealSTL](https://github.com/rdeioris/UnrealSTL) |
+| **py_audio2face & OculusLipsync UE5** | GitHub | UE5 | Headless NVIDIA Audio2Face -> UE5 AnimSequence generator + real-time viseme lip-sync plugin | [py_audio2face](https://github.com/SocAIty/py_audio2face) · [OculusLipsync-UE5](https://github.com/Shiyatzu/OculusLipsyncPlugin-UE5) |
+| **MegaMocapVR** | GitHub | UE5 · GPL-3.0 | Full-body SteamVR tracker motion capture & calibration suite inside Unreal Engine (430+★) | [GitHub](https://github.com/Megasteakman/MegaMocapVR) |
+| **VibeMetaHumans** | GitHub | **UE 5.8** · MIT | Automate UE 5.8 MetaHuman creation, rigging, MetaHuman Animator & LiveLink via MCP | [GitHub](https://github.com/kevinpbuckley/VibeMetaHumans) |
+| **IM-for-UE5 & LiveLink Face Remap** | GitHub | UE5 · MIT | Additional MMD importer for UE5 + ARKit LiveLink blendshape remapping asset | [IM-for-UE5](https://github.com/axilesoft/IM-for-UE5) · [FacialTrackingRemap](https://github.com/pafuhana1213/FacialTrackingLiveLinkRemapAsset) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -258,6 +401,14 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **2D Hack & Slash Template** | GitHub | UE5 · BP | 2D side-scrolling combat template | [GitHub](https://github.com/Well-known-Game-Studio/2DHackSlash) |
 | **UE5 Soul Boy** | GitHub | UE5 | 2.5D Souls-like dark fantasy sidescroller | [GitHub](https://github.com/3sannasia/UE5-Soul-Boy) |
 | **UE4 Classic Templates for UE5** | GitHub | UE5 | Classic UE4 SideScroller2D, TwinStick, Flying & Rolling templates ported to UE5 | [GitHub](https://github.com/ScaerieTale/Unreal-Engine-4.27.2-Templates) |
+| **PaperZD (UE5)** | GitHub | UE5 · MIT | Essential 2D AnimBP, state-machine, notify & directional flipbook animation plugin for Paper2D | [GitHub](https://github.com/heavybullets/PaperZD) |
+| **PixelPerfect2D & Climb2D Samples** | GitHub | UE5 · MIT | Crisp integer-scaled pixel-perfect Paper2D camera setup + custom 2D surface climbing movement | [PixelPerfect2D](https://github.com/Nauja/ue4-pixelperfect2d-sample) · [Climb2D](https://github.com/Nauja/ue4-climb2d-sample) |
+| **template-topdown-2D-UE5** | GitHub | UE5 · BP | Top-down 2D pixel-art RPG/adventure Blueprint starter | [GitHub](https://github.com/hnqca/template-topdown-2D-UE5) |
+| **TP_RollingBP (UE 5.6+)** | GitHub | UE 5.6+ · MIT | Modernized physics rolling-ball platformer Blueprint template | [GitHub](https://github.com/CobraCodeDev/TP_RollingBP) |
+| **Unreal-Test2DPlatformer** | GitHub | UE5 · MIT | Clean C++/BP 2D platformer reference project for UE5 | [GitHub](https://github.com/tanis2000/Unreal-Test2DPlatformer) |
+| **Creature 2D Mesh Animation & SpriteRecolour** | GitHub | UE4/5 · Apache-2.0 / MIT | 2D skeletal/mesh deformation runtime + dynamic palette-swapping sprite processor | [Creature_UE4](https://github.com/kestrelm/Creature_UE4) · [spriterecolour](https://github.com/sinbad/spriterecolour) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -269,11 +420,17 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **TurnBasedTacticalCombat** | GitHub | UE5 | Grid tactical turn-based combat | [GitHub](https://github.com/justAbhi77/TurnBasedTacticalCombat) |
 | **UnrealRTS** | GitHub | UE5 | RTS & tower defense foundation | [GitHub](https://github.com/gcclua/UnrealRTS) |
 | **ue4-rts** | GitHub | UE4/5 · MIT | Real-time strategy plugin + showcase | [GitHub](https://github.com/npruehs/ue4-rts) |
-| **tower-defense-ue5** | GitHub | UE5 | Tower defense starter project | [GitHub](https://github.com/WilkinGames/tower-defense-ue5) |
+| **tower-defense-ue5** *(Archived)* | GitHub | UE5 | Tower defense starter project | [GitHub](https://github.com/WilkinGames/tower-defense-ue5) |
 | **Hive Mind** | GitHub | UE5 | Hexagon-tile turn-based strategy & building | [GitHub](https://github.com/chFleschutz/hive-mind) |
 | **FarmSimulator** | GitHub | UE5 | Farming & management building template | [GitHub](https://github.com/GP2P/FarmSimulator) |
 | **city-form** | GitHub | UE · MIT | Open-source city-building project | [GitHub](https://github.com/JonathanWMorris/city-form) |
-| **VaFogOfWar** | GitHub | UE · Plugin | Fog of War system for RTS/MOBA | [GitHub](https://github.com/ufna/VaFogOfWar) |
+| **VaFogOfWar** *(Archived)* | GitHub | UE · Plugin | Fog of War system for RTS/MOBA | [GitHub](https://github.com/ufna/VaFogOfWar) |
+| **Unreal-Polygonal-Map-Gen** | GitHub | UE4/5 · Apache-2.0 | Voronoi/Delaunay polygonal island, biome, river & elevation map generator for strategy/4X games (385+★) | [GitHub](https://github.com/Jay2645/Unreal-Polygonal-Map-Gen) |
+| **FactionsExtension (PipeRift)** | GitHub | UE4/5 · Apache-2.0 | Designer-friendly faction attitude, hostility & reputation matrix in C++ and Blueprints | [GitHub](https://github.com/PipeRift/FactionsExtension) |
+| **ProceduralCityGeneration** | GitHub | UE5 · MIT | C++ procedural road, lot & city-block layout algorithms for city builders | [GitHub](https://github.com/Grzybojad/ProceduralCityGeneration) |
+| **Dark-Descent Squad Tactics Ref** | GitHub | UE · MIT | Real-time tactical squad architecture reference `.uproject` | [GitHub](https://github.com/korgano/Dark-Descent-Reference-Project) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -292,6 +449,15 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Simple 6DOF Spaceship Example** | GitHub | UE4/5 · MIT | 6DOF zero-G spaceship Blueprints, HUD & space map | [GitHub](https://github.com/jawadato/simple-6DOF-component-example) |
 | **UnrealEngineFlightProject** | GitHub | UE5 | Aircraft flight controller project | [GitHub](https://github.com/Michael-Yuan-Trebble/UnrealEngineFlightProject) |
 | **PsRealVehicle** | GitHub | UE · Plugin | Force-driven vehicle simulation plugin | [GitHub](https://github.com/PushkinStudio/PsRealVehicle) |
+| **Astral Shipwright** | GitHub | UE5 · BSD-3-Clause | Full open-source UE5 6DOF spacecraft construction & orbital flight game codebase | [GitHub](https://github.com/strangergwenn/AstralShipwright) |
+| **EngineSimulatorPlugin** | GitHub | UE5 · MIT | Integrates AngeTheGreat's physical internal-combustion engine audio & torque simulator with Chaos Vehicles | [GitHub](https://github.com/nicholas477/EngineSimulatorPlugin) |
+| **Unreal_RotaryWingAircraft & SimCopter** | GitHub | UE5 · MIT | Realistic helicopter rotor physics plugin + full UE5 urban helicopter mission remake | [RotaryWingAircraft](https://github.com/dannymcgee/Unreal_RotaryWingAircraft) · [sim-copter-remake](https://github.com/JamesIV4/sim-copter-remake) |
+| **MMT_Plugin (Machinery Modelling Toolkit)** | GitHub | UE4/5 | Custom physics substepping for tanks, tracked vehicles, hovercraft, airfoils & suspension | [GitHub](https://github.com/BoredEngineer/MMT_Plugin) |
+| **BuoyancySystem** | GitHub | UE4/5 · MIT | Multi-point water buoyancy and naval boat physics controller | [GitHub](https://github.com/Jay2645/BuoyancySystem) |
+| **UETrafficGame & MassTraffic (UE 5.7)** | GitHub | UE 5.7 · MIT | UE5 vehicle traffic playground + standalone Mass Traffic extracted from CitySample | [UETrafficGame](https://github.com/ScrappyCocco/UETrafficGame) · [MassTraffic-Test](https://github.com/Myxcil/MassTraffic-Test) |
+| **SpaceKit** | GitHub | UE | Large-scale double & fixed-point coordinate math plugin for planetary/space sims | [GitHub](https://github.com/Evols/SpaceKit) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -305,6 +471,13 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **UE5 Chess** | GitHub | UE5 | Full 3D chess board & ruleset | [GitHub](https://github.com/fedeg202/Chess) |
 | **CryptRaider** | GitHub | UE5 | 3D first-person environmental puzzle prototype | [GitHub](https://github.com/denyskryvytskyi/CryptRaider) |
 | **Unreal Simon Game** | GitHub | UE 5.4 · C++ | 2D music/memory puzzle prototype | [GitHub](https://github.com/reuttaldev/Unreal-Simon-Game) |
+| **CardDeck & ScufflCardGame** | GitHub | UE4/5 · MIT | Reusable playing-card deck plugin + open-source multiplayer Unreal card game | [CardDeck](https://github.com/iliags/CardDeck) · [ScufflCardGame](https://github.com/MrScruffles/ScufflCardGame) · [BoardCardGames](https://github.com/Akaassha/BoardCardGames) |
+| **CATAN 3D Hex Board Game** | GitHub | UE5 | Single-player 3D hex-tile Catan board game implementation in UE5 | [GitHub](https://github.com/Aruuni/CATAN) |
+| **3D Chess Implementations** | GitHub | UE4/5 · MIT | Alternative C++ and Blueprint 3D chess board, move validation & AI projects | [yilmazfatih6/chess](https://github.com/yilmazfatih6/chess) · [Grociu/UE4-Chess](https://github.com/Grociu/UE4-Chess) · [UEChessGame (5.1)](https://github.com/youn0592/UEChessGame) |
+| **Escape Room Starters** | GitHub | UE · C++/BP | First-person escape-the-room environmental inspection & lock puzzle projects | [Escape (GPL-3.0)](https://github.com/ncmbch/Escape) · [Escape-the-room](https://github.com/Vhollow/Escape-the-room) · [MemoryCardGame](https://github.com/WayneKoorts/MemoryCardGame) |
+| **Rhythm Game Utilities & UniversalBeatGame** | GitHub | UE5 · MIT | Beat-map parsing, BPM sync & drop-in rhythm-game mechanics for any Unreal genre | [rhythm-game-utilities](https://github.com/rhythm-game-utilities/rhythm-game-utilities) · [UniversalBeatGame](https://github.com/josephkirk/UniversalBeatGame) · [Rhythm-Stealth Demo](https://github.com/yeeeezy/DontWakeTheUncle_MyTopDownGame) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -333,6 +506,20 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Replication_Graph_UE5** | GitHub | UE5 · C++ | Network Replication Graph setup tuned for 100+ players | [GitHub](https://github.com/droganaida/Replication_Graph_UE5) |
 | **NetworkReplication-UE5** | GitHub | UE 5.6+ · BP | Blueprint-friendly multiplayer networking & replication monitor without manual RPCs | [GitHub](https://github.com/straywriter/NetworkReplication-UE5) |
 | **AccelByte EOS Voice / 4Players ODIN** | GitHub | UE5 | Real-time voice chat & spatialized 3D multiplayer voice SDK plugins | [EOS Voice](https://github.com/AccelByte/accelbyte-eos-voice-unreal) · [ODIN Voice](https://github.com/4Players/odin-unreal-demo) |
+| **Agones Dedicated Server SDK** | GitHub | UE4/5 · Apache-2.0 | Google/Linux Foundation Kubernetes dedicated game server autoscaling & health SDK (7.1k+★) | [GitHub](https://github.com/agones-dev/agones) |
+| **SpacetimeDB** | GitHub | UE5 | Real-time relational database & low-latency MMO/multiplayer server runtime (25k+★) | [GitHub](https://github.com/clockworklabs/SpacetimeDB) |
+| **TurboLink (Google gRPC)** | GitHub | UE5 · MIT | Full C++ and Blueprint Google gRPC + Protobuf client/service integration for UE5 | [GitHub](https://github.com/thejinchao/turbolink) |
+| **SteamIntegrationKit & SteamBridge** | GitHub | UE 5.2+ · MIT | Comprehensive Blueprint-exposed Steamworks SDK plugins (lobbies, inventory, leaderboards, UGC) | [SteamIntegrationKit](https://github.com/betidestudio/SteamIntegrationKit) · [SteamBridge](https://github.com/trdwll/SteamBridge) |
+| **GGPOUE & Rollback-Networking-Shooter** | GitHub | UE4/5 · MIT | GGPO rollback netcode plugin port + UE5 GGPO + Bullet3 deterministic FPS project | [GGPOUE](https://github.com/BwdYeti/GGPOUE) · [Rollback-FPS](https://github.com/TheFiftGuy/Rollback-Networking-Shooter) |
+| **Rivet, Colyseus & Birdman Backends** | GitHub | UE5 · Apache-2.0 / MIT | Open-source matchmaker, room-state & lightweight non-K8s dedicated server orchestrators | [Rivet UE5](https://github.com/OpenGameBackend/plugin-unreal) · [Colyseus](https://github.com/charisma-ai/colyseus-unreal) · [Birdman](https://github.com/ufna/birdman) |
+| **AccelByte SDK & ODIN Voice SDK** | GitHub | UE4/5 | Official AccelByte backend services plugin + 4Players ODIN spatial voice SDK | [AccelByte SDK](https://github.com/AccelByte/accelbyte-unreal-sdk-plugin) · [ODIN SDK](https://github.com/4Players/odin-sdk-unreal) |
+| **UE-DSSPlugin & LocusReplicationGraph** | GitHub | UE4/5 · MIT | Scalable MMO/dungeon instance orchestration + Blueprint-exposed `UReplicationGraph` | [UE-DSSPlugin](https://github.com/sha3sha3/UE-DSSPlugin) · [LocusReplicationGraph](https://github.com/locus84/LocusReplicationGraph) |
+| **Discord Rich Presence & GameSDK** | GitHub | UE5 · MIT | Discord presence, party invites & spectating plugins | [DiscordRPC](https://github.com/LouisRaverdy/DiscordRPC) · [Xist DiscordGameSample](https://github.com/XistGG/DiscordGameSample) |
+| **TCP / UDP / WebSocket / SignalR / MQTT / Kafka** | GitHub | UE4/5 · MIT | Battle-tested transport & message-broker plugins for custom backends | [UDP-Unreal](https://github.com/getnamo/UDP-Unreal) · [TCP-Unreal](https://github.com/getnamo/TCP-Unreal) · [TcpSocket](https://github.com/CodeSpartan/UE4TcpSocketPlugin) · [UE5-ServerWebSocket](https://github.com/h2ogit/UE5-ServerWebSocket) · [SignalR](https://github.com/FrozenStormInteractive/Unreal-SignalR) · [MQTT](https://github.com/NinevaStudios/mqtt-utilities-unreal) · [EasyKafka](https://github.com/sha3sha3/UE-EasyKafka) |
+| **SQLiteGameDb & unreal-sqlite3** | GitHub | UE5 · MIT | Self-contained SQLite3 local/server database persistence plugins | [SQLiteGameDb](https://github.com/Ysgrathe/SQLiteGameDb) · [unreal-sqlite3](https://github.com/cindustries/unreal-sqlite3) |
+| **UE5_EOSTemplate & Simple HTTP Server** | GitHub | UE5 · MIT | EOS + Steam multiplayer starter + embedded Blueprint/C++ HTTP server | [UE5_EOSTemplate](https://github.com/Gipfel/UE5_EOSTemplate) · [UE-Simple-Http-Server](https://github.com/Kaboms/UE-Simple-Http-Server) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -343,6 +530,16 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **VRExpansionPlugin** | GitHub | UE4/5 · MIT | Industry-standard open-source VR framework (gripping, physics hands, climbing, sliders/levers, replication) | [GitHub](https://github.com/mordentral/VRExpansionPlugin) |
 | **UE-VRHands-Template** | GitHub | UE5 · BP | Dynamic VR hands, touchscreens, grabbables & locomotion | [GitHub](https://github.com/DanielRBowen/UE-VRHands-Template) |
 | **VR Multiplayer Racing** | GitHub | UE5 | Multiplayer VR racing with custom locomotion | [GitHub](https://github.com/SemyanovVisuals/race-multiplayer) |
+| **VRExpPluginExample** | GitHub | UE5 · MIT | Official playable template project demonstrating `VRExpansionPlugin` weapons, climbing, dials & OpenXR hands | [GitHub](https://github.com/mordentral/VRExpPluginExample) |
+| **UEVR (Universal Unreal VR)** | GitHub | UE 4.8–5.4+ | Universal 6DOF OpenXR/OpenVR runtime injector with C++ & Lua plugin SDK (4.7k+★) | [GitHub](https://github.com/praydog/UEVR) |
+| **Meta Quest 3 Passthrough & MRUK Samples** | GitHub | UE5 · Meta XR | Official Meta Quest Mixed Reality Utility Kit (room mesh, scene anchors), color Passthrough & multi-user MR showcases | [MRUtilityKit](https://github.com/oculus-samples/Unreal-MRUtilityKitSample) · [Passthrough](https://github.com/oculus-samples/Unreal-PassthroughSample) · [Discover MR](https://github.com/oculus-samples/Unreal-Discover) · [Phanto MR](https://github.com/oculus-samples/Unreal-Phanto) · [Quest 3 Starter](https://github.com/Ayushanbhore/Unreal-Quest3-PassthroughSample) |
+| **Meta XR Interaction, Hand, Body & Shared Spaces** | GitHub | UE5 · Meta XR | Official Meta samples for Interaction SDK, hand gameplay, body/eye/face tracking, spatial anchors & multiplayer lobbies | [InteractionSDK](https://github.com/oculus-samples/Unreal-InteractionSDK-Sample) · [HandGameplay (MIT)](https://github.com/oculus-samples/Unreal-HandGameplay) · [Movement](https://github.com/oculus-samples/Unreal-Movement) · [SharedSpaces](https://github.com/oculus-samples/Unreal-SharedSpaces) · [SpatialAnchors](https://github.com/oculus-samples/Unreal-SpatialAnchorsSample) · [Locomotion](https://github.com/oculus-samples/Unreal-Locomotion) |
+| **FSOpenXRHandTracking & ue5-xrcore** | GitHub | UE5 · MIT | Lightweight vendor-neutral OpenXR hand-tracking + multiplayer XR interaction plugins | [FSOpenXRHandTracking](https://github.com/demonixis/FSOpenXRHandTracking) · [ue5-xrcore](https://github.com/V4C38/ue5-xrcore) |
+| **Ultraleap, Varjo OpenXR & Stereolabs ZED** | GitHub | UE5 · MIT / SDK | Optical hand tracking, high-res enterprise XR passthrough & ZED depth-camera AR/MR plugins | [Ultraleap](https://github.com/ultraleap/UnrealPlugin) · [Varjo OpenXR](https://github.com/varjocom/VarjoUnrealOpenXRExamples) · [ZED UE5 (MIT)](https://github.com/stereolabs/zed-UE5) |
+| **RunebergVRPlugin & SteamVR Input** | GitHub | UE4/5 · MIT | Classic Blueprint VR interaction library + Valve SteamVR Input reference | [RunebergVRPlugin](https://github.com/1runeberg/RunebergVRPlugin) · [SteamVR Plugin](https://github.com/ValveSoftware/steamvr_unreal_plugin) |
+| **DualSense PlayStation Haptics (UE 5.8)** | GitHub | **UE 5.8** · Unlicense / MIT | PlayStation DualSense raw/Enhanced Input, adaptive triggers & LED support on Windows | [UEPlaystationGamepad (5.8)](https://github.com/DarknessFX/UEPlaystationGamepad) · [DualSenseWindows](https://github.com/KITATUS/DualSenseWindows_UE4) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -356,6 +553,18 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **WorldMason** | GitHub | UE5 · MIT | Spline, instanced mesh & dynamic mesh level-building Blueprint toolkit (walls, curved stairs, rooms, bridges, domes) | [GitHub](https://github.com/StudioSyndiCatCaius/WorldMason) |
 | **RealtimeMeshComponent** | GitHub | UE5 · MIT | High-performance runtime procedural mesh renderer (replaces `ProceduralMeshComponent`) | [GitHub](https://github.com/TriAxis-Games/RealtimeMeshComponent) |
 | **ProceduralDungeon** | GitHub | UE4/5 | Room-based procedural dungeon generator plugin | [GitHub](https://github.com/BenPyton/ProceduralDungeon) |
+| **Gradientspace UEToolbox & Runtime Tools** | GitHub | UE5 · MPL-2.0 / MIT | Open-source voxel/grid modeling, texture painting, GeometryScript demos & **runtime** `InteractiveToolsFramework` apps | [UEToolboxPlugin](https://github.com/gradientspace/UEToolboxPlugin) · [MeshProcessing](https://github.com/gradientspace/UnrealMeshProcessingTools) · [RuntimeToolsDemo](https://github.com/gradientspace/UE5RuntimeToolsFrameworkDemo) · [ModelingModeExt](https://github.com/gradientspace/UE5ModelingModeExtensionDemo) |
+| **UE5-Procedural-Building (GeometryScript)** | GitHub | UE5 · MIT | C++ procedural building generator built directly on UE5's `GeometryScript` API | [GitHub](https://github.com/bendemott/UE5-Procedural-Building) |
+| **ProceduralMeshDemos** | GitHub | UE4/5 · MIT | Reference implementations of runtime procedural geometry generation in Unreal (365★) | [GitHub](https://github.com/SiggiG/ProceduralMeshDemos) |
+| **Prefabricator** | GitHub | UE4/5 · MIT | Nested actor prefab authoring, randomization & level-design workflow plugin | [GitHub](https://github.com/coderespawn/prefabricator-ue4) |
+| **CustomGravityPlugin** | GitHub | UE4/5 | Planetary, spherical, spline & arbitrary directional gravity for characters and physics | [GitHub](https://github.com/HoussineMehnik/UE4-CustomGravityPlugin) |
+| **3D Dungeon Generators (UE 5.x–5.8)** | GitHub | **UE 5.0–5.8** · MIT / GPL-3.0 | Room/corridor procedural dungeon, minimap & mission layout plugins | [orfeasel (MIT)](https://github.com/orfeasel/DungeonGenerator) · [draquel (UE 5.8)](https://github.com/draquel/ProceduralDungeonPlugin) · [shun126 (GPL-3.0)](https://github.com/shun126/DungeonGenerator) |
+| **VoxelWorlds (UE 5.8), VOX4U & VoxelTerrain** | GitHub | **UE 5.8** · MIT / GPL-3.0 | GPU-driven UE 5.8 voxel terrain with LODs, MagicaVoxel `.vox` importer & Marching Cubes terrain | [VoxelWorlds (5.8)](https://github.com/draquel/VoxelWorlds) · [VOX4U (MIT)](https://github.com/mik14a/VOX4U) · [UE5VoxelTerrainDemo (GPL-3.0)](https://github.com/bw2012/UE5VoxelTerrainDemo) |
+| **Box3DUnreal & Blast Destruction** | GitHub | UE5 · MIT | Deterministic Box3D rigid-body physics integration + NVIDIA Blast Chaos destruction plugin | [Box3DUnreal](https://github.com/alattanzio/Box3DUnreal) · [Blast-UE-Plugin](https://github.com/ProjectBorealis/Blast-UE-Plugin) |
+| **Spline Spawner, UESplineFollow & Greebler** | GitHub | UE4/5 · MIT | Editor spline mesh/decal placement, spline movement/action components & automatic corner rubble scatter | [Spline-Objects-Tool](https://github.com/Louis1351/Spline-Objects-Tool-UE4) · [UESplineFollow](https://github.com/TheEmidee/UESplineFollow) · [Greebler](https://github.com/alexismorin/Greebler) |
+| **SerialCOM Hardware / Arduino Plugin** | GitHub | UE4/5 · MIT | Read/write serial COM ports from Blueprints for Arduino, custom controllers & arcade hardware | [GitHub](https://github.com/videofeedback/Unreal_Engine_SerialCOM_Plugin) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -378,6 +587,15 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **MassAIExample** | GitHub | UE5 | Mass Entity + Smart Objects + StateTree crowd interaction sample | [GitHub](https://github.com/Ji-Rath/MassAIExample) |
 | **BTUtility** | GitHub | UE5 · MIT | Lightweight Utility AI response-curve nodes for Behavior Trees | [GitHub](https://github.com/ric-fm/BTUtility) |
 | **HTN Example Project** | GitHub | UE4/5 | Hierarchical Task Network (HTN) planning plugin demo | [GitHub](https://github.com/maksmaisak/htn-example-project) |
+| **TurboSequence (GPU Skeletal Crowds)** | GitHub | UE5 · MIT | GPU-skinned instanced skeletal mesh crowds rendering tens of thousands of animated characters at high FPS (570+★) | [GitHub](https://github.com/LukasFratzl/TurboSequence) |
+| **SUSS (Steve's Utility AI Subsystem)** | GitHub | UE5 · MIT | Data-driven Utility AI subsystem for UE5 with queries, considerations, curves & Brain components | [GitHub](https://github.com/sinbad/SUSS) |
+| **Project Borealis IAUS & BTUtilityPlugin** | GitHub | UE4/5 · MIT | Infinite Axis Utility System & utility selector extensions for Unreal Behavior Trees | [IAUS](https://github.com/ProjectBorealis/IAUS) · [BTUtilityPlugin](https://github.com/kamrann/BTUtilityPlugin) |
+| **UESVONavigation & UEAIExtensions** | GitHub | UE5 · MIT | Sparse Voxel Octree 3D navigation & Behavior Tree / EQS helper extensions | [UESVONavigation](https://github.com/TheEmidee/UESVONavigation) · [UEAIExtensions](https://github.com/TheEmidee/UEAIExtensions) |
+| **MassCommunitySample, MassSimple & Apparatus Crowd** | GitHub | UE5 · MIT / Apache-2.0 | Focused Mass Entity processor, time-dilation, boids & Apparatus ECS crowd battle examples | [MassCommunitySample](https://github.com/getnamo/MassCommunitySample) · [MassSimple](https://github.com/XistGG/MassSimple) · [MassTimeGame](https://github.com/XistGG/MassTimeGame) · [ApparatusCrowd](https://github.com/LeroyMackerl/UE5-ApparatusECS-CrowdBattlePlugin) |
+| **StateTree Extensions & Combat Samples** | GitHub | UE5 | Magic/stealth enemy StateTree example + reusable StateTree & SmartObject helper nodes | [StateTreeTest](https://github.com/haktan313/StateTreeTest) · [StateTreeExtension](https://github.com/capralkein/StateTreeExtension) · [NSCoreHelperLite](https://github.com/Next-Stage-Inc/NSCoreHelperLite) |
+| **Local LLM & GenAI NPC Plugins (Llama.cpp / Ollama)** | GitHub | UE5 · MIT | On-device `llama.cpp`, Ollama + SQLite NPC memory, Whisper STT & multi-provider LLM Blueprint nodes | [Llama-Unreal (MIT)](https://github.com/getnamo/Llama-Unreal) · [UELlama (MIT)](https://github.com/mika314/UELlama) · [Cyrene NPC Memory](https://github.com/zcingerman-dev/Cyrene-AI-NPC-UE5-Demo) · [OpenAI-Api-Unreal (MIT)](https://github.com/KellanM/OpenAI-Api-Unreal) · [RuntimeSpeechRecognizer (Archived)](https://github.com/gtreshchev/RuntimeSpeechRecognizer) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -400,12 +618,23 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **ArcGIS CityEngine for Unreal** | GitHub | UE5 | Procedural urban/architecture modeling rules directly in Unreal | [GitHub](https://github.com/Esri/cityengine_for_unreal) |
 | **WFCPlugin / Wave-Function-Collapse-UE5** | GitHub | UE5 · MIT | C++ Wave Function Collapse tile/environment procedural generators | [WFCPlugin](https://github.com/bohdon/WFCPlugin) · [WFC-UE5](https://github.com/DNL-22/Wave-Function-Collapse-UE5) |
 | **Niagara Destruction Driver** | GitHub | UE5 | Converts Chaos Geometry Collections into high-FPS GPU Niagara-simulated destructibles | [GitHub](https://github.com/eanticev/niagara-destruction-driver) |
-| **Vapor (Nubis Clouds)** | GitHub | UE5 | Physically-based volumetric cloud rendering plugin based on Horizon's Nubis | [GitHub](https://github.com/mxcop/vapor) |
+| **Vapor (Nubis Clouds)** *(Archived)* | GitHub | UE5 | Physically-based volumetric cloud rendering plugin based on Horizon's Nubis | [GitHub](https://github.com/mxcop/vapor) |
 | **WeatherEnvironmentSystem** | GitHub | UE5 | Persistent world clock, moving weather fronts, local wind, rain/snow, clouds & foliage response | [GitHub](https://github.com/James-Joslin/WeatherEnvironmentSystem) |
 | **DynamicSkySystem / WeatherX** | GitHub | UE5 · BP/Niagara | Spatial & temporal weather transition plugins and dynamic sky rigs | [DynamicSkySystem](https://github.com/alexmegahat/DynamicSkySystem) · [WeatherX](https://github.com/fer0072/WeatherX) |
 | **UE5NiagaraComputeShaderIntegration** | GitHub | UE5 | Niagara + Compute Shader GPU boids integration example | [GitHub](https://github.com/Shadertech/UE5NiagaraComputeShaderIntegration) |
 | **VolumetricCloudsUnreal** | GitHub | UE5 | Ray-marching volumetric shader & cloud techniques | [GitHub](https://github.com/cavallimarko/VolumetricCloudsUnreal) |
 | **AINiagara** | GitHub | UE5 | Natural-language Niagara particle system authoring inside Unreal Editor | [GitHub](https://github.com/andrehrferreira/AINiagara) |
+| **PCGExtendedToolkit (PCGEx)** | GitHub | UE5 · MIT | Essential UE5 PCG expansion: graph/cluster theory, A*/Dijkstra pathfinding, spatial Voronoi/Delaunay ops & asset staging (715★) | [GitHub](https://github.com/PCGEx/PCGExtendedToolkit) |
+| **GPU-PCG (UE 5.7)** | GitHub | UE 5.7 | GPU-accelerated PCG tools: procedural meshes, terrain erosion, vine growth & shallow-water simulation | [GitHub](https://github.com/KisaragiTomi/GPU-PCG) |
+| **Cesium for Unreal** | GitHub | UE5 · Apache-2.0 | Stream global real-world WGS84 3D Tiles photogrammetry & terrain into UE5 (1.2k+★) | [Plugin](https://github.com/CesiumGS/cesium-unreal) · [Samples](https://github.com/CesiumGS/cesium-unreal-samples) · [VR Tutorial](https://github.com/CesiumGS/cesium-unreal-vr-tutorial) |
+| **Houdini Engine for Unreal** | GitHub | UE5 | SideFX's official plugin bringing procedural Houdini Digital Assets (`.hda`) & landscapes into Unreal (1.6k+★) | [GitHub](https://github.com/sideeffects/HoudiniEngineForUnreal) |
+| **StreetMap (OSM) & OpenDRIVE** | GitHub | UE4/5 · MIT / MPL-2.0 | Import OpenStreetMap buildings/roads (2.2k+★) and OpenDRIVE road specifications into Unreal | [StreetMap](https://github.com/MikeFricker/StreetMap) · [OpenDRIVE](https://github.com/brifsttar/OpenDRIVE) |
+| **XScene, LCC & OpenSplat4D (3DGS / 4DGS)** | GitHub | UE5 · Apache-2.0 / OS | Billion-scale relightable 3DGS, hybrid mesh+splat editing & 4D spacetime Gaussian Splatting renderers | [XScene (1.1k★)](https://github.com/xverse-engine/XScene-UEPlugin) · [LCC-3DGS](https://github.com/xgrids/LCC-3DGS-Unreal-Plugin) · [SplatRenderer (5.5+)](https://github.com/DazaiStudio/SplatRenderer-UEPlugin) · [OpenSplat4D](https://github.com/YuanBaoSMadLab/OpenSplat4D) |
+| **cashgenUE & UnrealFastNoise2** | GitHub | UE4/5 · MIT | Runtime procedural chunked terrain generator + SIMD FastNoise2 node graph wrapper | [cashgenUE](https://github.com/midgen/cashgenUE) · [UnrealFastNoise2](https://github.com/DoubleDeez/UnrealFastNoise2) |
+| **OceanProject, SkyAtmosphere & DynamicWeather** | GitHub | UE4/5 · MIT | Community ocean/buoyancy/fish suite (1.3k+★), Epic's Sky Atmosphere paper reference & UE5 dynamic weather | [OceanProject](https://github.com/UE4-OceanProject/OceanProject) · [SkyAtmosphere](https://github.com/sebh/UnrealEngineSkyAtmosphere) · [DynamicWeather](https://github.com/DanialKama/DynamicWeather) |
+| **project-leonida-ue58 & SimpleImposterBaker** | GitHub | **UE 5.8** / UE5 · MIT | UE 5.8 open-world PCG/water prototype + octahedral imposter baker plugin | [project-leonida-ue58](https://github.com/alshraritalal-dev/project-leonida-ue58) · [SimpleImposterBaker](https://github.com/mouNtaene/SimpleImposterBaker-UE5) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -433,6 +662,16 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **MetaSound Branches** | GitHub | UE5 | Custom MetaSounds node pack for Windows & Mac | [GitHub](https://github.com/matthewscharles/metasound-branches) |
 | **UE5 Wwise Footsteps** | GitHub | UE5 · Wwise | Surface-aware footstep audio system in Wwise + Blueprints/C++ | [GitHub](https://github.com/abovenoisestudios/ANE_Blog_UE5_Wwise_Footsteps) |
 | **UE-AUDIO-MCP** | GitHub | UE5 | Natural-language Wwise + MetaSounds + Blueprint audio workflow automation | [GitHub](https://github.com/koshimazaki/UE-AUDIO-MCP) |
+| **UnrealEngineShaderPluginDemo** | GitHub | UE4/5 · MIT | Classic, heavily documented HLSL pixel & compute shader plugin reference (1k+★) | [GitHub](https://github.com/Temaran/UnrealEngineShaderPluginDemo) |
+| **NiagaraUIRenderer** | GitHub | UE5 · MIT | Render live Niagara particle systems directly inside UMG user interface widgets (375+★) | [GitHub](https://github.com/SourySK/NiagaraUIRenderer) |
+| **UTC_LiquidShader (Substrate)** | GitHub | UE 5.3+ · MIT | Dynamic bottle/surface liquid shader authored on UE5's **Substrate** material system | [GitHub](https://github.com/UniversalToolCompiler/UTC_LiquidShader) |
+| **Filmimic** | GitHub | UE5 · GPL-2.0 | Real-time film stock emulation: 21 color looks, halation, film grain & lens controls | [GitHub](https://github.com/DreamyLab30/Filmimic) |
+| **DreamShader & DreamFX (Text DSLs)** | GitHub | **UE 5.8** · MIT | Write Unreal Materials and Niagara VFX systems as clean text files that compile to native assets | [DreamShader](https://github.com/TypeDreamMoon/DreamShader) · [DreamFX](https://github.com/TypeDreamMoon/DreamFX) |
+| **CustomMaterialNodeTemplate & TBRaymarcher** | GitHub | UE5 · MIT | Template for custom C++ `UMaterialExpression` nodes + volumetric 3D texture raymarching plugin | [CustomMaterialNode](https://github.com/PetyaFX/CustomMaterialNodeTemplate) · [TBRaymarcherPlugin](https://github.com/tommybazar/TBRaymarcherPlugin) · [UEFluid2DSample](https://github.com/Rainidle/UEFluid2DSample) |
+| **Intel XeSS, VisionGTAO (UE 5.8) & RTXGI** | GitHub | **UE 5.7–5.8** · MIT / Apache-2.0 | Official Intel XeSS upscaler, UE 5.8 XeGTAO ambient occlusion, SWRT hard shadows & RTXGI 5.7 ports | [XeSS Plugin](https://github.com/GameTechDev/XeSSUnrealPlugin) · [VisionGTAO (5.8)](https://github.com/JustinDarlington/VisionGTAO) · [SWRT Shadows (5.7)](https://github.com/ThreatInteractive/Prototype-SWRT-Hard-Shadows-For-UE5.7) · [RTXGI (5.7)](https://github.com/sergio2692/RTXGI-UE-5.7-Plugin) |
+| **Wwise Gyms, WAC Audio Capture & MIDI** | GitHub | UE5 · MIT / SDK | Official Audiokinetic Wwise feature gyms, Windows loopback audio visualizer & MIDI I/O plugins | [Wwise Gyms](https://github.com/audiokinetic/Gyms) · [WAC (MIT)](https://github.com/kwstasg/WAC) · [Midi-Unreal](https://github.com/Geromatic/Midi-Unreal) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -447,7 +686,7 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **UE5_PerspectiveMinimap** | GitHub | UE5 | 3D perspective minimap widget plugin | [GitHub](https://github.com/kjinwoo12/UE5_PerspectiveMinimap) |
 | **Unreal5-ImGui / VesCodes ImGui** | GitHub | UE 5.4+ · MIT | Dear ImGui in-game debug menus & live telemetry inspectors | [Unreal5-ImGui](https://github.com/SLSNe/Unreal5-ImGui) · [VesCodes/imgui](https://github.com/VesCodes/imgui) |
 | **PoolManager / UnrealObjectPooler** | GitHub | UE 5.7+ · MIT | World-subsystem actor/object pooling (bullets, enemies, VFX) | [PoolManager](https://github.com/JanSeliv/PoolManager) · [UnrealObjectPooler](https://github.com/FadeOutcast/UnrealObjectPooler) |
-| **GameplayCameraToolset / Advanced-Camera-Manager** | GitHub | UE5 · MIT | Modular gameplay camera rigs & camera manager components | [GameplayCameraToolset](https://github.com/iEclisse/GameplayCameraToolset) · [Advanced-Camera-Manager](https://github.com/oivio/Advanced-Camera-Manager) |
+| **GameplayCameraToolset / Advanced-Camera-Manager** | GitHub | UE5 · MIT | Modular gameplay camera rigs & camera manager components | [GameplayCameraToolset](https://github.com/iEclisse/GameplayCameraToolset) · [Advanced-Camera-Manager (Archived)](https://github.com/oivio/Advanced-Camera-Manager) |
 | **ArcUI** | GitHub | UE5 · UMG | Context-based UI & Model-View-Presenter framework for UMG | [GitHub](https://github.com/ArcstoneGames/ArcUI) |
 | **LazyGenericUIFramework** | GitHub | UE5 · CommonUI | Lyra-inspired layer stacking, gameplay tags & auto-discovering slot injection on CommonUI | [GitHub](https://github.com/Lazy-Jason/LazyGenericUIFramework) |
 | **CaptionCue** | GitHub | UE5 · C++ | Certification-ready subtitles & closed captions (speaker colors, directional arrows, reading time, accessibility) | [GitHub](https://github.com/SimulatedFlow/ue-plugin-CaptionCue) |
@@ -476,6 +715,20 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Async Chaos Suspension & Kinematics** | GitHub | UE5 · C++ | Async `FSimCallback` MacPherson & double-wishbone vehicle suspension physics | [Suspension](https://github.com/fgrenoville/Async-Physics-Suspension) · [Kinematics](https://github.com/fgrenoville/Async-Physics-Suspension-Kinematics) |
 | **NetworkedPhysics** | GitHub | UE5 | Replicated physics pawn reference project | [GitHub](https://github.com/cem-akkaya/NetworkedPhysics) |
 | **Deep-Cut Open-Source Genre Projects** | GitHub | UE5 | Football (LAN/Steam MP), Local MP Golf, Skateboarding Sim, 2.5D Metroidvania, Cozy Open World, Fighting Template | [ProVisionFootball](https://github.com/Voit89/ProVisionFootball) · [Golf-Mania](https://github.com/ChaseZardezed/Golf-Mania-Case-Study) · [Skateboard-Sim](https://github.com/omar94hamza/Skateboard-Sim-Prototype) · [ProjectLux](https://github.com/TinyAlmonds/ProjectLux) · [CozyTales](https://github.com/AndromeDIE/CozyTales) · [FightingTemplate](https://github.com/TanushKrashak/Ue5.0_FightingGameTemplate) |
+| **VaCuus & RmlUi (HTML/CSS UI)** | GitHub | UE5 · Custom / MIT | Off-game-thread HTML/CSS + QuickJS UI renderer for Unreal Engine built on RmlUi (4.6k+★) | [VaCuus](https://github.com/ufna/VaCuus) · [RmlUi](https://github.com/mikke89/RmlUi) |
+| **NoesisGUI & FairyGUI Unreal** | GitHub | UE4/5 · SDK / MIT | Production XAML vector UI (Noesis) and cross-engine FairyGUI frameworks for Unreal | [Noesis Unreal](https://github.com/Noesis/UnrealPlugin) · [FairyGUI-unreal](https://github.com/fairygui/FairyGUI-unreal) |
+| **UINavigation** | GitHub | UE4/5 · MIT | Plug-and-play unified mouse, keyboard & gamepad navigation for UMG menus with input prompts | [GitHub](https://github.com/goncasmage1/UINavigation) |
+| **MDViewModel & MDFastBinding** | GitHub | UE 5.1+ · MIT | Designer-friendly automatic MVVM data binding & zero-overhead property binding replacements | [MDViewModel](https://github.com/DoubleDeez/MDViewModel) · [MDFastBinding](https://github.com/DoubleDeez/MDFastBinding) |
+| **ElementUI-UMG-Kit & DreamGUI (UE 5.8)** | GitHub | **UE 5.8** · MIT | Pre-styled shadcn-inspired CommonUI widget kit + UE 5.8 3D world/screen-space UI designer | [ElementUI-UMG-Kit](https://github.com/rdelian/ElementUI-UMG-Kit) · [DreamGUI (5.8)](https://github.com/TypeDreamMoon/DreamGUI) |
+| **CustomShapeButton, UI_Blooman & KantanCharts** | GitHub | UE 5.x–5.7 · MIT | Arbitrary-polygon hit-test buttons, UMG fake bloom & Slate/UMG bar/line/cartesian charts | [CustomShapeButton](https://github.com/JanSeliv/CustomShapeButton) · [UI_Blooman](https://github.com/seiko-dev/UI_Blooman) · [KantanCharts](https://github.com/kamrann/KantanCharts) |
+| **fresh_cooked_tweens & Runtime GIF/WebP Loaders** | GitHub | UE5 · MIT | Fluent C++/BP tweening library + hitch-free runtime animated GIF/WebP/PNG loaders | [fresh_cooked_tweens](https://github.com/jdcook/fresh_cooked_tweens) · [UAnimatedTexture5](https://github.com/neil3d/UAnimatedTexture5) · [RuntimeImageLoader](https://github.com/RaiaN/RuntimeImageLoader) |
+| **Gamepad-Overlay & Easy Localization** | GitHub | UE 5.6–5.8 · MIT | Live DualSense/DualShock input overlay widget + CSV & local-LLM localization pipelines | [Gamepad-Overlay](https://github.com/rafaelvaloto/Gamepad-Overlay-Unreal) · [EasyLocalization](https://github.com/zompi2/UE4EasyLocalizationTool) · [LocHub (5.6–5.8)](https://github.com/DmVergasov/LocHub) |
+| **HotPatcher & GameUpdate (OTA Pak/IoStore)** | GitHub | UE 5.x–5.7 · MIT | Differential Pak/IoStore chunking, DLC cooking & over-the-air hot-update frameworks (1.5k+★) | [HotPatcher](https://github.com/hxhb/HotPatcher) · [GameUpdate (5.7)](https://github.com/977908569/GameUpdate) |
+| **Work Balancer & Micromegas Telemetry** | GitHub | UE5 · MIT / Apache-2.0 | Multi-frame CPU work time-slicing + ultra-low-overhead Rust/UE5 logs, metrics & trace observability | [Work-Balancer](https://github.com/eanticev/ue-gameplay-work-balancer) · [Micromegas](https://github.com/madesroches/micromegas) |
+| **Alternative Scripting Runtimes (C#, JS, Lua, Nim, Python, TS)** | GitHub | UE4/5 · MIT | Additional scripting languages: .NET C#, JavaScript/React-UMG, Lua, hot-reloading Nim, Kotlin, Haxe & UE 5.8 TypeScript | [UnrealCLR](https://github.com/nxrighthere/UnrealCLR) · [Unreal.js](https://github.com/ncsoft/Unreal.js) · [sluaunreal](https://github.com/Tencent/sluaunreal) · [LuaMachine](https://github.com/rdeioris/LuaMachine) · [NimForUE](https://github.com/jmgomez/NimForUE) · [kotlin-unreal](https://github.com/hiperbou/kotlin-unreal) · [unreal.hx](https://github.com/proletariatgames/unreal.hx) · [UnrealEnginePython](https://github.com/20tab/UnrealEnginePython) · [hyperreal-starter-kit (5.8)](https://github.com/vibegameengine/hyperreal-starter-kit) |
+| **SlateStyleBrowser & UnrealImGuiTools** | GitHub | UE5 · MIT | Browse built-in Slate icons/brushes in-editor + ready-made ImGui debug panels | [SlateStyleBrowser](https://github.com/sirjofri/SlateStyleBrowser) · [UnrealImGuiTools](https://github.com/nakdeyes/UnrealImGuiTools) · [segross/UnrealImGui](https://github.com/segross/UnrealImGui) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -492,6 +745,8 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **Defender: Top-Down Shooter v3.3** | Top-down / twin-stick shooter | [Fab](https://www.fab.com/listings/502b6728-3e1c-4307-9996-2b97be4fe2e3) |
 | **jRPG Template** | Turn-based JRPG party, battle & menu framework | [Fab](https://www.fab.com/listings/dc86686f-02fb-4ed0-a776-9b317c5848b0?lang=en) |
 
+[↑ Back to top](#table-of-contents)
+
 ---
 
 ## 23. Giant Indexes, Blueprint Paste-Bins & Free Hubs
@@ -505,6 +760,14 @@ Included offline in every Unreal Engine 5.8 installation under `<UE_5.8>/Templat
 | **aiekick/Awesome_Unreal_Engine_4_-_5** | Shaders, procedural geometry, physics & tools mega-list | [GitHub](https://github.com/aiekick/Awesome_Unreal_Engine_4_-_5) |
 | **SeeleAI/awesome-unreal-open-source-games** | Playable open-source Unreal projects sorted by genre | [GitHub](https://github.com/SeeleAI/awesome-unreal-open-source-games) |
 | **SeeleAI/awesome-unreal-ai-tools** | Unreal MCP servers, AI agents & Blueprint automation | [GitHub](https://github.com/SeeleAI/awesome-unreal-ai-tools) |
+| **Gamemakin UE5 Style Guide (Allar)** | Industry-standard naming, folder, Blueprint & C++ consistency conventions (MIT, 6.3k+★) | [GitHub](https://github.com/Allar/ue5-style-guide) |
+| **ikrima/gamedevguide & mikeroyal UE5 Guide** | Deep-dive Unreal rendering, C++ architecture, networking & multi-platform engineering guides | [gamedevguide](https://github.com/ikrima/gamedevguide) · [Unreal-Engine-Guide](https://github.com/mikeroyal/Unreal-Engine-Guide) · [MrRobin Guide](https://github.com/MrRobinOfficial/Guide-UnrealEngine) |
+| **UnrealSpecifiers, C++ Snippets & BP→C++ Cheatsheet** | 100+ `UPROPERTY`/`UFUNCTION` specifiers, 50+ C++ gameplay recipes & Blueprint-to-C++ translation tables | [UnrealSpecifiers](https://github.com/fjz13/UnrealSpecifiers) · [benui Specifier Docs](https://github.com/benui-dev/UE-Specifier-Docs) · [Harrison1/unrealcpp](https://github.com/Harrison1/unrealcpp) · [ue5-cheatsheet](https://github.com/marcohenning/ue5-cheatsheet) |
+| **Coop56/awesome-unreal & Multiplayer Networking** | Curated UE5 resource list + 8.7k+★ multiplayer netcode & lag-compensation reading index | [Coop56/awesome-unreal](https://github.com/Coop56/awesome-unreal) · [MultiplayerNetworkingResources](https://github.com/0xFA11/MultiplayerNetworkingResources) |
+| **FModel, UAssetGUI & UE-Modding-Tools** | Inspect `.pak`/IoStore `.utoc`/`.uasset` packages, serialize `.uasset` JSON & browse modding tools | [FModel (3.4k★)](https://github.com/4sval/FModel) · [UAssetGUI](https://github.com/atenfyr/UAssetGUI) · [UAssetAPI](https://github.com/atenfyr/UAssetAPI) · [UE-Modding-Tools](https://github.com/Buckminsterfullerene02/UE-Modding-Tools) |
+| **Packt UE5 C++ & Gameplay Companion Repos** | Complete book source projects for UE5 C++ scripting and advanced gameplay systems (MIT) | [UE5 C++ Scripting](https://github.com/PacktPublishing/Unreal-Engine-5-Game-Development-with-C-Scripting) · [Elevating Game Experiences 2e](https://github.com/PacktPublishing/Elevating-Game-Experiences-with-Unreal-Engine-5-Second-Edition) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -519,6 +782,12 @@ If you want a drop-in, closed-source-safe UE 5.8 production stack:
 - **Save & Serialization:** `SPUD` (MIT) + `DataConfig` (MIT)
 - **AI, Crowds & 3D Nav:** Native StateTree + `CTRL.StateTree` (MIT) + `DLL Mass Units` (Apache-2.0) + `Gunfire3DNavigation`
 - **Pooling, Audio, Validation & Crash Telemetry:** `PoolManager` (MIT) + `DLL Audio` (Apache-2.0) + `Netflix UnrealValidationFramework` (Apache-2.0) + `sentry-unreal` (MIT)
+- **UE 5.8 Networked Mover & GPU Crowds:** `Foothold-Core` (MIT, Mover traversal) + `TurboSequence` (MIT, GPU skeletal crowds)
+- **PCG, Geospatial & Runtime Procedural Geometry:** `PCGExtendedToolkit` (MIT) + `Cesium for Unreal` (Apache-2.0) + `RealtimeMeshComponent` (MIT)
+- **Narrative Scripting & Off-Thread UI:** `Inkpot` or `SUDS` (MIT) + `RmlUi` / `UINavigation` (MIT)
+- **gRPC, Dedicated Servers, OTA Patching & CI/CD:** `TurboLink` (MIT) + `Agones` (Apache-2.0) + `HotPatcher` (MIT) + `RedpointGames/uet` (MIT) + `Allar/ue5-style-guide` (MIT)
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -553,12 +822,14 @@ flowchart LR
 | **Unreal-LiveLink-for-Blender** | Blender → UE | Open Source | Stream Blender armatures & animations live into Unreal Engine via LiveLink | [GitHub](https://github.com/W-Nabe/Unreal-LiveLink-for-Blender) |
 | **blender-unreal-rig-utils** | Blender | GPL-3.0 | Character rigging helper utilities targeting Unreal Engine skeletons | [GitHub](https://github.com/greenpau/blender-unreal-rig-utils) |
 | **Blender_to_UE_Plugin** | Blender → UE | Open Source | Clean static/skeletal/animation export with UE scale, normals, and materials | [GitHub](https://github.com/DanTheLion-git/Blender_to_UE_Plugin) |
+| **MetaHuman DNA Add-on** | Blender ↔ UE5 | GPL-3.0 | Round-trip MetaHuman `.dna` head & body rigs between Blender and MetaHuman Creator | [GitHub](https://github.com/poly-hammer/character-dna-addon) |
+| **UE5_SimpleGroomExporter** | UE5 → Blender | Open Source | Additional Unreal Engine 5 strand groom exporter to Alembic `.abc` | [GitHub](https://github.com/kostenickj/UE5_SimpleGroomExporter) |
 
 ### UE 5.8 Modular Assembly, Control Rig, Hair/Cloth Physics & LiveLink
 
 | Tool | Role in Pipeline | UE / License | Highlights | Link |
 |---|---|---|---|---|
-| **UE 5.8 `Mutable` + MutableGraphToolset** | Modular character assembly | **UE 5.8** | Keep head, limbs, boots, garments, and hair separate on **one shared skeleton**, cull hidden body faces under clothing, merge draw calls; 22 MCP tools for automated Customizable Object graph building | [MutableGraphToolset](https://github.com/ITemre/MutableGraphToolset) · [Fab](https://www.fab.com/listings/aa935747-f923-4d4f-aa23-1b2a8e8a196d) |
+| **UE 5.8 `Mutable` + MutableGraphToolset** | Modular character assembly | **UE 5.8** | Keep head, limbs, boots, garments, and hair separate on **one shared skeleton**, cull hidden body faces under clothing, merge draw calls; 22 MCP tools for automated Customizable Object graph building | [MutableGraphToolset](https://github.com/ITemre/MutableGraphToolset) |
 | **glTFRuntime** | Runtime unbaked part swapping | UE5 · MIT | Load `.glb`/`.gltf` limbs, outfits, hair, skeletons, and morphs at runtime without offline editor recook | [GitHub](https://github.com/rdeioris/glTFRuntime) |
 | **KawaiiPhysics** | Hair & loose cloth bone chains | UE4/5 · MIT | Drives hair-card spring chains, skirts, ribbons, and sleeves in AnimGraph with capsule collision against neck, shoulders, and thighs | [GitHub](https://github.com/pafuhana1213/KawaiiPhysics) |
 | **AnimVerlet** | Cloth/hair/string Verlet dynamics | UE4/5 | Alternative AnimGraph Verlet dynamics solver for hair, cloth, strings, and soft attachments | [GitHub](https://github.com/chonjay21/AnimVerlet) |
@@ -577,6 +848,8 @@ flowchart LR
 2. **`KawaiiPhysics`** — hair-card spring chains, skirts, sleeves, and accessories with body collision
 3. **`GASP-ALS-R`** (with Epic's Game Animation Sample) — Motion Matching locomotion, foot/ankle IK, and mocap layering
 4. **`UE_CelLit`** — clean anime/stylized shading in vanilla UE 5.8 without custom engine builds
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -647,6 +920,8 @@ flowchart TB
 - **Keep Blender cycles/optix off Spark:** Use Spark for PyTorch/CUDA ML + headless mesh prep, and route all Cycles GPU bakes/renders to the **RTX 3090** (OptiX) or **RTX 5070 Ti** (when UE Editor is closed).
 - **Blender 4.5 vs 5.x EEVEE compatibility:** Detect version dynamically (`'BLENDER_EEVEE'` on Blender 5.0+, `'BLENDER_EEVEE_NEXT'` on Blender 4.5 LTS) and always run headless scripts with `--python-exit-code 1`.
 
+[↑ Back to top](#table-of-contents)
+
 ---
 
 ## 27. Free CC0 & Open-Source 3D Models, PBR Textures, HDRIs, Animations & Audio Hubs
@@ -662,6 +937,10 @@ flowchart TB
 | **itch.io CC0 Free Game Assets** | CC0 | Massive filterable directory of public-domain 3D kits, textures, sprites & audio | [itch.io CC0](https://itch.io/game-assets/assets-cc0/free) |
 | **Free Game Dev Assets (TMHSDigital)** | Verified Licenses | 450+ curated free 3D, 2D, character, animation, audio & shader sources with license audit | [Catalog](https://tmhsdigital.github.io/Free-Game-Dev-Assets) |
 | **JackLuguibin/GameAssets** | Curated Index | Categorized GitHub index of free character, environment, PBR, UI, audio & VFX sources | [GitHub](https://github.com/JackLuguibin/GameAssets) |
+| **devanshutak25/3d-resources** | CC0-1.0 | 4,800+ categorized 3D, VFX, shader, texture, mocap & game-dev tools index (1k+★) | [GitHub](https://github.com/devanshutak25/3d-resources) |
+| **nikrich/unreal-assets & Starter Content** | MIT / Free | Curated free asset repositories & standalone UE 5.0+ starter content packs | [unreal-assets](https://github.com/nikrich/unreal-assets) · [unreal-engine-starter-content](https://github.com/Evavic44/unreal-engine-starter-content) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -677,6 +956,12 @@ flowchart TB
 | **Rigger** | Open Source | Generates full-control rigs, retargets, exports to game engines & animates from video | [GitHub](https://github.com/asu37/Rigger) |
 | **vrm-addon-rigify-custom / vrm-rigify** | MIT | Generate Blender Rigify armatures & facial expression tools for VRM characters | [vrm-addon-rigify-custom](https://github.com/SYLQW/vrm-addon-rigify-custom) · [vrm-rigify](https://github.com/nanoskript/vrm-rigify) |
 | **jd_rigging_tools** | GPL-3.0 | General-purpose Blender rigging helper utilities | [GitHub](https://github.com/jaldoyle/jd_rigging_tools) |
+| **Mr Mannequins Tools** | Open Source | Ready-to-animate UE4/UE5 Mannequin rigs & clean FBX export workflows inside Blender (560★) | [GitHub](https://github.com/Jim-Kroovy/mr_mannequins_tools) |
+| **MetaHuman Character DNA Add-on** | GPL-3.0 | Import MetaHuman head & body `.dna` rigs into Blender, sculpt/customize, and round-trip back to MetaHuman Creator | [GitHub](https://github.com/poly-hammer/character-dna-addon) |
+| **VRM-Addon-for-Blender** | MIT | Full VRM 0.x/1.0 humanoid import, spring-bone setup, morphs & export for Blender 2.93–5.3 (1.7k+★) | [GitHub](https://github.com/saturday06/VRM-Addon-for-Blender) |
+| **ActionPoser** | GPL-2.0 | Streamlines Blender Action constraint facial & mechanical rigging setups | [GitHub](https://github.com/Arminando/ActionPoser) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -691,6 +976,12 @@ flowchart TB
 | **flow-lod** | Open Source | Automated LOD generation workflow add-on for Blender | [GitHub](https://github.com/solid-state-games/flow-lod) |
 | **quadami / retopology_tool / remi** | Open Source | Lightweight Blender retopology & quad-flow utilities | [quadami](https://github.com/KajetanMuczynski/quadami) · [retopology_tool](https://github.com/postsilver/retopology_tool) · [remi](https://github.com/shaderko/remi-blender-addon) |
 | **blender-meshtools-addon / CurioMesh** | Open Source | Mesh cleanup, editing & topology helper add-ons | [meshtools](https://github.com/sysoutch/blender-meshtools-addon) · [CurioMesh](https://github.com/CurioCrafter/CurioMesh) |
+| **UvSquares** | GPL-2.0 | One-click reshape of warped UV selections into clean orthogonal quad grids (2.1k+★) | [GitHub](https://github.com/Radivarig/UvSquares) |
+| **Material Combiner & FbxUdimUnpack** | GPL-3.0 / MIT | Pack multi-material meshes into single draw-call texture atlases + split UDIMs for real-time engines | [material-combiner-addon](https://github.com/Grim-es/material-combiner-addon) · [FbxUdimUnpack](https://github.com/sinbad/FbxUdimUnpack) |
+| **UVToolkit & Cotangent2** | GPL-3.0 / MIT | Fast UV island alignment/checker tools + standalone open-source mesh/texture repair successor to Meshmixer | [UVToolkit](https://github.com/oRazeD/UVToolkit) · [Cotangent2](https://github.com/gradientspace/Cotangent2) |
+| **glTF-Blender-IO & UEFormat** | Apache-2.0 / GPL-3.0 | Official Khronos Blender glTF 2.0 I/O (1.6k+★) + `.uemodel`/`.ueanim` lossless intermediate format | [glTF-Blender-IO](https://github.com/KhronosGroup/glTF-Blender-IO) · [UEFormat](https://github.com/h4lfheart/UEFormat) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -704,6 +995,12 @@ flowchart TB
 | **wanderer-cad / blender-cad-tools** | Open Source | Precision CAD-style snapping, dimensions & hard-surface tools in Blender | [wanderer-cad](https://github.com/Impressivetravel/wanderer-cad) · [blender-cad-tools](https://github.com/EleotleCram/blender-cad-tools) |
 | **BlenderKit** | Open Source Client | In-Blender asset library client (free & pro models, materials, HDRIs, brushes) | [GitHub](https://github.com/BlenderKit/Blendkit) |
 | **awesome-blender / awesome-3d-blender-addons** | Open Source | Massive curated master directories of free & open-source Blender add-ons | [awesome-blender](https://github.com/agmmnn/awesome-blender) · [awesome-3d-blender-addons](https://github.com/naranyala/awesome-3d-blender-addons) |
+| **BlenderGIS** | GPL-3.0 | Import satellite DEM elevation, OpenStreetMap 3D buildings & georeferenced terrain into Blender (9.6k+★) | [GitHub](https://github.com/domlysz/BlenderGIS) |
+| **building_tools** | MIT | Procedural modular building facade, roof, balcony, window & stair generator in Blender (1.5k+★) | [GitHub](https://github.com/ranjian0/building_tools) |
+| **Photogrammetry & 3DGS Blender Add-ons** | MIT / GPL-2.0 | Import Colmap/Meshroom reconstructions & render/edit 3D Gaussian Splats inside Blender | [Photogrammetry-Importer](https://github.com/SBCV/Blender-Addon-Photogrammetry-Importer) · [KIRI 3DGS Render](https://github.com/Kiri-Innovation/3dgs-render-blender-addon) |
+| **mcp-for-blender (BlenderMCP)** | MIT | Connect AI coding assistants directly to Blender via Model Context Protocol for scene/mesh/material scripting (35k+★) | [GitHub](https://github.com/ahujasid/mcp-for-blender) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -719,6 +1016,12 @@ flowchart TB
 | **NprEevee / npr-face-shader** | GPL-3.0 / OS | Non-photorealistic cel/toon shaders & Grease-Pencil-guided smooth anime face lighting | [NprEevee](https://github.com/kents00/NprEevee) · [npr-face-shader](https://github.com/EmuMan/npr-face-shader) |
 | **Material Maker** | MIT | Free open-source node-based procedural PBR material & 3D painting studio (5.9k★, Substance Designer alternative) | [GitHub](https://github.com/RodZill4/material-maker) |
 | **ArmorPaint + Blender Add-on** | Open Source | GPU-accelerated standalone 3D PBR texture painting tool + Blender live bridge | [ArmorPaint](https://github.com/armory3d/armorpaint) · [Blender Add-on](https://github.com/armory3d/armorpaint_blender) |
+| **Ucupaint** | GPL-3.0 | Substance-style multi-layer PBR texture painting, masks, normal/bake management inside Eevee & Cycles (2.3k+★) | [GitHub](https://github.com/ucupumar/ucupaint) |
+| **Dream Textures** | GPL-3.0 | Local Stable Diffusion seamless PBR texture, depth-to-image & UV projection painting inside Blender (8.2k+★) | [GitHub](https://github.com/carson-katri/dream-textures) |
+| **Geometry Script for Blender** | GPL-3.0 | Clean Python scripting DSL that compiles directly into complex Blender Geometry Nodes trees | [GitHub](https://github.com/carson-katri/geometry-script) |
+| **HairNet & blender_mmd_tools** | Open Source | Generate particle/curve hair guides from mesh sheets/ribbons + import/export MMD models & physics | [HairNet](https://github.com/Jandals/HairNet) · [blender_mmd_tools](https://github.com/sugiany/blender_mmd_tools) |
+
+[↑ Back to top](#table-of-contents)
 
 ---
 
@@ -735,3 +1038,84 @@ flowchart TB
 | **GVHMR** | Open Source | SIGGRAPH Asia world-grounded 3D human motion recovery from monocular video | [Official](https://github.com/zju3dv/GVHMR) · [Modernized Fork](https://github.com/ryanrudes/gvhmr) |
 | **ComfyUI-3D-Pack** | Open Source | Extensive ComfyUI node suite for 3D meshes, UV textures, 3DGS & multi-view generation | [GitHub](https://github.com/MrForExample/ComfyUI-3D-Pack) |
 | **awesome-comfyui** | GPL-3.0 | Curated directory of ComfyUI custom nodes & generative pipelines | [GitHub](https://github.com/ComfyUI-Workflow/awesome-comfyui) |
+| **Hunyuan3D-2, HY-World-2.0 & HY-Motion-1.0** | Open Source | High-resolution 3D asset diffusion (15.5k★), interactive 3D world generation & 3D human motion synthesis | [Hunyuan3D-2](https://github.com/Tencent-Hunyuan/Hunyuan3D-2) · [HY-World-2.0](https://github.com/Tencent-Hunyuan/HY-World-2.0) · [HY-Motion-1.0](https://github.com/Tencent-Hunyuan/HY-Motion-1.0) |
+| **TripoSR, TripoSF & TripoSplat** | MIT | Sub-second image-to-3D reconstruction (7.4k★), SparseFlex arbitrary-topology shapes & single-image 3DGS | [TripoSR](https://github.com/VAST-AI-Research/TripoSR) · [TripoSF](https://github.com/VAST-AI-Research/TripoSF) · [TripoSplat](https://github.com/VAST-AI-Research/TripoSplat) |
+| **HoloPart & GeoSAM2 (3D Part Splitting)** | MIT / Apache-2.0 | Generative amodal 3D part completion & SAM2-guided 3D part segmentation for modular character/prop kits | [HoloPart](https://github.com/VAST-AI-Research/HoloPart) · [GeoSAM2](https://github.com/VAST-AI-Research/GeoSAM2) |
+| **SkinTokens & AniGen** | MIT / OS | Unified autoregressive skeleton rigging/skinning & animatable 3D character asset generation | [SkinTokens](https://github.com/VAST-AI-Research/SkinTokens) · [AniGen](https://github.com/VAST-AI-Research/AniGen) |
+| **MeshAnything & MeshAnything V2** | Open Source | Artist-style low-poly quad/triangle autoregressive mesh topology generation (2.3k+★) | [MeshAnything](https://github.com/buaacyw/MeshAnything) · [MeshAnythingV2](https://github.com/buaacyw/MeshAnythingV2) |
+| **SPAR3D, MIDI-3D & DetailGen3D** | Apache-2.0 / MIT | Point-aware 3D object reconstruction (Stability AI), multi-object 3D scene diffusion & geometry detail enhancement | [SPAR3D](https://github.com/Stability-AI/stable-point-aware-3d) · [MIDI-3D](https://github.com/VAST-AI-Research/MIDI-3D) · [DetailGen3D](https://github.com/VAST-AI-Research/DetailGen3D) |
+| **Depth Anything V2, Apple Depth Pro & SAM 2** | Apache-2.0 / OS | Metric monocular depth maps (for displacement/Nanite/3D) & video/image mask segmentation | [Depth-Anything-V2](https://github.com/DepthAnything/Depth-Anything-V2) · [ml-depth-pro](https://github.com/apple-aiml-research/ml-depth-pro) · [SAM 2](https://github.com/facebookresearch/sam2) |
+| **reference-asset-compiler** | MIT | Evidence-gated single-concept-image to rigged, textured, animation-ready UE5 character pipeline | [GitHub](https://github.com/raydeStar/reference-asset-compiler) |
+
+[↑ Back to top](#table-of-contents)
+
+---
+
+## 33. Blueprint Graph Formatters, Editor Productivity, Source Control & Build/CI DevOps
+
+| Name | Source | UE / License | Highlights | Link |
+|---|---|---|---|---|
+| **ElectronicNodes & DarkerNodes** | GitHub | UE4/5 | Clean 45° subway-style Blueprint/Material wires + modern flat dark theme for Unreal Editor | [ElectronicNodes](https://github.com/hugoattal/ElectronicNodes) · [DarkerNodes](https://github.com/hugoattal/DarkerNodes) |
+| **GraphFormatter, blueprint-auto-layout & glooprint** | GitHub | UE5 · MIT / OS | One-key automatic Blueprint/Material node alignment and clean wire routing plugins | [GraphFormatter (MIT)](https://github.com/howaajin/graphformatter) · [blueprint-auto-layout (MIT)](https://github.com/ibrews/blueprint-auto-layout) · [glooprint](https://github.com/ishtms/glooprint) |
+| **AutoSizeComments & GraphPrinter** | GitHub | UE5 · CC-BY-4.0 / MIT | Auto-resizing Blueprint comment boxes + full-resolution Blueprint/Material graph screenshot exporter | [AutoSizeComments](https://github.com/AutoSizeComments/AutoSizeComments) · [GraphPrinter](https://github.com/Naotsun19B/GraphPrinter) |
+| **klee, blueprintue-cpp & BlueprintToCpp** | GitHub | UE5 · MIT | Standalone web Blueprint viewer, in-editor `blueprintUE` paste plugin & Blueprint-to-C++ converter | [klee](https://github.com/Joined-Forces/klee) · [blueprintue-cpp](https://github.com/blueprintue/blueprintue-cpp-plugin) · [BlueprintToCpp](https://github.com/Krowe-moh/BlueprintToCpp) · [BlueprintRetarget](https://github.com/PipeRift/BlueprintRetarget) |
+| **SubsystemBrowser, MDMetaDataEditor & FunctionPicker** | GitHub | UE 5.1–5.7 · MIT / Zlib | Live running subsystem inspector, Blueprint metadata specifier editor & DataAsset function picker | [SubsystemBrowser](https://github.com/aquanox/SubsystemBrowserPlugin) · [MDMetaDataEditor](https://github.com/DoubleDeez/MDMetaDataEditor) · [FunctionPicker](https://github.com/JanSeliv/FunctionPicker) |
+| **MetaCheatManager & BUICheatManager** | GitHub | UE 5.7 · MIT / CC0 | Auto-registered `Category.Command` console cheats and developer debug shortcuts | [MetaCheatManager](https://github.com/JanSeliv/MetaCheatManager) · [BUICheatManager](https://github.com/benui-dev/UE-BUICheatManager) |
+| **ProjectCleaner, HardReferenceFinder & Validators** | GitHub | UE5 · MIT / CC0 | Purge unused assets, hunt expensive Blueprint hard-reference memory chains & enforce naming rules | [ProjectCleaner](https://github.com/ashe23/ProjectCleaner) · [HardReferenceFinder](https://github.com/heyomidk/HardReferenceFinder) · [NamingValidation](https://github.com/TheEmidee/UENamingConventionValidation) · [DataValidationExt](https://github.com/TheEmidee/UEDataValidationExtensions) · [BUIValidator](https://github.com/benui-dev/UE-BUIValidator) |
+| **DataAssetSheetEditor, EasyThumbnail (UE 5.8) & ActorPreset** | GitHub | **UE 5.8** · MIT | Spreadsheet editor for DataAssets, transparent PNG mesh thumbnail generator & childless actor presets | [DataAssetSheetEditor](https://github.com/pafuhana1213/UE5_DataAssetSheetEditor) · [EasyThumbnailGenerator (5.8)](https://github.com/ZUPTI/EasyThumbnailGenerator) · [ActorPreset](https://github.com/StudioSyndiCatCaius/UnrealPlugin_ActorPreset) |
+| **UnrealEditorPythonScripts & Shell Helpers** | GitHub | UE5 · MIT | Batch asset Python scripts, Windows Explorer `.uproject` quick-launch & cache cleaner context menus | [EditorPythonScripts](https://github.com/mamoniem/UnrealEditorPythonScripts) · [UE_QuickLaunch](https://github.com/ScottKirvan/UE_QuickLaunch) · [UE5ShellExtensions](https://github.com/Shadertech/UE5ShellExtensions) |
+| **Git LFS 2, Lore & Perforce Setup** | GitHub | UE5 · MIT | Git LFS lock source control plugins, `.gitignore`/`.gitattributes` templates, Docker Perforce & Epic's **Lore** VCS | [SRombauts UEGitPlugin](https://github.com/SRombauts/UEGitPlugin) · [Borealis UEGitPlugin](https://github.com/ProjectBorealis/UEGitPlugin) · [ue5-gitignore](https://github.com/MOZGIII/ue5-gitignore) · [UE5-Git-Init](https://github.com/XistGG/UE5-Git-Init) · [Docker Perforce](https://github.com/XistGG/docker-perforce-server-for-unreal-engine) · [Epic Lore](https://github.com/EpicGames/lore) |
+| **UET, ue4-docker & Binary Builders** | GitHub | UE5 · MIT | BuildGraph CI/CD automation (`uet`), Linux/Windows UE containers, Rocket binary builders & Nuke C# tasks | [RedpointGames/uet](https://github.com/RedpointGames/uet) · [ue4-docker](https://github.com/adamrehn/ue4-docker) · [Unreal-Binary-Builder](https://github.com/ryanjon2040/Unreal-Binary-Builder) · [MounteaUnrealBuilder](https://github.com/Mountea-Framework/MounteaUnrealBuilder) · [Nuke.Unreal](https://github.com/microdee/Nuke.Unreal) |
+| **Gauntlet, Automatron, UEST & Profilers** | GitHub | UE5 · MIT / BSD-3 | Automated Gauntlet/functional testing suites, UBT compile-time flamegraphs, Optick & Epic RAD Debugger | [Daedalic Gauntlet](https://github.com/DaedalicEntertainment/ue4-test-automation) · [Automatron](https://github.com/splash-damage/automatron) · [UEST](https://github.com/slonopotamus/UEST) · [UECompileTimesVisualizer](https://github.com/Phyronnaz/UECompileTimesVisualizer) · [Optick](https://github.com/bombomby/optick) · [Epic RAD Debugger](https://github.com/EpicGames/raddebugger) |
+
+[↑ Back to top](#table-of-contents)
+
+---
+
+## 34. Cinematics, Virtual Production, Sequencer, Spout/OSC & Cloud Render Farms
+
+| Name | Source | UE / License | Highlights | Link |
+|---|---|---|---|---|
+| **UE5_Spout2_DX12 & Spout Plugins** | GitHub | UE5 · MIT | Zero-latency GPU DirectX 12 texture sharing between Unreal Engine 5, TouchDesigner, OBS, Resolume & VJ tools | [UE5_Spout2_DX12](https://github.com/GPUbrainStorm/UE5_Spout2_DX12) · [UE5-Spout2](https://github.com/ryanwang0521/UE5-Spout2) · [AleDel Spout](https://github.com/AleDel/Spout-UE4) |
+| **UE-OSC & UESequencerSync** | GitHub | UE4/5 · MIT | Open Sound Control (OSC) Blueprint networking + live TouchDesigner ↔ Unreal Sequencer timeline sync | [UE-OSC](https://github.com/monsieurgustav/UE-OSC) · [UESequencerSync](https://github.com/L05/UESequencerSync) |
+| **AWS Deadline Cloud for Unreal Engine** | GitHub | UE5 · Apache-2.0 | Official AWS Deadline Cloud render-farm submitter and OpenJD job adaptor for Movie Render Queue | [GitHub](https://github.com/aws-deadline/deadline-cloud-for-unreal-engine) |
+| **A-Better-Actor & SequencerImages** | GitHub | UE5 · MIT | Easily directable AI blocking actors for cinematic Sequences + in-Sequencer storyboard image tracks | [A-Better-Actor](https://github.com/alexismorin/A-Better-Actor) · [SequencerImages](https://github.com/dave-ryley/SequencerImages) |
+| **FrameGrabber & TakeRecorder Helpers** | GitHub | UE5 · MIT / Unlicense | High-speed viewport/render-target capture & automated external TakeRecorder mocap session triggers | [FrameGrabberSample](https://github.com/pafuhana1213/FrameGrabberSample) · [AnimationRecordHelper](https://github.com/pafuhana1213/UE5_AnimationRecordHelper) |
+| **360° Stereo Panoramic Player & Exporter** | GitHub | UE5 · MIT / OS | Stereo 360° VR panoramic video playback & cubemap panorama export actors | [Stereo Panoramic Demo](https://github.com/UNAmedia/ue5-stereo-panoramic-player-demo) · [Panoramic Exporter](https://github.com/Allar/ue4-simple-panoramic-exporter) |
+| **UE4VirtualProduction & VP Resource Index** | GitHub | UE · MIT | Virtual camera, Composure chroma-key & live-stage reference project + curated Virtual Production directory | [UE4VirtualProduction](https://github.com/MiloMindbender/UE4VirtualProduction) · [awesome-virtual-production](https://github.com/lazpremarathna/awesome-virtual-production) |
+
+[↑ Back to top](#table-of-contents)
+
+---
+
+## 35. Robotics, Autonomous Vehicles, Drones, ROS2 & Synthetic Vision Simulation
+
+| Name | Source | UE / License | Highlights | Link |
+|---|---|---|---|---|
+| **UnrealRoboticsLab (UE5 + MuJoCo)** | GitHub | UE5 · Apache-2.0 | Combines Unreal Engine 5 photorealistic Lumen/Nanite rendering with **MuJoCo** precision contact physics (585★) | [GitHub](https://github.com/URLab-Sim/UnrealRoboticsLab) |
+| **Tempo Simulation Suite** | GitHub | UE5 · Apache-2.0 | Modular UE5 robotics simulation plugins: LiDAR/camera/depth sensors, vehicle/pedestrian traffic & ROS2 bridge | [Tempo](https://github.com/tempo-sim/Tempo) · [UnrealFest Demo](https://github.com/tempo-sim/TempoUnrealFestDemo) |
+| **AirSim, Cosys-AirSim & Colosseum** | GitHub | UE4/5 · MIT / OS | Autonomous drone, ground vehicle & multi-modal sensor simulators with Python/C++ control APIs | [AirSim (18.6k★)](https://github.com/microsoft/AirSim) · [Cosys-AirSim (Active UE5)](https://github.com/Cosys-Lab/Cosys-AirSim) · [Colosseum (Archived)](https://github.com/CodexLabsLLC/Colosseum) |
+| **rclUE (ROS2) & ROSIntegration** | GitHub | UE5 · Apache-2.0 / MIT | Native Robot Operating System (ROS2 / ROS1) topics, services & action bridges for C++ and Blueprints | [rclUE (ROS2)](https://github.com/rapyuta-robotics/rclUE) · [ROSIntegration](https://github.com/code-iai/ROSIntegration) |
+| **UNav-Sim & DroneSimLab** | GitHub | UE5 · MIT / OS | Photorealistic underwater ROV robotics simulator + PX4 / ArduCopter SITL flight-control testbed | [UNav-Sim](https://github.com/open-airlab/UNav-Sim) · [DroneSimLab](https://github.com/orig74/DroneSimLab) |
+| **UnrealCV, gym-unrealcv & unrealgt** | GitHub | UE5 · MIT / Apache-2.0 | Ground-truth depth/normal/instance-mask dataset generators & OpenAI Gym reinforcement-learning environments | [UnrealCV](https://github.com/unrealcv/unrealcv) · [gym-unrealcv](https://github.com/zfw1226/gym-unrealcv) · [unrealgt](https://github.com/unrealgt/unrealgt) |
+| **TensorFlow-Unreal & ML-Remote** | GitHub | UE5 · MIT | Run embedded TensorFlow C++ inference or bridge live gameplay state to Python PyTorch/RL servers | [TensorFlow-Unreal](https://github.com/getnamo/TensorFlow-Unreal) · [MachineLearningRemote](https://github.com/getnamo/MachineLearningRemote-Unreal) |
+
+[↑ Back to top](#table-of-contents)
+
+---
+
+## 36. AI Coding Agents, Unreal MCP Servers & Editor Co-Pilots (UE 5.4–5.8)
+
+| Name | Source | UE / License | Highlights | Link |
+|---|---|---|---|---|
+| **Epic Unreal Engine Skills Plugin** | GitHub | UE5 · MIT | Official Epic Games Unreal Engine agent skills plugin for AI coding workflows (2k+★) | [GitHub](https://github.com/EpicGames/unreal-engine-skills-for-claude-code-plugin) |
+| **chongdashu/unreal-mcp & ChiR24/Unreal_mcp** | GitHub | UE5 · MIT / OS | Full-featured Model Context Protocol (MCP) servers exposing actors, Blueprints, Python & C++ automation (2.1k+★ / 1k+★) | [chongdashu/unreal-mcp](https://github.com/chongdashu/unreal-mcp) · [ChiR24/Unreal_mcp](https://github.com/ChiR24/Unreal_mcp) |
+| **Monolith (UE 5.7 & 5.8 MCP)** | GitHub | **UE 5.7–5.8** · MIT | Deep read/write MCP server covering Blueprints, Materials, Niagara, Animation, Sequencer & DataTables | [GitHub](https://github.com/tumourlove/monolith) |
+| **VibeUE & Vibe3D (UE 5.8)** | GitHub | **UE 5.8** · MIT | In-editor AI coding toolset + procedural UE 5.8 Modeling Mode operators (booleans, lofts, remesh) via MCP | [VibeUE](https://github.com/kevinpbuckley/VibeUE) · [Vibe3D (5.8)](https://github.com/kevinpbuckley/Vibe3D) |
+| **UnrealClaude, UnrealGenAISupport & db-lyon/ue-mcp** | GitHub | UE 5.7 · MIT / OS | Built-in UE 5.7 doc context CLI bridge, multi-LLM + MCP plugin (685+★) & complete MCP dev toolkit (520★) | [UnrealClaude](https://github.com/Natfii/UnrealClaude) · [UnrealGenAISupport](https://github.com/prajwalshettydev/UnrealGenAISupport) · [db-lyon/ue-mcp](https://github.com/db-lyon/ue-mcp) |
+| **UnrealBridge, UnrealClientProtocol & UMG-MCP** | GitHub | UE5 · MIT | Typed Blueprint/AnimBP authoring surface, lightweight TCP+JSON reflection bridge & dedicated UMG layout MCP | [UnrealBridge](https://github.com/TornLux/UnrealBridge) · [UnrealClientProtocol](https://github.com/Italink/UnrealClientProtocol) · [UnrealMotionGraphicsMCP](https://github.com/winyunq/UnrealMotionGraphicsMCP) |
+| **unreal-agent-harness (UE 5.8 City Builder)** | GitHub | **UE 5.8** | Autonomous agent harness building procedural UE 5.8 cities on top of City Sample + PCG + Blender facade kits | [GitHub](https://github.com/per-simmons/unreal-agent-harness) |
+| **Autonomix, VERA & Kismet** | GitHub | UE5 · MIT / Apache-2.0 | Dockable Slate co-pilots and autonomous Blueprint/material/widget compilers inside Unreal Editor | [Autonomix](https://github.com/PRQELT/Autonomix) · [VERA](https://github.com/ezesubu/VERA) · [Kismet](https://github.com/kismetai-io/Kismet) · [Blueprint Doc Gen](https://github.com/OctavianTocan/blueprint-documentation-generator-plugin-for-ue5) |
+| **quodsoler/unreal-engine-skills & GameDev Skills** | GitHub | UE5 · MIT / Apache-2.0 | 27 specialized Unreal C++ gameplay/rendering/networking agent skills + 79 cross-engine game-dev skills (11k+★) | [unreal-engine-skills](https://github.com/quodsoler/unreal-engine-skills) · [awesome-gamedev-agent-skills](https://github.com/gamedev-skills/awesome-gamedev-agent-skills) · [UE 5.8 Codex Skill](https://github.com/WildCake/unreal-engine-mcp-codex) |
+
+[↑ Back to top](#table-of-contents)
