@@ -9,9 +9,9 @@ A massive, categorized catalog of **Unreal Engine 5 (UE 5.x–5.8)** game templa
 ## 20-loop catalog updates
 
 - [Unreal Engine](catalogs/UNREAL.md) — new gameplay samples, networking frameworks, and development tools.
-- [Blender](catalogs/BLENDER.md) — modeling, rigging, rendering, asset interchange, and automation.
-- [Godot](catalogs/GODOT.md) — playable 2D/3D demos and reusable Godot 4 recipes.
-- [Unity](catalogs/UNITY.md) — game samples, Unity 6 templates, and package workflows.
+- [Blender](https://github.com/TimothyVang/awesome-blender-tools) — modeling, rigging, rendering, asset interchange, and automation.
+- [Godot](https://github.com/TimothyVang/awesome-godot-templates-demos) — playable 2D/3D demos and reusable Godot 4 recipes.
+- [Unity](https://github.com/TimothyVang/awesome-unity-templates-samples) — game samples, Unity 6 templates, and package workflows.
 
 ## Table of Contents
 
