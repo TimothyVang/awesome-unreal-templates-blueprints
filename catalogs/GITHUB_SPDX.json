@@ -1,0 +1,5677 @@
+{
+  "0xfa11/multiplayernetworkingresources": {
+    "nameWithOwner": "0xFA11/MultiplayerNetworkingResources",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "13xforever/gvas-converter": {
+    "nameWithOwner": "13xforever/gvas-converter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "1runeberg/runebergvrplugin": {
+    "nameWithOwner": "1runeberg/RunebergVRPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "20tab/unrealenginepython": {
+    "nameWithOwner": "20tab/UnrealEnginePython",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "3sannasia/ue5-soul-boy": {
+    "nameWithOwner": "3sannasia/UE5-Soul-Boy",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "4fatesstudios/echoes-of-hubris": {
+    "nameWithOwner": "4fatesstudios/echoes-of-hubris",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "4players/odin-sdk-unreal": {
+    "nameWithOwner": "4Players/odin-sdk-unreal",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "4players/odin-unreal-demo": {
+    "nameWithOwner": "4Players/odin-unreal-demo",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "4sval/fmodel": {
+    "nameWithOwner": "4sval/FModel",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "933yee/ue5_computeshader": {
+    "nameWithOwner": "933yee/UE5_ComputeShader",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "977908569/gameupdate": {
+    "nameWithOwner": "977908569/GameUpdate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "a57r4l/sceneviewextensiontemplate": {
+    "nameWithOwner": "A57R4L/SceneViewExtensionTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "aadeshrao123/unreal-mcp": {
+    "nameWithOwner": "aadeshrao123/Unreal-MCP",
+    "spdx": "MPL-2.0",
+    "archived": false
+  },
+  "aaryansachdeva/unreal-audio2lipsync": {
+    "nameWithOwner": "aaryansachdeva/unreal-audio2lipsync",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "abovenoisestudios/ane_blog_ue5_wwise_footsteps": {
+    "nameWithOwner": "abovenoisestudios/ANE_Blog_UE5_Wwise_Footsteps",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "accelbyte/accelbyte-eos-voice-unreal": {
+    "nameWithOwner": "AccelByte/accelbyte-eos-voice-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "accelbyte/accelbyte-unreal-sdk-plugin": {
+    "nameWithOwner": "AccelByte/accelbyte-unreal-sdk-plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "adamrehn/ue4-docker": {
+    "nameWithOwner": "adamrehn/ue4-docker",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "adriwin06/ultimate-commonui-menu-system": {
+    "nameWithOwner": "Adriwin06/Ultimate-CommonUI-Menu-System",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "agmmnn/awesome-blender": {
+    "nameWithOwner": "agmmnn/awesome-blender",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "agones-dev/agones": {
+    "nameWithOwner": "agones-dev/agones",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "ahujasid/mcp-for-blender": {
+    "nameWithOwner": "ahujasid/mcp-for-blender",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "aiekick/awesome_unreal_engine_4_-_5": {
+    "nameWithOwner": "aiekick/Awesome_Unreal_Engine_4_-_5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "akaassha/boardcardgames": {
+    "nameWithOwner": "Akaassha/BoardCardGames",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "alanlaboratory/unrealmlagents": {
+    "nameWithOwner": "AlanLaboratory/UnrealMLAgents",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "alattanzio/box3dunreal": {
+    "nameWithOwner": "alattanzio/Box3DUnreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alchestudio/unrealfesttokyo2026-uefn-sampleproject": {
+    "nameWithOwner": "AlcheStudio/UnrealFestTokyo2026-UEFN-SampleProject",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "aledel/spout-ue4": {
+    "nameWithOwner": "AleDel/Spout-UE4",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "alessandrobelli/inventorypluginue5": {
+    "nameWithOwner": "alessandrobelli/InventoryPluginUE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alexhajdu/whatsmypublicip-ue4-plugin": {
+    "nameWithOwner": "alexhajdu/WhatsMyPublicIP-ue4-plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alexirae/unreal-audio-dsp-template-ue5": {
+    "nameWithOwner": "alexirae/unreal-audio-dsp-template-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alexismorin/a-better-actor": {
+    "nameWithOwner": "alexismorin/A-Better-Actor",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alexismorin/auto-lightmap-adjuster": {
+    "nameWithOwner": "alexismorin/Auto-Lightmap-Adjuster",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alexismorin/greebler": {
+    "nameWithOwner": "alexismorin/Greebler",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alexmegahat/dynamicskysystem": {
+    "nameWithOwner": "alexmegahat/DynamicSkySystem",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "alfonsoprograms/fluidforge": {
+    "nameWithOwner": "AlfonsoPrograms/FluidForge",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "allar/ue4-mp-downloader": {
+    "nameWithOwner": "Allar/ue4-mp-downloader",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "allar/ue4-simple-panoramic-exporter": {
+    "nameWithOwner": "Allar/ue4-simple-panoramic-exporter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "allar/ue5-style-guide": {
+    "nameWithOwner": "Allar/ue5-style-guide",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "alshraritalal-dev/project-leonida-ue58": {
+    "nameWithOwner": "alshraritalal-dev/project-leonida-ue58",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "althropic/unreal-motion": {
+    "nameWithOwner": "althropic/unreal-motion",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "alvarobishop/u5_fps_multiplayer": {
+    "nameWithOwner": "AlvaroBishop/U5_FPS_Multiplayer",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "amap-n/ue5-mmd-toolkit": {
+    "nameWithOwner": "AMAP-N/ue5-mmd-toolkit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "amazon-gamelift/amazon-gamelift-plugin-unreal": {
+    "nameWithOwner": "amazon-gamelift/amazon-gamelift-plugin-unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "amirans/lyragamecapturetheflag": {
+    "nameWithOwner": "Amirans/LyraGameCaptureTheFlag",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "anastasismarinos/ue5-psx-game-template": {
+    "nameWithOwner": "AnastasisMarinos/UE5-PSX-Game-Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "anastasismarinos/ue5-vehicle-template": {
+    "nameWithOwner": "AnastasisMarinos/UE5-Vehicle-Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "andicraft/ue4-auroraeffect": {
+    "nameWithOwner": "Andicraft/UE4-AuroraEffect",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "andrehrferreira/ainiagara": {
+    "nameWithOwner": "andrehrferreira/AINiagara",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "andrewrcr/survivalhorrorproject": {
+    "nameWithOwner": "andrewRCr/SurvivalHorrorProject",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "andromedie/cozytales": {
+    "nameWithOwner": "AndromeDIE/CozyTales",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "angelhodar/openrpg_inventory": {
+    "nameWithOwner": "angelhodar/OpenRPG_Inventory",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "angelhodar/openrpg_quest": {
+    "nameWithOwner": "angelhodar/OpenRPG_Quest",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "angelhodar/openrpg_radarsystem": {
+    "nameWithOwner": "angelhodar/OpenRPG_RadarSystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "angelhodar/openrpg_stats": {
+    "nameWithOwner": "angelhodar/OpenRPG_Stats",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "antidamage/celshader": {
+    "nameWithOwner": "antidamage/CelShader",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "apokrif6/combograph": {
+    "nameWithOwner": "apokrif6/ComboGraph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "apple-aiml-research/ml-depth-pro": {
+    "nameWithOwner": "apple-aiml-research/ml-depth-pro",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "appsinacup/gamend": {
+    "nameWithOwner": "appsinacup/gamend",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "aquanox/blueprintcomponentreferenceplugin": {
+    "nameWithOwner": "aquanox/BlueprintComponentReferencePlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "aquanox/blueprintmessagelogplugin": {
+    "nameWithOwner": "aquanox/BlueprintMessageLogPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "aquanox/subsystembrowserplugin": {
+    "nameWithOwner": "aquanox/SubsystemBrowserPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ar-tracking/unrealdtrackplugin": {
+    "nameWithOwner": "ar-tracking/UnrealDTrackPlugin",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "arcstonegames/arcui": {
+    "nameWithOwner": "ArcstoneGames/ArcUI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ardaurum/unrealrdglearning": {
+    "nameWithOwner": "Ardaurum/UnrealRDGLearning",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ardcarraigh/blender_apx_addon": {
+    "nameWithOwner": "ArdCarraigh/Blender_APX_Addon",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "arieslr/pakmaster": {
+    "nameWithOwner": "AriesLR/PakMaster",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "arminando/actionposer": {
+    "nameWithOwner": "Arminando/ActionPoser",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "arminando/gamerig": {
+    "nameWithOwner": "Arminando/GameRig",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "armoredcolony/armored-toolkit": {
+    "nameWithOwner": "ArmoredColony/ARMORED-Toolkit",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "armory3d/armorpaint": {
+    "nameWithOwner": "armory3d/armorpaint",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "armory3d/armorpaint_blender": {
+    "nameWithOwner": "armory3d/armorpaint_blender",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "artemchig/ue5-weapon-system": {
+    "nameWithOwner": "ArtemChig/UE5-Weapon-System",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "artemiyx/parallelbehaviorunreal": {
+    "nameWithOwner": "ArtemIyX/ParallelBehaviorUnreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "arthurbarthur/arthursaudiobps": {
+    "nameWithOwner": "ArthurBarthur/ArthursAudioBPs",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "articysoftware/articy3importerforunreal": {
+    "nameWithOwner": "ArticySoftware/Articy3ImporterForUnreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "aruuni/catan": {
+    "nameWithOwner": "Aruuni/CATAN",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "arystos/advanced-outline-shader-ue5": {
+    "nameWithOwner": "Arystos/Advanced-Outline-Shader-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ashe23/projectcleaner": {
+    "nameWithOwner": "ashe23/ProjectCleaner",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "asmundschei/fps-template-with-shooting-ai": {
+    "nameWithOwner": "AsmundSchei/FPS-template-with-shooting-AI",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "asmundschei/smartobjectai": {
+    "nameWithOwner": "AsmundSchei/SmartObjectAI",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "aspjt/dungeontemplatelibrary": {
+    "nameWithOwner": "AsPJT/DungeonTemplateLibrary",
+    "spdx": "BSL-1.0",
+    "archived": false
+  },
+  "aspjt/roguelike": {
+    "nameWithOwner": "AsPJT/Roguelike",
+    "spdx": "BSL-1.0",
+    "archived": false
+  },
+  "asu37/rigger": {
+    "nameWithOwner": "asu37/Rigger",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "asugeno/gamecoreframework": {
+    "nameWithOwner": "asugeno/GameCoreFramework",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "atdev-inc/uemcp": {
+    "nameWithOwner": "ATDev-Inc/uemcp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "atenfyr/uassetapi": {
+    "nameWithOwner": "atenfyr/UAssetAPI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "atenfyr/uassetgui": {
+    "nameWithOwner": "atenfyr/UAssetGUI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "atomahuro/anime-tools": {
+    "nameWithOwner": "Kraxziss/Anime-Tools",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "audiokinetic/gyms": {
+    "nameWithOwner": "audiokinetic/Gyms",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "authortom/ultimate-xr-dev-guide": {
+    "nameWithOwner": "authorTom/ultimate-XR-dev-guide",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "autosizecomments/autosizecomments": {
+    "nameWithOwner": "AutoSizeComments/AutoSizeComments",
+    "spdx": "CC-BY-4.0",
+    "archived": false
+  },
+  "avikshenoy/ue5-edmund-and-eliza": {
+    "nameWithOwner": "avikshenoy/UE5-Edmund-And-Eliza",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "aws-deadline/deadline-cloud-for-unreal-engine": {
+    "nameWithOwner": "aws-deadline/deadline-cloud-for-unreal-engine",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "axilesoft/im-for-ue5": {
+    "nameWithOwner": "axilesoft/IM-for-UE5",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ayadoggames/gameplayframework": {
+    "nameWithOwner": "AyaDogGames/GameplayFramework",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "ayoubkhammassi/customcomputeshaders": {
+    "nameWithOwner": "AyoubKhammassi/CustomComputeShaders",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ayushanbhore/unreal-quest3-passthroughsample": {
+    "nameWithOwner": "Ayushanbhore/Unreal-Quest3-PassthroughSample",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "azure-samples/azure-digital-twins-unreal-integration": {
+    "nameWithOwner": "Azure-Samples/azure-digital-twins-unreal-integration",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bacteriajun/bvh-motion-retargeter": {
+    "nameWithOwner": "BacteriaJun/BVH-Motion-Retargeter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bakjos/webcamerafeed": {
+    "nameWithOwner": "bakjos/WebCameraFeed",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "barsdeveloper/ueblueprint": {
+    "nameWithOwner": "barsdeveloper/ueblueprint",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bartekzawadzki/tartarusarena": {
+    "nameWithOwner": "BartekZawadzki/TartarusArena",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bassounet/quickmenu-plugin": {
+    "nameWithOwner": "Bassounet/QuickMenu-Plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bastienvdw/commonloadingscreen": {
+    "nameWithOwner": "BastienVdW/CommonLoadingScreen",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "bendemott/ue5-procedural-building": {
+    "nameWithOwner": "bendemott/UE5-Procedural-Building",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bennystarfighter/unrealengine-objectpool": {
+    "nameWithOwner": "bennystarfighter/UnrealEngine-ObjectPool",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "benolimits/inventorysystem": {
+    "nameWithOwner": "benolimits/InventorySystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "benpyton/proceduraldungeon": {
+    "nameWithOwner": "BenPyton/ProceduralDungeon",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "benui-dev/ue-buicheatmanager": {
+    "nameWithOwner": "benui-dev/UE-BUICheatManager",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "benui-dev/ue-buitween": {
+    "nameWithOwner": "benui-dev/UE-BUITween",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "benui-dev/ue-buivalidator": {
+    "nameWithOwner": "benui-dev/UE-BUIValidator",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "benui-dev/ue-specifier-docs": {
+    "nameWithOwner": "benui-dev/UE-Specifier-Docs",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "betidestudio/eosvoiceintegrationkit": {
+    "nameWithOwner": "betidestudio/EOSVoiceIntegrationKit",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "betidestudio/steamintegrationkit": {
+    "nameWithOwner": "betidestudio/SteamIntegrationKit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bexarclaw/uefn-verse-snippets": {
+    "nameWithOwner": "Bexarclaw/UEFN-Verse-Snippets",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "blazekill/ue5voxeltutorial": {
+    "nameWithOwner": "BLaZeKiLL/UE5VoxelTutorial",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "blenderkit/blendkit": {
+    "nameWithOwner": "BlenderKit/Blendkit",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "blueprint-engine/blueprintengine": {
+    "nameWithOwner": "Blueprint-Engine/BlueprintEngine",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "blueprintue/blueprintue-cpp-plugin": {
+    "nameWithOwner": "blueprintue/blueprintue-cpp-plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "blueprintue/uasset-reader-js": {
+    "nameWithOwner": "blueprintue/uasset-reader-js",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bneukom/unreallandscape": {
+    "nameWithOwner": "bneukom/UnrealLandscape",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bneukom/unrealsnow": {
+    "nameWithOwner": "bneukom/UnrealSnow",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "bohdon/gameexperiencesplugin": {
+    "nameWithOwner": "bohdon/GameExperiencesPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bohdon/wfcplugin": {
+    "nameWithOwner": "bohdon/WFCPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "boiltask/actionrpg-ue5": {
+    "nameWithOwner": "BoilTask/ActionRPG-UE5",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "bombomby/optick": {
+    "nameWithOwner": "bombomby/optick",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "boocs/unreal-clangd": {
+    "nameWithOwner": "boocs/unreal-clangd",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "boredengineer/mmt_plugin": {
+    "nameWithOwner": "BoredEngineer/MMT_Plugin",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "bot-hopps/unreal-genericvar": {
+    "nameWithOwner": "bot-hopps/Unreal-GenericVar",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "botman99/colorblindsimulation": {
+    "nameWithOwner": "botman99/ColorBlindSimulation",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "bp-shirai/ue5-warrior": {
+    "nameWithOwner": "bp-shirai/ue5-warrior",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "braceyourselfgames/ue-byglocalization": {
+    "nameWithOwner": "BraceYourselfGames/UE-BYGLocalization",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "breathfang/breathfanggeonodes": {
+    "nameWithOwner": "Breathfang/BreathfangGeoNodes",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "brifsttar/opendrive": {
+    "nameWithOwner": "brifsttar/OpenDRIVE",
+    "spdx": "MPL-2.0",
+    "archived": false
+  },
+  "brunoxavierleite/unreal-magic-nodes": {
+    "nameWithOwner": "BrUnOXaVIeRLeiTE/Unreal-Magic-Nodes",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bruteforks/unrealenginelyrareferences": {
+    "nameWithOwner": "bruteforks/UnrealEngineLyraReferences",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "btarg/ue5rpg": {
+    "nameWithOwner": "btarg/UE5RPG",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "buaacyw/meshanything": {
+    "nameWithOwner": "buaacyw/MeshAnything",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "buaacyw/meshanythingv2": {
+    "nameWithOwner": "buaacyw/MeshAnythingV2",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "bublint/ue5-llama-lora": {
+    "nameWithOwner": "bublint/ue5-llama-lora",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "buckminsterfullerene02/ue-modding-tools": {
+    "nameWithOwner": "Buckminsterfullerene02/UE-Modding-Tools",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "burhanaftab1/runtimeaudioimporter": {
+    "nameWithOwner": "burhanaftab1/RuntimeAudioImporter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bw2012/ue5voxelterraindemo": {
+    "nameWithOwner": "bw2012/UE5VoxelTerrainDemo",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "bwdyeti/ggpoue": {
+    "nameWithOwner": "BwdYeti/GGPOUE",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "bytepine/nexuslink": {
+    "nameWithOwner": "bytepine/NexusLink",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "caishangqi/charmingcraft": {
+    "nameWithOwner": "Caishangqi/CharmingCraft",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "camenduru/unreal-engine-puzzle-collection-blueprint": {
+    "nameWithOwner": "camenduru/unreal-engine-puzzle-collection-blueprint",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "canreader/stealthdemo": {
+    "nameWithOwner": "CanReader/StealthDemo",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "canreader/tactix": {
+    "nameWithOwner": "CanReader/Tactix",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "capralkein/statetreeextension": {
+    "nameWithOwner": "capralkein/StateTreeExtension",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "carla-simulator/carla": {
+    "nameWithOwner": "carla-simulator/carla",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "carlxsmg/ueagent": {
+    "nameWithOwner": "CarlxsMG/UEAgent",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "carson-katri/dream-textures": {
+    "nameWithOwner": "carson-katri/dream-textures",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "carson-katri/geometry-script": {
+    "nameWithOwner": "carson-katri/geometry-script",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "cavallimarko/volumetriccloudsunreal": {
+    "nameWithOwner": "cavallimarko/VolumetricCloudsUnreal",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cdpred/redtalaria": {
+    "nameWithOwner": "cdpred/RedTalaria",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "cem-akkaya/networkedphysics": {
+    "nameWithOwner": "cem-akkaya/NetworkedPhysics",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cenairaclub/motionmatchingreplicated": {
+    "nameWithOwner": "UmutFarukDilli/motionmatchingreplicated",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "cesiumgs/3d-tiles": {
+    "nameWithOwner": "CesiumGS/3d-tiles",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cesiumgs/3d-tiles-samples": {
+    "nameWithOwner": "CesiumGS/3d-tiles-samples",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cesiumgs/3d-tiles-tools": {
+    "nameWithOwner": "CesiumGS/3d-tiles-tools",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cesiumgs/3d-tiles-validator": {
+    "nameWithOwner": "CesiumGS/3d-tiles-validator",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cesiumgs/cesium-unreal": {
+    "nameWithOwner": "CesiumGS/cesium-unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cesiumgs/cesium-unreal-samples": {
+    "nameWithOwner": "CesiumGS/cesium-unreal-samples",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cesiumgs/cesium-unreal-vr-tutorial": {
+    "nameWithOwner": "CesiumGS/cesium-unreal-vr-tutorial",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cesiumgs/gltf-pipeline": {
+    "nameWithOwner": "CesiumGS/gltf-pipeline",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cesiumgs/obj2gltf": {
+    "nameWithOwner": "CesiumGS/obj2gltf",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "cgerchenhp/tapython_chatgpt_ue5": {
+    "nameWithOwner": "cgerchenhp/TAPython_ChatGPT_UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "chaosgrid/extracamwindow": {
+    "nameWithOwner": "chaosgrid/ExtraCamWindow",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "charisma-ai/colyseus-unreal": {
+    "nameWithOwner": "charisma-ai/colyseus-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "chasezardezed/golf-mania-case-study": {
+    "nameWithOwner": "ChaseZardezed/Golf-Mania-Case-Study",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "chfleschutz/hive-mind": {
+    "nameWithOwner": "chFleschutz/hive-mind",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "chir24/unreal_mcp": {
+    "nameWithOwner": "ChiR24/Unreal_mcp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "chongdashu/unreal-mcp": {
+    "nameWithOwner": "chongdashu/unreal-mcp",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "chonjay21/animverlet": {
+    "nameWithOwner": "chonjay21/AnimVerlet",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "chrisloop/unreal5_toonshader": {
+    "nameWithOwner": "chrisloop/Unreal5_ToonShader",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "chrizey91/runtimemeshloader": {
+    "nameWithOwner": "Chrizey91/RuntimeMeshLoader",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "chronicler-software/modalcamera": {
+    "nameWithOwner": "chronicler-software/ModalCamera",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ciberusps/unreal-helper-library": {
+    "nameWithOwner": "Ciberusps/unreal-helper-library",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cindustries/unreal-sqlite3": {
+    "nameWithOwner": "cindustries/unreal-sqlite3",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "clarkstone/solo-leveling-arpg": {
+    "nameWithOwner": "clarkstone/Solo-Leveling-ARPG",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "clockworklabs/spacetimedb": {
+    "nameWithOwner": "clockworklabs/SpacetimeDB",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "cngosei/gasaura": {
+    "nameWithOwner": "CNGoSeI/GASAura",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cobracodedev/tp_2dsidescrollerbp": {
+    "nameWithOwner": "CobraCodeDev/TP_2DSideScrollerBP",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "cobracodedev/tp_rollingbp": {
+    "nameWithOwner": "CobraCodeDev/TP_RollingBP",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "code-iai/rosintegration": {
+    "nameWithOwner": "code-iai/ROSIntegration",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "code4game/gltfforue4": {
+    "nameWithOwner": "code4game/glTFForUE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "coderespawn/prefabricator-ue4": {
+    "nameWithOwner": "coderespawn/prefabricator-ue4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "codespartan/ue4tcpsocketplugin": {
+    "nameWithOwner": "CodeSpartan/UE4TcpSocketPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "codexlabsllc/colosseum": {
+    "nameWithOwner": "CodexLabsLLC/Colosseum",
+    "spdx": "NOASSERTION",
+    "archived": true
+  },
+  "coi-zhi/-unreal-engine-5.6-flow-field-city-generation": {
+    "nameWithOwner": "Coi-Zhi/-Unreal-Engine-5.6-Flow-Field-City-Generation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "coltonkeeley/projectost-deprecated": {
+    "nameWithOwner": "ColtonKeeley/ProjectOST-Deprecated",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "cometchat/chat-sdk-unreal": {
+    "nameWithOwner": "cometchat/chat-sdk-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "comfyui-workflow/awesome-comfyui": {
+    "nameWithOwner": "ComfyUI-Workflow/awesome-comfyui",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "commissaryarrick/moba": {
+    "nameWithOwner": "CommissarYarrick/MOBA",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "conalh/mocara-unreal": {
+    "nameWithOwner": "Conalh/Mocara-Unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "conv-ai/convai-unrealengine-sdk": {
+    "nameWithOwner": "Conv-AI/Convai-UnrealEngine-SDK",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "coop56/awesome-unreal": {
+    "nameWithOwner": "Coop56/awesome-unreal",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "coquigames/ap_template": {
+    "nameWithOwner": "coquigames/AP_Template",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "cormacmadden/headtracked-3d-screen-unreal-ndisplay": {
+    "nameWithOwner": "cormacmadden/HeadTracked-3D-Screen-Unreal-nDisplay",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "cosys-lab/cosys-airsim": {
+    "nameWithOwner": "Cosys-Lab/Cosys-AirSim",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "crazytuzi/unrealcsharp": {
+    "nameWithOwner": "crazytuzi/UnrealCSharp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "cronofear-dev/versereferenceexplorer": {
+    "nameWithOwner": "cronofear-dev/VerseReferenceExplorer",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "crystalvapor/ue5-crystalrecoil": {
+    "nameWithOwner": "CrystalVapor/UE5-CrystalRecoil",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ctu-mrs/flight_forge": {
+    "nameWithOwner": "ctu-mrs/flight_forge",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "cunhathoang/project_moba": {
+    "nameWithOwner": "CuNhatHoang/Project_MOBA",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "curiocrafter/curiomesh": {
+    "nameWithOwner": "CurioCrafter/CurioMesh",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "cutter-h/skmeshdismemberment": {
+    "nameWithOwner": "Cutter-H/SKMeshDismemberment",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dabardibid/budget-backrooms": {
+    "nameWithOwner": "dabardibid/Budget-Backrooms",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "daedalicentertainment/third-person-camera": {
+    "nameWithOwner": "DaedalicEntertainment/third-person-camera",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daedalicentertainment/ue4-orders-abilities": {
+    "nameWithOwner": "DaedalicEntertainment/ue4-orders-abilities",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daedalicentertainment/ue4-replication-graph": {
+    "nameWithOwner": "DaedalicEntertainment/ue4-replication-graph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daedalicentertainment/ue4-test-automation": {
+    "nameWithOwner": "DaedalicEntertainment/ue4-test-automation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daftsoftware/daftmover": {
+    "nameWithOwner": "daftsoftware/DaftMover",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daftsoftware/starterproject": {
+    "nameWithOwner": "daftsoftware/StarterProject",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dahlgrenmartin/actionrpgv5": {
+    "nameWithOwner": "dahlgrenmartin/ActionRPGV5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daim1993/rigify-ue-bridge": {
+    "nameWithOwner": "daim1993/rigify-ue-bridge",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dan-singer/dark-ue4": {
+    "nameWithOwner": "dan-singer/dark-ue4",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "danialkama/climbingsystem": {
+    "nameWithOwner": "DanialKama/ClimbingSystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danialkama/dynamicweather": {
+    "nameWithOwner": "DanialKama/DynamicWeather",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danialkama/survivalmechanics": {
+    "nameWithOwner": "DanialKama/SurvivalMechanics",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danialkama/thirdpersonshooter": {
+    "nameWithOwner": "DanialKama/ThirdPersonShooter",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "danialkama/tpsonline": {
+    "nameWithOwner": "DanialKama/TPSOnline",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danialkama/vehicularcombat": {
+    "nameWithOwner": "DanialKama/VehicularCombat",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danielkocan/easymatchmaking": {
+    "nameWithOwner": "DanielKocan/EasyMatchmaking",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danielrbowen/ue-vrhands-template": {
+    "nameWithOwner": "DanielRBowen/UE-VRHands-Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dannymcgee/unreal_rotarywingaircraft": {
+    "nameWithOwner": "dannymcgee/Unreal_RotaryWingAircraft",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "danthelion-git/blender_to_ue_plugin": {
+    "nameWithOwner": "DanTheLion-git/Blender_to_UE_Plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "darbycostello/nav3d": {
+    "nameWithOwner": "darbycostello/Nav3D",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "darknessfx/niagara_study": {
+    "nameWithOwner": "DarknessFX/Niagara_Study",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "darknessfx/ueplaystationgamepad": {
+    "nameWithOwner": "DarknessFX/UEPlaystationGamepad",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "darknessfx/ueplugins_disabledefault": {
+    "nameWithOwner": "DarknessFX/UEPlugins_DisableDefault",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dartanlla/ows": {
+    "nameWithOwner": "Dartanlla/OWS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dasbander/hordetemplate": {
+    "nameWithOwner": "DasBander/HordeTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dave-ryley/sequencerimages": {
+    "nameWithOwner": "dave-ryley/SequencerImages",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daveface/cheekyfps": {
+    "nameWithOwner": "DaveFace/CheekyFPS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daveface/unrealretroshaders": {
+    "nameWithOwner": "DaveFace/UnrealRetroShaders",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "daxmakingames/paperzd2.5-template": {
+    "nameWithOwner": "DaxMakinGames/PaperZD2.5-Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dazaistudio/splatrenderer-ueplugin": {
+    "nameWithOwner": "DazaiStudio/SplatRenderer-UEPlugin",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "db-lyon/ue-mcp": {
+    "nameWithOwner": "db-lyon/ue-mcp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "deema35/climbing-movement-component": {
+    "nameWithOwner": "Deema35/Climbing-Movement-Component",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "delebash/als-refactored-eos": {
+    "nameWithOwner": "delebash/ALS-Refactored-EOS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "demonixis/fsopenxrhandtracking": {
+    "nameWithOwner": "demonixis/FSOpenXRHandTracking",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "denyskryvytskyi/cryptraider": {
+    "nameWithOwner": "denyskryvytskyi/CryptRaider",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "depthanything/depth-anything-v2": {
+    "nameWithOwner": "DepthAnything/Depth-Anything-V2",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "descendentstudios/xmppchatplugin": {
+    "nameWithOwner": "DescendentStudios/XMPPChatPlugin",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "devanshutak25/3d-resources": {
+    "nameWithOwner": "devanshutak25/3d-resources",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "developerbastian/unreal-lyra-concepts": {
+    "nameWithOwner": "DeveloperBastian/Unreal-Lyra-Concepts",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "digilogiclabs/dll-audio": {
+    "nameWithOwner": "DigiLogicLabs/dll-audio",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "digilogiclabs/dll-mass-units": {
+    "nameWithOwner": "DigiLogicLabs/dll-mass-units",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "dimev/realistic-atmosphere-godot-and-ue4": {
+    "nameWithOwner": "Dimev/Realistic-Atmosphere-Godot-and-UE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dimev/shadertoy-to-unreal-engine": {
+    "nameWithOwner": "Dimev/shadertoy-to-unreal-engine",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "disbitski/embermere-rpg": {
+    "nameWithOwner": "disbitski/embermere-rpg",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dkesserich/simpledaynightplugin": {
+    "nameWithOwner": "DKesserich/SimpleDayNightPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dlarkinc/sidescrollerbp": {
+    "nameWithOwner": "dlarkinc/SideScrollerBP",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dmgvol/ue_modding": {
+    "nameWithOwner": "Dmgvol/UE_Modding",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dmvergasov/lochub": {
+    "nameWithOwner": "DmVergasov/LocHub",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "dnl-22/wave-function-collapse-ue5": {
+    "nameWithOwner": "DNL-22/Wave-Function-Collapse-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "domlysz/blendergis": {
+    "nameWithOwner": "domlysz/BlenderGIS",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "don-enone/ue_node2code": {
+    "nameWithOwner": "Don-Enone/UE_Node2Code",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "donanroherty/ue4_darksoulscamera": {
+    "nameWithOwner": "donanroherty/UE4_DarkSoulsCamera",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dooyeonk/ue5-steam-session-plugin": {
+    "nameWithOwner": "dooyeonk/ue5-steam-session-plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "doubledeez/mdfastbinding": {
+    "nameWithOwner": "DoubleDeez/MDFastBinding",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "doubledeez/mdmetadataeditor": {
+    "nameWithOwner": "DoubleDeez/MDMetaDataEditor",
+    "spdx": "Zlib",
+    "archived": false
+  },
+  "doubledeez/mdviewmodel": {
+    "nameWithOwner": "DoubleDeez/MDViewModel",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "doubledeez/unrealfastnoise2": {
+    "nameWithOwner": "DoubleDeez/UnrealFastNoise2",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "dr-rank/gmclocomotion": {
+    "nameWithOwner": "Dr-Rank/GMCLocomotion",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dragomirson/physxinstancedsubsystem": {
+    "nameWithOwner": "Dragomirson/PhysXInstancedSubsystem",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "drakynfly/heartgraph": {
+    "nameWithOwner": "Drakynfly/HeartGraph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "draquel/proceduraldungeonplugin": {
+    "nameWithOwner": "draquel/ProceduralDungeonPlugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "draquel/voxelworlds": {
+    "nameWithOwner": "draquel/VoxelWorlds",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "dreamylab30/filmimic": {
+    "nameWithOwner": "DreamyLab30/Filmimic",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "drichardson/unrealengineexamples": {
+    "nameWithOwner": "drichardson/UnrealEngineExamples",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "droganaida/replication_graph_ue5": {
+    "nameWithOwner": "droganaida/Replication_Graph_UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "druidmech/ue5_multiplayer_fps": {
+    "nameWithOwner": "DruidMech/UE5_Multiplayer_FPS",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "druidmech/ue5_theultimatedevelopercourse": {
+    "nameWithOwner": "DruidMech/UE5_TheUltimateDeveloperCourse",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "e-oneill/crpg-project": {
+    "nameWithOwner": "e-oneill/cRPG-Project",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "e-oneill/utilityairts": {
+    "nameWithOwner": "e-oneill/UtilityAIRTS",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "e1p3/learned_motion_matching_training": {
+    "nameWithOwner": "E1P3/Learned_Motion_Matching_Training",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "eanticev/niagara-destruction-driver": {
+    "nameWithOwner": "eanticev/niagara-destruction-driver",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "eanticev/ue-gameplay-work-balancer": {
+    "nameWithOwner": "eanticev/ue-gameplay-work-balancer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "edgegap/game-sample-unreal-engine-lyra": {
+    "nameWithOwner": "edgegap/game-sample-unreal-engine-lyra",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "effectustasi/unreal-groom-alembic-exporter": {
+    "nameWithOwner": "effectustasi/unreal-groom-alembic-exporter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "egojump/acgcard": {
+    "nameWithOwner": "egojump/ACGCard",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "elboletaire/ue-tower-defense-game": {
+    "nameWithOwner": "elboletaire/ue-tower-defense-game",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "electronicarts/iris-unreal-plugin": {
+    "nameWithOwner": "electronicarts/IRIS-Unreal-Plugin",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "eleotlecram/blender-cad-tools": {
+    "nameWithOwner": "EleotleCram/blender-cad-tools",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "elgsoft/elgeditorscripting": {
+    "nameWithOwner": "ElgSoft/ElgEditorScripting",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "elgsoft/elgkismeteditorwidget": {
+    "nameWithOwner": "ElgSoft/ElgKismetEditorWidget",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "eliotvu/unreal-library": {
+    "nameWithOwner": "EliotVU/Unreal-Library",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "embarrassingmoment/proceduraldrawingmaterialsamples": {
+    "nameWithOwner": "EmbarrassingMoment/ProceduralDrawingMaterialSamples",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "emuman/npr-face-shader": {
+    "nameWithOwner": "EmuMan/npr-face-shader",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "enc3ll/unrealengine5_movertutorial": {
+    "nameWithOwner": "ENC3LL/UnrealEngine5_MoverTutorial",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/blendertools": {
+    "nameWithOwner": "EpicGames/BlenderTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/eos-getting-started": {
+    "nameWithOwner": "EpicGames/EOS-Getting-Started",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/lore": {
+    "nameWithOwner": "EpicGames/lore",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/metahuman-dna-calibration": {
+    "nameWithOwner": "EpicGames/MetaHuman-DNA-Calibration",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "epicgames/mobulivelink": {
+    "nameWithOwner": "EpicGames/MobuLiveLink",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/openriglogic": {
+    "nameWithOwner": "EpicGames/OpenRigLogic",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/pixelstreaminginfrastructure": {
+    "nameWithOwner": "EpicGames/PixelStreamingInfrastructure",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/raddebugger": {
+    "nameWithOwner": "EpicGames/raddebugger",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "epicgames/signup": {
+    "nameWithOwner": "EpicGames/Signup",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "epicgames/unreal-engine-skills-for-claude-code-plugin": {
+    "nameWithOwner": "EpicGames/unreal-engine-skills-for-claude-code-plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "eren-pekdemir/rpgtemplate": {
+    "nameWithOwner": "eren-pekdemir/RPGTemplate",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "eren-pekdemir/tacticalsquadai": {
+    "nameWithOwner": "eren-pekdemir/TacticalSquadAI",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "esri/cityengine_for_unreal": {
+    "nameWithOwner": "Esri/cityengine_for_unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "evavic44/unreal-engine-starter-content": {
+    "nameWithOwner": "Evavic44/unreal-engine-starter-content",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "evelynschwab/sequential-interaction-plugin": {
+    "nameWithOwner": "EvelynSchwab/Sequential-Interaction-Plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "evernewjoy/ue4gamepadumg": {
+    "nameWithOwner": "EverNewJoy/UE4GamepadUMG",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "evernewjoy/victoryplugin": {
+    "nameWithOwner": "EverNewJoy/VictoryPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "evols/dronesimulator": {
+    "nameWithOwner": "Evols/DroneSimulator",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "evols/spacekit": {
+    "nameWithOwner": "Evols/SpaceKit",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "exeviruz/pcgprotools": {
+    "nameWithOwner": "eXeViruZ/PCGProTools",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ezesubu/vera": {
+    "nameWithOwner": "ezesubu/VERA",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "facebookresearch/sam2": {
+    "nameWithOwner": "facebookresearch/sam2",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "fadeoutcast/unrealobjectpooler": {
+    "nameWithOwner": "FadeOutcast/UnrealObjectPooler",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fahimkamal/ue5_dungeonadvanture": {
+    "nameWithOwner": "FahimKamal/UE5_DungeonAdvanture",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "fahimkamal/ue5_hybridrpg": {
+    "nameWithOwner": "FahimKamal/UE5_HybridRPG",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "fairygui/fairygui-unreal": {
+    "nameWithOwner": "fairygui/FairyGUI-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "fallintodusk/alis": {
+    "nameWithOwner": "fallintodusk/alis",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "far-beyond-dev/horizon_ue5_template": {
+    "nameWithOwner": "Far-Beyond-Dev/Horizon_UE5_Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fedeg202/chess": {
+    "nameWithOwner": "fedeg202/Chess",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fer0072/weatherx": {
+    "nameWithOwner": "fer0072/WeatherX",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fgrenoville/async-physics-suspension": {
+    "nameWithOwner": "fgrenoville/Async-Physics-Suspension",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "fgrenoville/async-physics-suspension-kinematics": {
+    "nameWithOwner": "fgrenoville/Async-Physics-Suspension-Kinematics",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "finalstack/inventorysystem": {
+    "nameWithOwner": "benolimits/InventorySystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "finger563/unreal-camera-capture": {
+    "nameWithOwner": "finger563/unreal-camera-capture",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "finger563/unreal-space-program": {
+    "nameWithOwner": "finger563/unreal-space-program",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "fjz13/unrealspecifiers": {
+    "nameWithOwner": "fjz13/UnrealSpecifiers",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "flopperam/unreal-engine-mcp": {
+    "nameWithOwner": "flopperam/unreal-engine-mcp",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fmellorodrigo/basicmontagesequencemanager": {
+    "nameWithOwner": "FMelloRodrigo/BasicMontageSequenceManager",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fogspire/folio": {
+    "nameWithOwner": "Fogspire/Folio",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "franmarz/textools-blender": {
+    "nameWithOwner": "franMarz/TexTools-Blender",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "freshbakedcode/bloodmoon_public": {
+    "nameWithOwner": "FreshBakedCode/BloodMoon_Public",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "frozenstorminteractive/unreal-signalr": {
+    "nameWithOwner": "FrozenStormInteractive/Unreal-SignalR",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "fuzzfas/topdownfow": {
+    "nameWithOwner": "Fuzzfas/TopDownFOW",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "fweidner/ue4-plugin-offaxis": {
+    "nameWithOwner": "fweidner/UE4-Plugin-OffAxis",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "g4nd44/unreal-engine-compute-shader-destory": {
+    "nameWithOwner": "G4ND44/Unreal-Engine-Compute-Shader-Destory",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gamedev-skills/awesome-gamedev-agent-skills": {
+    "nameWithOwner": "gamedev-skills/awesome-gamedev-agent-skills",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "gamedev4k/unreal-fetch": {
+    "nameWithOwner": "GDi4K/unreal-fetch",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gamedev4k/unreal-open-land": {
+    "nameWithOwner": "GDi4K/unreal-openland",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gamednastudio/fastswitcher": {
+    "nameWithOwner": "GameDNAStudio/FastSwitcher",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gamednastudio/mobileutils": {
+    "nameWithOwner": "GameDNAStudio/MobileUtils",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gametechdev/xessunrealplugin": {
+    "nameWithOwner": "GameTechDev/XeSSUnrealPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "garrettpfoy/uefn-generic-devices": {
+    "nameWithOwner": "garrettpfoy/uefn-generic-devices",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "gcclua/unrealrts": {
+    "nameWithOwner": "gcclua/UnrealRTS",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "genorca/unreal-mcp": {
+    "nameWithOwner": "GenOrca/unreal-mcp",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "gerlogu/proceduralfpsanimationsplugin": {
+    "nameWithOwner": "gerlogu/ProceduralFPSAnimationsPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gerlogu/weaponfovandclippingfix": {
+    "nameWithOwner": "gerlogu/WeaponFOVAndClippingFix",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "geromatic/midi-unreal": {
+    "nameWithOwner": "Geromatic/Midi-Unreal",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "getnamo/bodystate-unreal": {
+    "nameWithOwner": "getnamo/BodyState-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/globaleventsystem-unreal": {
+    "nameWithOwner": "getnamo/GlobalEventSystem-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/llama-unreal": {
+    "nameWithOwner": "getnamo/Llama-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/machinelearningremote-unreal": {
+    "nameWithOwner": "getnamo/MachineLearningRemote-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/masscommunitysample": {
+    "nameWithOwner": "getnamo/MassCommunitySample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/nodejs-unreal": {
+    "nameWithOwner": "getnamo/NodeJs-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/pipercli-unreal": {
+    "nameWithOwner": "getnamo/PiperCLI-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/socketioclient-unreal": {
+    "nameWithOwner": "getnamo/SocketIOClient-Unreal",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "getnamo/tcp-unreal": {
+    "nameWithOwner": "getnamo/TCP-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/tensorflow-unreal": {
+    "nameWithOwner": "getnamo/TensorFlow-Unreal",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "getnamo/tensorflow-unreal-examples": {
+    "nameWithOwner": "getnamo/TensorFlow-Unreal-Examples",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/udp-unreal": {
+    "nameWithOwner": "getnamo/UDP-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/ue4-mouseikthirdperson": {
+    "nameWithOwner": "getnamo/UE4-MouseIKThirdPerson",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "getnamo/weapontrace-unreal": {
+    "nameWithOwner": "getnamo/WeaponTrace-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getnamo/ziputility-unreal": {
+    "nameWithOwner": "getnamo/ZipUtility-Unreal",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "getsentry/sentry-unreal": {
+    "nameWithOwner": "getsentry/sentry-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getsetgames/blueprintreflection": {
+    "nameWithOwner": "getsetgames/BlueprintReflection",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getsetgames/sharing": {
+    "nameWithOwner": "getsetgames/Sharing",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getsetgames/swipe": {
+    "nameWithOwner": "getsetgames/Swipe",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "getstream/stream-chat-unreal": {
+    "nameWithOwner": "GetStream/stream-chat-unreal",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "gipfel/ue5_eostemplate": {
+    "nameWithOwner": "Gipfel/UE5_EOSTemplate",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "gixoxyz/blendergbhtool": {
+    "nameWithOwner": "GixoXYZ/BlenderGBHTool",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "gizmolunchbox/serverandlobbysystem": {
+    "nameWithOwner": "gizmolunchbox/ServerAndLobbySystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "goncasmage1/uinavigation": {
+    "nameWithOwner": "goncasmage1/UINavigation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gp2p/farmsimulator": {
+    "nameWithOwner": "GP2P/FarmSimulator",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "gpubrainstorm/ue5_spout2_dx12": {
+    "nameWithOwner": "GPUbrainStorm/UE5_Spout2_DX12",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/ags_sdk": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/AGS_SDK",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/blenderusdhydraaddon": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/BlenderUSDHydraAddon",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/capsaicin": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/Capsaicin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/cauldron": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/Cauldron",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/d3d12memoryallocator": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/D3D12MemoryAllocator",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/fidelityfx-sdk": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/FidelityFX-SDK",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/radeonprorenderblenderaddon": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/RadeonProRenderBlenderAddon",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "gpuopen-librariesandsdks/vulkanmemoryallocator": {
+    "nameWithOwner": "GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gradientspace/cotangent2": {
+    "nameWithOwner": "gradientspace/Cotangent2",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gradientspace/ue5modelingmodeextensiondemo": {
+    "nameWithOwner": "gradientspace/UE5ModelingModeExtensionDemo",
+    "spdx": "BSL-1.0",
+    "archived": false
+  },
+  "gradientspace/ue5runtimetoolsframeworkdemo": {
+    "nameWithOwner": "gradientspace/UE5RuntimeToolsFrameworkDemo",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gradientspace/uetoolboxplugin": {
+    "nameWithOwner": "gradientspace/UEToolboxPlugin",
+    "spdx": "MPL-2.0",
+    "archived": false
+  },
+  "gradientspace/unrealmeshprocessingtools": {
+    "nameWithOwner": "gradientspace/UnrealMeshProcessingTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "greenpau/blender-unreal-rig-utils": {
+    "nameWithOwner": "greenpau/blender-unreal-rig-utils",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "gregorik/foothold-core": {
+    "nameWithOwner": "gregorik/Foothold-Core",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gregorik/rollback-core": {
+    "nameWithOwner": "gregorik/Rollback-Core",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "greisane/gret": {
+    "nameWithOwner": "greisane/gret",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "grim-es/material-combiner-addon": {
+    "nameWithOwner": "Grim-es/material-combiner-addon",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "grociu/ue4-chess": {
+    "nameWithOwner": "Grociu/UE4-Chess",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "grzybojad/proceduralcitygeneration": {
+    "nameWithOwner": "Grzybojad/ProceduralCityGeneration",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "gtreshchev/runtimearchiver": {
+    "nameWithOwner": "gtreshchev/RuntimeArchiver",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "gtreshchev/runtimeaudioimporter": {
+    "nameWithOwner": "gtreshchev/RuntimeAudioImporter",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "gtreshchev/runtimespeechrecognizer": {
+    "nameWithOwner": "gtreshchev/RuntimeSpeechRecognizer",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "gunfiregames/gunfire3dnavigation": {
+    "nameWithOwner": "GunfireGames/Gunfire3DNavigation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "h2ogit/ue5-serverwebsocket": {
+    "nameWithOwner": "h2ogit/UE5-ServerWebSocket",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "h4lfheart/ueformat": {
+    "nameWithOwner": "h4lfheart/UEFormat",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "haktan313/haipro": {
+    "nameWithOwner": "haktan313/HAIPro",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "haktan313/statetreetest": {
+    "nameWithOwner": "haktan313/StateTreeTest",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hanon-games/shiden": {
+    "nameWithOwner": "HANON-games/Shiden",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hanye0817/ue5-enhancedprojectile": {
+    "nameWithOwner": "HanYe0817/UE5-EnhancedProjectile",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "harrison1/unrealcpp": {
+    "nameWithOwner": "Harrison1/unrealcpp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hawkdev15/kartinggame": {
+    "nameWithOwner": "HawkDev15/KartingGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "haywireinteractive/onallfronts-public": {
+    "nameWithOwner": "HaywireInteractive/OnAllFronts-Public",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hazelight/docs-unrealengine-angelscript": {
+    "nameWithOwner": "Hazelight/Docs-UnrealEngine-Angelscript",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "heavybullets/paperzd": {
+    "nameWithOwner": "heavybullets/PaperZD",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hemalpatel2990/elementalarsenal": {
+    "nameWithOwner": "hemalpatel2990/ElementalArsenal",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "heroiclabs/nakama": {
+    "nameWithOwner": "heroiclabs/nakama",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "heroiclabs/nakama-unreal": {
+    "nameWithOwner": "heroiclabs/nakama-unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "heyomidk/hardreferencefinder": {
+    "nameWithOwner": "heyomidk/HardReferenceFinder",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "heyzoos/openrtsvision": {
+    "nameWithOwner": "HeyZoos/OpenRTSVision",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hfjooste/ultimatestarterkit": {
+    "nameWithOwner": "hfjooste/UltimateStarterKit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hideinfade/dyingcity": {
+    "nameWithOwner": "HideInFade/DyingCity",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hiiammoot/runtimebps": {
+    "nameWithOwner": "HiIAmMoot/RuntimeBPs",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hiperbou/kotlin-unreal": {
+    "nameWithOwner": "hiperbou/kotlin-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hnqca/captain2d-platformer-ue5": {
+    "nameWithOwner": "hnqca/captain2D-platformer-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hnqca/template-topdown-2d-ue5": {
+    "nameWithOwner": "hnqca/template-topdown-2D-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hoanggiang93/uroboviz": {
+    "nameWithOwner": "HoangGiang93/URoboViz",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hollowdilnik/glowingquad": {
+    "nameWithOwner": "hollowdilnik/GlowingQuad",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hollsteinm/reasonableplanningai": {
+    "nameWithOwner": "hollsteinm/ReasonablePlanningAI",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "houssinemehnik/ue4-customgravityplugin": {
+    "nameWithOwner": "HoussineMehnik/UE4-CustomGravityPlugin",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "howaajin/graphformatter": {
+    "nameWithOwner": "howaajin/graphformatter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hugoattal/darkernodes": {
+    "nameWithOwner": "hugoattal/DarkerNodes",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hugoattal/electronicnodes": {
+    "nameWithOwner": "hugoattal/ElectronicNodes",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hunterleek/forestofnightmares": {
+    "nameWithOwner": "hunterleek/ForestOfNightmares",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hurtzdonutstudios/ai-forge-mcp": {
+    "nameWithOwner": "HurtzDonutStudios/ai-forge-mcp",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hxhb/hotpatcher": {
+    "nameWithOwner": "hxhb/HotPatcher",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "hxhb/ue4-export-nav-data": {
+    "nameWithOwner": "hxhb/ue4-export-nav-data",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "hyz317/hairdeck": {
+    "nameWithOwner": "hyz317/HairDeck",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "ibrews/blueprint-auto-layout": {
+    "nameWithOwner": "ibrews/blueprint-auto-layout",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ieclisse/gameplaycameratoolset": {
+    "nameWithOwner": "iEclisse/GameplayCameraToolset",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ikesjohnston/dungeon-deathmatch": {
+    "nameWithOwner": "ikesjohnston/Dungeon-Deathmatch",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ikrima/gamedevguide": {
+    "nameWithOwner": "ikrima/gamedevguide",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "iliags/carddeck": {
+    "nameWithOwner": "iliags/CardDeck",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "imloopdev/perfectly-optimized": {
+    "nameWithOwner": "Imloopdev/Perfectly-Optimized",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "impressivetravel/wanderer-cad": {
+    "nameWithOwner": "Impressivetravel/wanderer-cad",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "inca/blender-differential-growth": {
+    "nameWithOwner": "inca/blender-differential-growth",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "incanta/unreal-bp-csv-parsing": {
+    "nameWithOwner": "Incanta/unreal-bp-csv-parsing",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "iniside/actionrpggame": {
+    "nameWithOwner": "iniside/ActionRPGGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "innerloopllc/oculusplatformbp": {
+    "nameWithOwner": "InnerLoopLLC/OculusPlatformBP",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "insthync/awesome-unreal": {
+    "nameWithOwner": "insthync/awesome-unreal",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "intrxx/multiplayer-shooter": {
+    "nameWithOwner": "intrxx/Multiplayer-Shooter",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "intrxx/obsidian": {
+    "nameWithOwner": "intrxx/Obsidian",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "irajsb/ue4_assimp": {
+    "nameWithOwner": "irajsb/UE4_Assimp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "irajsb/ue_capturesubsystem": {
+    "nameWithOwner": "irajsb/UE_CaptureSubsystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ishtms/glooprint": {
+    "nameWithOwner": "ishtms/glooprint",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "islamhaqq/unrealenginedeepdive": {
+    "nameWithOwner": "islamhaqq/UnrealEngineDeepDive",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "italink/unrealclientprotocol": {
+    "nameWithOwner": "Italink/UnrealClientProtocol",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "itemre/forma-lite": {
+    "nameWithOwner": "ITemre/FORMA-Lite",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "itemre/mutablegraphtoolset": {
+    "nameWithOwner": "ITemre/MutableGraphToolset",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ivanmurzak/unreal-mcp": {
+    "nameWithOwner": "IvanMurzak/Unreal-MCP",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "jackluguibin/gameassets": {
+    "nameWithOwner": "JackLuguibin/GameAssets",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jake599/rhythm-range": {
+    "nameWithOwner": "jake599/Rhythm-Range",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jaldoyle/jd_rigging_tools": {
+    "nameWithOwner": "jaldoyle/jd_rigging_tools",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "james-joslin/weatherenvironmentsystem": {
+    "nameWithOwner": "James-Joslin/WeatherEnvironmentSystem",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jamesiv4/sim-copter-remake": {
+    "nameWithOwner": "JamesIV4/sim-copter-remake",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jandals/hairnet": {
+    "nameWithOwner": "Jandals/HairNet",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "janikowski-dev/chronicle": {
+    "nameWithOwner": "janikowski-dev/Chronicle",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/bomber": {
+    "nameWithOwner": "JanSeliv/Bomber",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/customshapebutton": {
+    "nameWithOwner": "JanSeliv/CustomShapeButton",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/functionpicker": {
+    "nameWithOwner": "JanSeliv/FunctionPicker",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/metacheatmanager": {
+    "nameWithOwner": "JanSeliv/MetaCheatManager",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/morphsplayer": {
+    "nameWithOwner": "JanSeliv/MorphsPlayer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/poolmanager": {
+    "nameWithOwner": "JanSeliv/PoolManager",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "janseliv/settingswidgetconstructor": {
+    "nameWithOwner": "JanSeliv/SettingsWidgetConstructor",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jashking/unrealpakviewer": {
+    "nameWithOwner": "jashking/UnrealPakViewer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jasonma0012/mooatoon": {
+    "nameWithOwner": "JasonMa0012/MooaToon",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "jawadato/simple-6dof-component-example": {
+    "nameWithOwner": "jawadato/simple-6DOF-component-example",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jay2645/buoyancysystem": {
+    "nameWithOwner": "Jay2645/BuoyancySystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jay2645/unreal-polygonal-map-gen": {
+    "nameWithOwner": "Jay2645/Unreal-Polygonal-Map-Gen",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "jay2645/unrealutilityai": {
+    "nameWithOwner": "Jay2645/UnrealUtilityAI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jbtronics/ue4-cheatsheet": {
+    "nameWithOwner": "jbtronics/UE4-CheatSheet",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "jd-cg/unreal-custom-camera": {
+    "nameWithOwner": "jd-cg/Unreal-Custom-Camera",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jdcook/fresh_cooked_tweens": {
+    "nameWithOwner": "jdcook/fresh_cooked_tweens",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jediknightchan/eternalcrusaderesurrection": {
+    "nameWithOwner": "JediKnightChan/EternalCrusadeResurrection",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jessebr2/ue5-cpp-gas-code-samples": {
+    "nameWithOwner": "jessebr2/UE5-Cpp-GAS-Code-Samples",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ji-rath/massaiexample": {
+    "nameWithOwner": "Ji-Rath/MassAIExample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jim-kroovy/mr_mannequins_tools": {
+    "nameWithOwner": "Jim-Kroovy/mr_mannequins_tools",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jingchengzhao-ta/ue5-assetvalidator-plugin": {
+    "nameWithOwner": "jingchengzhao-TA/UE5-AssetValidator-Plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jinyuliao/genericgraph": {
+    "nameWithOwner": "jinyuliao/GenericGraph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jlagedo/elysium-unreal": {
+    "nameWithOwner": "jlagedo/elysium-unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jmgomez/nimforue": {
+    "nameWithOwner": "jmgomez/NimForUE",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "joined-forces/klee": {
+    "nameWithOwner": "Joined-Forces/klee",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jonasreich/openunrealutilities": {
+    "nameWithOwner": "JonasReich/OpenUnrealUtilities",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "jonathanwmorris/city-form": {
+    "nameWithOwner": "JonathanWMorris/city-form",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "jorgenpt/hermes": {
+    "nameWithOwner": "jorgenpt/Hermes",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "jorgenpt/uasset-rs": {
+    "nameWithOwner": "jorgenpt/uasset-rs",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "josephkirk/universalbeatgame": {
+    "nameWithOwner": "josephkirk/UniversalBeatGame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "joshrbogart/unreal_tools": {
+    "nameWithOwner": "JoshRBogart/unreal_tools",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "jpbouza/blenrig": {
+    "nameWithOwner": "jpbouza/BlenRig",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "juaxix/ue-grapple-game": {
+    "nameWithOwner": "juaxix/UE-Grapple-Game",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "justabhi77/turnbasedtacticalcombat": {
+    "nameWithOwner": "justAbhi77/TurnBasedTacticalCombat",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "justindarlington/visiongtao": {
+    "nameWithOwner": "JustinDarlington/VisionGTAO",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "k1p1/ue5topdownarpg": {
+    "nameWithOwner": "k1p1/UE5TopDownARPG",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kaboms/ue-simple-http-server": {
+    "nameWithOwner": "Kaboms/UE-Simple-Http-Server",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kaedeasset/kaedevn": {
+    "nameWithOwner": "kaedeasset/kaedevn",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kajetanmuczynski/quadami": {
+    "nameWithOwner": "KajetanMuczynski/quadami",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "kamikaziuk/ue5-arena-shooter-sample": {
+    "nameWithOwner": "KamikaziUk/UE5-Arena-Shooter-Sample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kampairaptor/photomodeplugin_ue5": {
+    "nameWithOwner": "KampaiRaptor/PhotoModePlugin_UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kamrann/btutilityplugin": {
+    "nameWithOwner": "kamrann/BTUtilityPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kamrann/kantancharts": {
+    "nameWithOwner": "kamrann/KantanCharts",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kantam5/ue5-action-adventure-sekiro-clone": {
+    "nameWithOwner": "kantam5/UE5-Action-Adventure-Sekiro-Clone",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kasparplaas/biomesurvivor": {
+    "nameWithOwner": "KasparPlaas/BiomeSurvivor",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kellanm/openai-api-unreal": {
+    "nameWithOwner": "KellanM/OpenAI-Api-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kents00/npreevee": {
+    "nameWithOwner": "kents00/NprEevee",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "ker0el/unrealengine-chinese": {
+    "nameWithOwner": "Ker0el/UnrealEngine-Chinese",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kestrelm/creature_ue4": {
+    "nameWithOwner": "kestrelm/Creature_UE4",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "ketoo/noahgameframe": {
+    "nameWithOwner": "ketoo/NoahGameFrame",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "kevinpbuckley/vibe3d": {
+    "nameWithOwner": "kevinpbuckley/Vibe3D",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kevinpbuckley/vibemetahumans": {
+    "nameWithOwner": "kevinpbuckley/VibeMetaHumans",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kevinpbuckley/vibeue": {
+    "nameWithOwner": "kevinpbuckley/VibeUE",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kevinrusev/medivalcombatgame": {
+    "nameWithOwner": "KevinRusev/MedievalCombatGame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "khartnjava/mysqlconnectorue4plugin": {
+    "nameWithOwner": "KhArtNJava/MySQLConnectorUE4Plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "khronosgroup/gltf-blender-io": {
+    "nameWithOwner": "KhronosGroup/glTF-Blender-IO",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "khronosgroup/openxr-sdk": {
+    "nameWithOwner": "KhronosGroup/OpenXR-SDK",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "kikozl1/uefn-blender-bridge": {
+    "nameWithOwner": "KiKoZl1/uefn-blender-bridge",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kirchuvakov/uefn-mcp-server": {
+    "nameWithOwner": "KirChuvakov/uefn-mcp-server",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kiri-innovation/3dgs-render-blender-addon": {
+    "nameWithOwner": "Kiri-Innovation/3dgs-render-blender-addon",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "kirzo/scriptableframework": {
+    "nameWithOwner": "kirzo/ScriptableFramework",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kisaragitomi/gpu-pcg": {
+    "nameWithOwner": "KisaragiTomi/GPU-PCG",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kismetai-io/kismet": {
+    "nameWithOwner": "kismetai-io/Kismet",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "kitatus/dualsensewindows_ue4": {
+    "nameWithOwner": "KITATUS/DualSenseWindows_UE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kjinwoo12/ue5_perspectiveminimap": {
+    "nameWithOwner": "kjinwoo12/UE5_PerspectiveMinimap",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kodingroo/k_cards-game-feature": {
+    "nameWithOwner": "Kodingroo/K_Cards-Game-Feature",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "korgano/dark-descent-reference-project": {
+    "nameWithOwner": "korgano/Dark-Descent-Reference-Project",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "koshimazaki/ue-audio-mcp": {
+    "nameWithOwner": "koshimazaki/UE-AUDIO-MCP",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "kosowskie/modernui_ue5": {
+    "nameWithOwner": "kosowskie/ModernUI_UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kostenickj/ue5_simplegroomexporter": {
+    "nameWithOwner": "kostenickj/UE5_SimpleGroomExporter",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kpettingereen/supersimplefpspack": {
+    "nameWithOwner": "KPettingerEEN/SuperSimpleFPSPack",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "krowe-moh/blueprinttocpp": {
+    "nameWithOwner": "Krowe-moh/BlueprintToCpp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "krumiaa/mindmaker": {
+    "nameWithOwner": "krumiaa/MindMaker",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ksami/qremeshify": {
+    "nameWithOwner": "ksami/QRemeshify",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "kulahala/ue5-soulslike-combat": {
+    "nameWithOwner": "Kulahala/UE5-Soulslike-Combat",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kvick-games/unrealmcp": {
+    "nameWithOwner": "kvick-games/UnrealMCP",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "kwstasg/wac": {
+    "nameWithOwner": "kwstasg/WAC",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "l05/uesequencersync": {
+    "nameWithOwner": "L05/UESequencerSync",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "landelare/ue5coro": {
+    "nameWithOwner": "landelare/ue5coro",
+    "spdx": "BSD-3-Clause-Clear",
+    "archived": true
+  },
+  "lazpremarathna/awesome-virtual-production": {
+    "nameWithOwner": "lazpremarathna/awesome-virtual-production",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "lazy-jason/lazygenericuiframework": {
+    "nameWithOwner": "Lazy-Jason/LazyGenericUIFramework",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "lazycatsdev/pcglayeredbiomes": {
+    "nameWithOwner": "lazycatsdev/PCGLayeredBiomes",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "learn-computer-graphics/perforce-uasset-diff": {
+    "nameWithOwner": "learn-computer-graphics/perforce-uasset-diff",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "leroymackerl/ue5-apparatusecs-crowdbattleplugin": {
+    "nameWithOwner": "LeroyMackerl/UE5-ApparatusECS-CrowdBattlePlugin",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "life-exe/unrealopenaiplugin": {
+    "nameWithOwner": "life-exe/UnrealOpenAIPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "lilwikipedia/uefnversepocketwiki": {
+    "nameWithOwner": "LilWikipedia/UEFNVersePocketWiki",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "lilwikipedia/verseconsolehelper": {
+    "nameWithOwner": "LilWikipedia/VerseConsoleHelper",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "lim-young/skeletalmeshdestruction": {
+    "nameWithOwner": "Lim-Young/SkeletalMeshDestruction",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "lim-young/unrealaitokensystem": {
+    "nameWithOwner": "Lim-Young/UnrealAITokenSystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "lindyhoppergt/aiflowgraph": {
+    "nameWithOwner": "LindyHopperGT/AIFlowGraph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "liuhuagang/xg-lyra-course-skill": {
+    "nameWithOwner": "liuhuagang/XG-Lyra-Course-Skill",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "liulong1994/meleewander": {
+    "nameWithOwner": "liulong1994/MeleeWander",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "locus84/locusreplicationgraph": {
+    "nameWithOwner": "locus84/LocusReplicationGraph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "lostcrowdev/essentialue5bps": {
+    "nameWithOwner": "lostcrowdev/EssentialUE5BPs",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "lostcrowdev/essentialue5pcg": {
+    "nameWithOwner": "lostcrowdev/EssentialUE5PCG",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "louis1351/spline-objects-tool-ue4": {
+    "nameWithOwner": "Louis1351/Spline-Objects-Tool-UE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "louisraverdy/discordrpc": {
+    "nameWithOwner": "LouisRaverdy/DiscordRPC",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ltsharpe/oblivionremasteredperformancefix": {
+    "nameWithOwner": "LTSharpe/OblivionRemasteredPerformanceFix",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ludovicchabant/ue-gameplay-cameras": {
+    "nameWithOwner": "ludovicchabant/ue-gameplay-cameras",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "lukasfratzl/turbosequence": {
+    "nameWithOwner": "LukasFratzl/TurboSequence",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mab09/unreal-mvvm-pattern-examples": {
+    "nameWithOwner": "mab09/Unreal-MVVM-Pattern-Examples",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "madesroches/micromegas": {
+    "nameWithOwner": "madesroches/micromegas",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "madsmgrin/verse": {
+    "nameWithOwner": "MadsMGrin/Verse",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "maikklein/unreal-rust": {
+    "nameWithOwner": "MaikKlein/unreal-rust",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "majortomaw/enhancedonlinesessions": {
+    "nameWithOwner": "MajorTomAW/EnhancedOnlineSessions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "majortomaw/modulargameplayabilities": {
+    "nameWithOwner": "MajorTomAW/ModularGameplayAbilities",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "make-live/multiplayer": {
+    "nameWithOwner": "make-live/multiplayer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "makehumancommunity/mpfb2": {
+    "nameWithOwner": "makehumancommunity/mpfb2",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "maksmaisak/htn-example-project": {
+    "nameWithOwner": "maksmaisak/htn-example-project",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "maksymkokoiev/metagrain": {
+    "nameWithOwner": "MaksymKokoiev/Metagrain",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "makyrios/soulslikegame": {
+    "nameWithOwner": "Makyrios/SoulsLikeGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mamoniem/unrealeditorpythonscripts": {
+    "nameWithOwner": "mamoniem/UnrealEditorPythonScripts",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "marcohenning/ue5-cheatsheet": {
+    "nameWithOwner": "marcohenning/ue5-cheatsheet",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "martiancraft/unreal-engine-4-plugins": {
+    "nameWithOwner": "martiancraft/Unreal-Engine-4-Plugins",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "matheuslaidler/modernsidescrollertemplate": {
+    "nameWithOwner": "matheuslaidler/ModernSidescrollerTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "matrocoles/skald_turnbasedstrategy_code": {
+    "nameWithOwner": "Matrocoles/Skald_TurnBasedStrategy_Code",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "matthewscharles/metasound-branches": {
+    "nameWithOwner": "matthewscharles/metasound-branches",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mattyman174/genericitemization": {
+    "nameWithOwner": "mattyman174/GenericItemization",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mauijerry/pose2art": {
+    "nameWithOwner": "MauiJerry/Pose2Art",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "max-verem/freedlivelink": {
+    "nameWithOwner": "max-verem/FreeDLiveLink",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "max-verem/vrpnlivelink": {
+    "nameWithOwner": "max-verem/VRPNLiveLink",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "maximedup/unrealengine_shaderlinking": {
+    "nameWithOwner": "MaximeDup/UnrealEngine_ShaderLinking",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mboard8070/ue5_datatablegenerator": {
+    "nameWithOwner": "mboard8070/UE5_DataTableGenerator",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mecha-nox/echoes-of-the-lost-sands": {
+    "nameWithOwner": "Mecha-NOX/Echoes-of-the-Lost-Sands",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "megafunk/masssample": {
+    "nameWithOwner": "Megafunk/MassSample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "megasteakman/megamocapvr": {
+    "nameWithOwner": "Megasteakman/MegaMocapVR",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "meshcapade/mc-uefn": {
+    "nameWithOwner": "Meshcapade/mc-uefn",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "meta-quest/meta-openxr-sdk": {
+    "nameWithOwner": "meta-quest/Meta-OpenXR-SDK",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "michael-yuan-trebble/unrealengineflightproject": {
+    "nameWithOwner": "Michael-Yuan-Trebble/UnrealEngineFlightProject",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "microdee/nuke.unreal": {
+    "nameWithOwner": "microdee/Nuke.Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "microsoft/airsim": {
+    "nameWithOwner": "microsoft/AirSim",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "microsoft/trellis": {
+    "nameWithOwner": "microsoft/TRELLIS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "microsoft/trellis.2": {
+    "nameWithOwner": "microsoft/TRELLIS.2",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "midgen/cashgenue": {
+    "nameWithOwner": "midgen/cashgenUE",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "midgen/unrealfastnoise": {
+    "nameWithOwner": "midgen/UnrealFastNoise",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mik14a/vox4u": {
+    "nameWithOwner": "mik14a/VOX4U",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mika314/uellama": {
+    "nameWithOwner": "mika314/UELlama",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mikefricker/streetmap": {
+    "nameWithOwner": "MikeFricker/StreetMap",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mikeroyal/ar-vr-guide": {
+    "nameWithOwner": "mikeroyal/AR-VR-Guide",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mikeroyal/game-console-dev-guide": {
+    "nameWithOwner": "mikeroyal/Game-Console-Dev-Guide",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mikeroyal/unreal-engine-guide": {
+    "nameWithOwner": "mikeroyal/Unreal-Engine-Guide",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mikesaito/game-settings-master": {
+    "nameWithOwner": "MikeSaito/Game-Settings-Master",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mikke89/rmlui": {
+    "nameWithOwner": "mikke89/RmlUi",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "milkyengineer/multithreading_unrealfestgc24": {
+    "nameWithOwner": "MilkyEngineer/Multithreading_UnrealFestGC24",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "milkyengineer/savegamebasic_unrealfestgc23": {
+    "nameWithOwner": "MilkyEngineer/SaveGameBasic_UnrealFestGC23",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "milomindbender/ue4virtualproduction": {
+    "nameWithOwner": "MiloMindbender/UE4VirtualProduction",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mimmo-the-root/uefn-dream-bot-team": {
+    "nameWithOwner": "mimmo-the-root/UEFN-dream-bot-team",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mio3io/mio3_uv": {
+    "nameWithOwner": "mio3io/mio3_uv",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "mirchd/actionrpg": {
+    "nameWithOwner": "mirchd/ActionRPG",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mirno-ehf/ue5-mcp": {
+    "nameWithOwner": "mirno-ehf/ue5-mcp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mitchemmc/vrcontentexamples": {
+    "nameWithOwner": "mitchemmc/VRContentExamples",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mklabs/ue4-targetsystemplugin": {
+    "nameWithOwner": "mklabs/ue4-targetsystemplugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mlslabs/mlslabsgaussiansplattingrenderer-ue": {
+    "nameWithOwner": "mlslabs/MLSLabsGaussianSplattingRenderer-UE",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "modio/modio-ue": {
+    "nameWithOwner": "modio/modio-ue",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mondrubberduck/bulletproof-retarget": {
+    "nameWithOwner": "MondRubberduck/Bulletproof-Retarget",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mondrubberduck/rig-bridge": {
+    "nameWithOwner": "MondRubberduck/Rig-Bridge",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "monsieurgustav/ue-osc": {
+    "nameWithOwner": "monsieurgustav/UE-OSC",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mordentral/advancedsessionsplugin": {
+    "nameWithOwner": "mordentral/AdvancedSessionsPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mordentral/vrexpansionplugin": {
+    "nameWithOwner": "mordentral/VRExpansionPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mordentral/vrexppluginexample": {
+    "nameWithOwner": "mordentral/VRExpPluginExample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "moritz-wundke/mptwinstickshooterwithue4": {
+    "nameWithOwner": "moritz-wundke/MPTwinStickShooterWithUE4",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "mothcocoon/flowgraph": {
+    "nameWithOwner": "MothCocoon/FlowGraph",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "motionforge/unreal-engine-5-game-starter-template": {
+    "nameWithOwner": "motionforge/Unreal-Engine-5-Game-Starter-Template",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mountaene/simpleimposterbaker-ue5": {
+    "nameWithOwner": "mouNtaene/SimpleImposterBaker-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mountea-framework/mounteadialoguesystem": {
+    "nameWithOwner": "Mountea-Framework/MounteaDialogueSystem",
+    "spdx": "MPL-2.0",
+    "archived": false
+  },
+  "mountea-framework/mounteainteractionsystem": {
+    "nameWithOwner": "Mountea-Framework/MounteaInteractionSystem",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "mountea-framework/mounteainventoryequipment": {
+    "nameWithOwner": "Mountea-Framework/MounteaInventoryEquipment",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "mountea-framework/mounteaunrealbuilder": {
+    "nameWithOwner": "Mountea-Framework/MounteaUnrealBuilder",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "movin3d/movin-uelivelink-plugin-v3": {
+    "nameWithOwner": "MOVIN3D/MOVIN-UELiveLink-Plugin-V3",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mozgiii/ue5-gitignore": {
+    "nameWithOwner": "MOZGIII/ue5-gitignore",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mrforexample/comfyui-3d-pack": {
+    "nameWithOwner": "MrForExample/ComfyUI-3D-Pack",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mrrobinofficial/guide-unrealengine": {
+    "nameWithOwner": "MrRobinOfficial/Guide-UnrealEngine",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mrscruffles/scufflcardgame": {
+    "nameWithOwner": "MrScruffles/ScufflCardGame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "msp/metasoundssynthrepo": {
+    "nameWithOwner": "msp/MetaSoundsSynthRepo",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "muddyterrain/unreal-ollama": {
+    "nameWithOwner": "MuddyTerrain/unreal-ollama",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mushe/niagaraflocking": {
+    "nameWithOwner": "mushe/NiagaraFlocking",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mushe/niagarafluid": {
+    "nameWithOwner": "mushe/NiagaraFluid",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "mustafa-kum/ue5-rpg-ability-system": {
+    "nameWithOwner": "Mustafa-Kum/ue5-rpg-ability-system",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mustafa-kum/ue5-rpg-inventory-system": {
+    "nameWithOwner": "Mustafa-Kum/ue5-rpg-inventory-system",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mustafa-kum/ue5-rpg-melee-combat-system": {
+    "nameWithOwner": "Mustafa-Kum/ue5-rpg-melee-combat-system",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mvanneutigem/unrealotioexporter": {
+    "nameWithOwner": "mvanneutigem/UnrealOtioExporter",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "mxcop/vapor": {
+    "nameWithOwner": "mxcop/vapor",
+    "spdx": "NONE",
+    "archived": true
+  },
+  "myoozy/kinetiforge-vehicle-system": {
+    "nameWithOwner": "myoozy/KinetiForge-Vehicle-System",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "myskygames/squick": {
+    "nameWithOwner": "MyskyGames/squick",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "myxcil/masstraffic-test": {
+    "nameWithOwner": "Myxcil/MassTraffic-Test",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "n3onnarwhal/oceanresearch": {
+    "nameWithOwner": "N3onNarwhal/OceanResearch",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nakdeyes/unrealimguitools": {
+    "nameWithOwner": "nakdeyes/UnrealImGuiTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nama-gatsuo/azurekinectforue": {
+    "nameWithOwner": "nama-gatsuo/AzureKinectForUE",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "nanoskript/vrm-rigify": {
+    "nameWithOwner": "nanoskript/vrm-rigify",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "naotsun19b/graphprinter": {
+    "nameWithOwner": "Naotsun19B/GraphPrinter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "naranyala/awesome-3d-blender-addons": {
+    "nameWithOwner": "naranyala/awesome-3d-blender-addons",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "narxim/narxim-gas-example": {
+    "nameWithOwner": "Narxim/Narxim-GAS-Example",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "natfii/unrealclaude": {
+    "nameWithOwner": "Natfii/UnrealClaude",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "nauja/ue4-climb2d-sample": {
+    "nameWithOwner": "Nauja/ue4-climb2d-sample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nauja/ue4-pixelperfect2d-sample": {
+    "nameWithOwner": "Nauja/ue4-pixelperfect2d-sample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nbertoa/ue5-gas-prototype": {
+    "nameWithOwner": "nbertoa/ue5-gas-prototype",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "nbertoa/ue5-online-multiplayer-adventure": {
+    "nameWithOwner": "nbertoa/ue5-online-multiplayer-adventure",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ncmbch/escape": {
+    "nameWithOwner": "ncmbch/Escape",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "ncsoft/react-umg": {
+    "nameWithOwner": "ncsoft/React-UMG",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ncsoft/unreal.js": {
+    "nameWithOwner": "ncsoft/Unreal.js",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "neginfinity/projectexodus": {
+    "nameWithOwner": "NegInfinity/ProjectExodus",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "neil3d/uanimatedtexture5": {
+    "nameWithOwner": "neil3d/UAnimatedTexture5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "neil3d/unrealcookbook": {
+    "nameWithOwner": "neil3d/UnrealCookbook",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "netflix-skunkworks/unrealvalidationframework": {
+    "nameWithOwner": "Netflix-Skunkworks/UnrealValidationFramework",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "next-stage-inc/nscorehelperlite": {
+    "nameWithOwner": "Next-Stage-Inc/NSCoreHelperLite",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "nfrechette/acl-ue4-plugin": {
+    "nameWithOwner": "nfrechette/acl-ue4-plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nicholas477/enginesimulatorplugin": {
+    "nameWithOwner": "nicholas477/EngineSimulatorPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nickmc05/ue5-gas-multiplayer-framework": {
+    "nameWithOwner": "NickMC05/UE5-GAS-Multiplayer-Framework",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "nikrich/unreal-assets": {
+    "nameWithOwner": "nikrich/unreal-assets",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ninevastudios/ble-utilities-unreal": {
+    "nameWithOwner": "NinevaStudios/ble-utilities-unreal",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ninevastudios/mqtt-utilities-unreal": {
+    "nameWithOwner": "NinevaStudios/mqtt-utilities-unreal",
+    "spdx": "EPL-1.0",
+    "archived": false
+  },
+  "noahzuo/ghostmeshplugin": {
+    "nameWithOwner": "NoahZuo/GhostMeshPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "noesis/unrealplugin": {
+    "nameWithOwner": "Noesis/UnrealPlugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "notyetgames/dlgsystem": {
+    "nameWithOwner": "NotYetGames/DlgSystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "npruehs/ue4-rts": {
+    "nameWithOwner": "npruehs/ue4-rts",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ntk4/ue4topdowncamera": {
+    "nameWithOwner": "ntk4/UE4TopDownCamera",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ntystudio/ctrl.statetree": {
+    "nameWithOwner": "ntystudio/CTRL.StateTree",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nutti/ueplugin-kdtree": {
+    "nameWithOwner": "nutti/UEPlugin-Kdtree",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nvidia-rtx/nrd": {
+    "nameWithOwner": "NVIDIA-RTX/NRD",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/nri": {
+    "nameWithOwner": "NVIDIA-RTX/NRI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nvidia-rtx/nvrhi": {
+    "nameWithOwner": "NVIDIA-RTX/NVRHI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nvidia-rtx/rtxdi": {
+    "nameWithOwner": "NVIDIA-RTX/RTXDI",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/rtxgi": {
+    "nameWithOwner": "NVIDIA-RTX/RTXGI",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/rtxmg": {
+    "nameWithOwner": "NVIDIA-RTX/RTXMG",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/rtxns": {
+    "nameWithOwner": "NVIDIA-RTX/RTXNS",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/rtxntc": {
+    "nameWithOwner": "NVIDIA-RTX/RTXNTC",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/rtxpt": {
+    "nameWithOwner": "NVIDIA-RTX/RTXPT",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nvidia-rtx/streamline": {
+    "nameWithOwner": "NVIDIA-RTX/Streamline",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "nxrighthere/unrealclr": {
+    "nameWithOwner": "nxrighthere/UnrealCLR",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "nxroot/alsv4-metahumans": {
+    "nameWithOwner": "NxRoot/ALSV4-Metahumans",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "o-y-g/ue5_2dplatformer": {
+    "nameWithOwner": "O-Y-G/UE5_2DPlatformer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "octaviantocan/blueprint-documentation-generator-plugin-for-ue5": {
+    "nameWithOwner": "OctavianTocan/blueprint-documentation-generator-plugin-for-ue5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "octaviantocan/realistic-assault-rifle-template": {
+    "nameWithOwner": "OctavianTocan/Realistic-Assault-Rifle-Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "oculus-samples/unreal-discover": {
+    "nameWithOwner": "oculus-samples/Unreal-Discover",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-handgameplay": {
+    "nameWithOwner": "oculus-samples/Unreal-HandGameplay",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "oculus-samples/unreal-interactionsdk-sample": {
+    "nameWithOwner": "oculus-samples/Unreal-InteractionSDK-Sample",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-locomotion": {
+    "nameWithOwner": "oculus-samples/Unreal-Locomotion",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-movement": {
+    "nameWithOwner": "oculus-samples/Unreal-Movement",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-mrutilitykitsample": {
+    "nameWithOwner": "oculus-samples/Unreal-MRUtilityKitSample",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-passthroughsample": {
+    "nameWithOwner": "oculus-samples/Unreal-PassthroughSample",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-phanto": {
+    "nameWithOwner": "oculus-samples/Unreal-Phanto",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-sharedspaces": {
+    "nameWithOwner": "oculus-samples/Unreal-SharedSpaces",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "oculus-samples/unreal-spatialanchorssample": {
+    "nameWithOwner": "oculus-samples/Unreal-SpatialAnchorsSample",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "odysseuskelton/swashbucklers": {
+    "nameWithOwner": "odysseuskelton/Swashbucklers",
+    "spdx": "OFL-1.1",
+    "archived": false
+  },
+  "oivio/advanced-camera-manager": {
+    "nameWithOwner": "oivio/Advanced-Camera-Manager",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "olafhaag/vectorfields": {
+    "nameWithOwner": "OlafHaag/VectorFields",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "omar94hamza/skateboard-sim-prototype": {
+    "nameWithOwner": "omar94hamza/Skateboard-Sim-Prototype",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "open-airlab/unav-sim": {
+    "nameWithOwner": "open-airlab/UNav-Sim",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "opengamebackend/plugin-unreal": {
+    "nameWithOwner": "OpenGameBackend/plugin-unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "openhutb/hutb": {
+    "nameWithOwner": "OpenHUTB/hutb",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "openpf2/enhancedunrealspecs": {
+    "nameWithOwner": "OpenPF2/EnhancedUnrealSpecs",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "openpf2/playground": {
+    "nameWithOwner": "OpenPF2/Playground",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "openpf2/plugin": {
+    "nameWithOwner": "OpenPF2/Plugin",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "openworldgame-io/openworld_plugin": {
+    "nameWithOwner": "OpenWorldGame-Io/OpenWorld_Plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "orazed/uvtoolkit": {
+    "nameWithOwner": "oRazeD/UVToolkit",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "orfeasel/dungeongenerator": {
+    "nameWithOwner": "orfeasel/DungeonGenerator",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "orig74/dronesimlab": {
+    "nameWithOwner": "orig74/DroneSimLab",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "oversizedsuncoredev/artilleryeco": {
+    "nameWithOwner": "OversizedSunCoreDev/ArtilleryEco",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/-blueprints-visual-scripting-for-unreal-engine-5": {
+    "nameWithOwner": "PacktPublishing/-Blueprints-Visual-Scripting-for-Unreal-Engine-5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/artificial-intelligence-in-unreal-engine-5": {
+    "nameWithOwner": "PacktPublishing/Artificial-Intelligence-in-Unreal-Engine-5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/blender-to-unreal-engine---become-a-dungeon-prop-artist": {
+    "nameWithOwner": "PacktPublishing/Blender-to-Unreal-Engine---Become-a-Dungeon-Prop-Artist",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/build-stunning-real-time-vfx-with-unreal-engine-5": {
+    "nameWithOwner": "PacktPublishing/Build-Stunning-Real-time-VFX-with-Unreal-Engine-5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/elevating-game-experiences-with-unreal-engine-5-second-edition": {
+    "nameWithOwner": "PacktPublishing/Elevating-Game-Experiences-with-Unreal-Engine-5-Second-Edition",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/game-development-patterns-with-unreal-engine-5": {
+    "nameWithOwner": "PacktPublishing/Game-Development-Patterns-with-Unreal-Engine-5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/game-development-projects-with-unreal-engine": {
+    "nameWithOwner": "PacktPublishing/Game-Development-Projects-with-Unreal-Engine",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/multiplayer-game-development-with-unreal-engine-5": {
+    "nameWithOwner": "PacktPublishing/Multiplayer-Game-Development-with-Unreal-Engine-5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/procedural-content-generation-with-unreal-engine-5": {
+    "nameWithOwner": "PacktPublishing/Procedural-Content-Generation-with-Unreal-Engine-5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "packtpublishing/unreal-engine-4-scripting-with-cplusplus-cookbook": {
+    "nameWithOwner": "PacktPublishing/Unreal-Engine-4-Scripting-with-CPlusPlus-Cookbook",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/unreal-engine-5---make-aaa-game-vehicles": {
+    "nameWithOwner": "PacktPublishing/Unreal-Engine-5---Make-AAA-Game-Vehicles",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/unreal-engine-5-character-creation-animation-and-cinematics": {
+    "nameWithOwner": "PacktPublishing/Unreal-Engine-5-Character-Creation-Animation-and-Cinematics",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/unreal-engine-5-create-a-zombie-survivor-fps-game": {
+    "nameWithOwner": "PacktPublishing/Unreal-Engine-5-Create-A-Zombie-Survivor-FPS-Game",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/unreal-engine-5-game-development-with-c-scripting": {
+    "nameWithOwner": "PacktPublishing/Unreal-Engine-5-Game-Development-with-C-Scripting",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "packtpublishing/unreal-engine-5-shaders-and-effects-cookbook-2nd-edition": {
+    "nameWithOwner": "PacktPublishing/Unreal-Engine-5-Shaders-and-Effects-Cookbook-2nd-Edition",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pafuhana1213/facialtrackinglivelinkremapasset": {
+    "nameWithOwner": "pafuhana1213/FacialTrackingLiveLinkRemapAsset",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pafuhana1213/framegrabbersample": {
+    "nameWithOwner": "pafuhana1213/FrameGrabberSample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pafuhana1213/kawaiiphysics": {
+    "nameWithOwner": "pafuhana1213/KawaiiPhysics",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pafuhana1213/recordanimeuwsample": {
+    "nameWithOwner": "pafuhana1213/RecordAnimEUWSample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pafuhana1213/ue5_animationrecordhelper": {
+    "nameWithOwner": "pafuhana1213/UE5_AnimationRecordHelper",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "pafuhana1213/ue5_commonconversationsample": {
+    "nameWithOwner": "pafuhana1213/UE5_CommonConversationSample",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "pafuhana1213/ue5_dataassetsheeteditor": {
+    "nameWithOwner": "pafuhana1213/UE5_DataAssetSheetEditor",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pafuhana1213/ue5_newanimsystemssample": {
+    "nameWithOwner": "pafuhana1213/UE5_NewAnimSystemsSample",
+    "spdx": "Unlicense",
+    "archived": false
+  },
+  "pafuhana1213/unrealengine-updatetracker": {
+    "nameWithOwner": "pafuhana1213/UnrealEngine-UpdateTracker",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "panicpetal/als-community": {
+    "nameWithOwner": "PanicPetal/ALS-Community",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "parmandorc/flockai": {
+    "nameWithOwner": "parmandorc/FlockAI",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "pcgex/pcgextendedtoolkit": {
+    "nameWithOwner": "PCGEx/PCGExtendedToolkit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pedromartinsmenezes/assettools": {
+    "nameWithOwner": "PedroMartinsMenezes/AssetTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "peilunnn/ue5parkoursystem": {
+    "nameWithOwner": "peilunnn/UE5ParkourSystem",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "per-simmons/unreal-agent-harness": {
+    "nameWithOwner": "per-simmons/unreal-agent-harness",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "perfect-hand/ue5-cardgame": {
+    "nameWithOwner": "perfect-hand/ue5-cardgame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "petyafx/custommaterialnodetemplate": {
+    "nameWithOwner": "PetyaFX/CustomMaterialNodeTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pfist/nano": {
+    "nameWithOwner": "pfist/Nano",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "pheobus78/uefn_fortemple": {
+    "nameWithOwner": "pheobus78/UEFN_ForTemple",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "phyronnaz/uecompiletimesvisualizer": {
+    "nameWithOwner": "Phyronnaz/UECompileTimesVisualizer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "phyronnaz/voxelplugin": {
+    "nameWithOwner": "VoxelPlugin/VoxelPluginFreeLegacy",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "pikogoro/gasshooter_ue55": {
+    "nameWithOwner": "pikogoro/GASShooter_UE55",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "piperift/actionsextension": {
+    "nameWithOwner": "PipeRift/ActionsExtension",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "piperift/attributesextension": {
+    "nameWithOwner": "PipeRift/AttributesExtension",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "piperift/blueprintretarget": {
+    "nameWithOwner": "PipeRift/BlueprintRetarget",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "piperift/factionsextension": {
+    "nameWithOwner": "PipeRift/FactionsExtension",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "piperift/saveextension": {
+    "nameWithOwner": "PipeRift/SaveExtension",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "playfab/playfabmultiplayerunreal": {
+    "nameWithOwner": "PlayFab/PlayFabMultiplayerUnreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pofiggames/onlineservicessteam": {
+    "nameWithOwner": "PoFigGames/OnlineServicesSteam",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "poly-hammer/blendertools": {
+    "nameWithOwner": "poly-hammer/BlenderTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "poly-hammer/character-dna-addon": {
+    "nameWithOwner": "poly-hammer/character-dna-addon",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "polygonhive/gaspals": {
+    "nameWithOwner": "PolygonHive/GASPALS",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "polygonvariable/open-rpg-template": {
+    "nameWithOwner": "polygonvariable/open-rpg-template",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "postsilver/retopology_tool": {
+    "nameWithOwner": "postsilver/retopology_tool",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "prajwalshettydev/unrealgenaisupport": {
+    "nameWithOwner": "prajwalshettydev/UnrealGenAISupport",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "prashannaantony/racinggame": {
+    "nameWithOwner": "prashannaantony/RacingGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "praveenkumarappu/dlss5forue5": {
+    "nameWithOwner": "praveenkumarappu/DLSS5ForUE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "praydog/uevr": {
+    "nameWithOwner": "praydog/UEVR",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "projectborealis/blast-ue-plugin": {
+    "nameWithOwner": "ProjectBorealis/Blast-UE-Plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "projectborealis/cliquesync": {
+    "nameWithOwner": "ProjectBorealis/CliqueSync",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "projectborealis/iaus": {
+    "nameWithOwner": "ProjectBorealis/IAUS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "projectborealis/pbcharactermovement": {
+    "nameWithOwner": "ProjectBorealis/PBCharacterMovement",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "projectborealis/uegitplugin": {
+    "nameWithOwner": "ProjectBorealis/UEGitPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "proletariatgames/unreal.hx": {
+    "nameWithOwner": "proletariatgames/unreal.hx",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "prqelt/autonomix": {
+    "nameWithOwner": "PRQELT/Autonomix",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "punyhumangames/arcactivities": {
+    "nameWithOwner": "punyhumangames/ArcActivities",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "pushkinstudio/psdata": {
+    "nameWithOwner": "PushkinStudio/PsData",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pushkinstudio/psrealvehicle": {
+    "nameWithOwner": "PushkinStudio/PsRealVehicle",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "pushkinstudio/psreplaykit": {
+    "nameWithOwner": "PushkinStudio/PsReplayKit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "qgdeep/parkour-system": {
+    "nameWithOwner": "QGDeep/Parkour-System",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "quodsoler/unreal-engine-skills": {
+    "nameWithOwner": "quodsoler/unreal-engine-skills",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "radivarig/uvsquares": {
+    "nameWithOwner": "Radivarig/UvSquares",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "rafaelvaloto/gamepad-overlay-unreal": {
+    "nameWithOwner": "rafaelvaloto/Gamepad-Overlay-Unreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rafasloth/chunks": {
+    "nameWithOwner": "rafasloth/Chunks",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "raffiesaurus/conv-reverb-plugin-ue5": {
+    "nameWithOwner": "Raffiesaurus/conv-reverb-plugin-ue5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ragingrey/survival-multiplayer-game": {
+    "nameWithOwner": "RagingRey/Survival-Multiplayer-Game",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "rahulchandra99/ue5-cpp-parkour-climbing-mechanics": {
+    "nameWithOwner": "RahulChandra99/ue5-cpp-parkour-climbing-mechanics",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "raian/runtimeimageloader": {
+    "nameWithOwner": "RaiaN/RuntimeImageLoader",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rainidle/uefluid2dsample": {
+    "nameWithOwner": "Rainidle/UEFluid2DSample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ramzelsuarez/projectcallisto": {
+    "nameWithOwner": "ramzelsuarez/ProjectCallisto",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ranjian0/building_tools": {
+    "nameWithOwner": "ranjian0/building_tools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rapyuta-robotics/rclue": {
+    "nameWithOwner": "rapyuta-robotics/rclUE",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "raydestar/reference-asset-compiler": {
+    "nameWithOwner": "raydeStar/reference-asset-compiler",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/compushadyunreal": {
+    "nameWithOwner": "rdeioris/CompushadyUnreal",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntime": {
+    "nameWithOwner": "rdeioris/glTFRuntime",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntime-docs": {
+    "nameWithOwner": "rdeioris/glTFRuntime-docs",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntimeconvexcollisions": {
+    "nameWithOwner": "rdeioris/glTFRuntimeConvexCollisions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntimedraco": {
+    "nameWithOwner": "rdeioris/glTFRuntimeDraco",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntimefbx": {
+    "nameWithOwner": "rdeioris/glTFRuntimeFBX",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntimevox": {
+    "nameWithOwner": "rdeioris/glTFRuntimeVox",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/gltfruntimewebp": {
+    "nameWithOwner": "rdeioris/glTFRuntimeWebP",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/luamachine": {
+    "nameWithOwner": "rdeioris/LuaMachine",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/mathvm": {
+    "nameWithOwner": "rdeioris/MathVM",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/unrealstl": {
+    "nameWithOwner": "rdeioris/UnrealSTL",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdeioris/unrealutilityai": {
+    "nameWithOwner": "rdeioris/UnrealUtilityAI",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdelian/elementui-umg-kit": {
+    "nameWithOwner": "rdelian/ElementUI-UMG-Kit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdelian/multiplayer-party-game-template-ue5": {
+    "nameWithOwner": "rdelian/Multiplayer-Party-Game-Template-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rdtg/unrealengineretroreflections": {
+    "nameWithOwner": "RDTG/UnrealEngineRetroreflections",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "readyplayerme/rpm-unreal-sdk": {
+    "nameWithOwner": "readyplayerme/rpm-unreal-sdk",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "readyplayerme/unrealexamples": {
+    "nameWithOwner": "readyplayerme/UnrealExamples",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "realchrisparker/paragongas": {
+    "nameWithOwner": "realchrisparker/ParagonGAS",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "rectus/ue4steamvrpassthrough": {
+    "nameWithOwner": "Rectus/UE4SteamVRPassthrough",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "redcatbox/cameravolumes": {
+    "nameWithOwner": "redcatbox/CameraVolumes",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "reddy-dev/smn2": {
+    "nameWithOwner": "Reddy-dev/SMN2",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "redpointgames/uet": {
+    "nameWithOwner": "RedpointGames/uet",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "remiphilippe/mcp-unreal": {
+    "nameWithOwner": "remiphilippe/mcp-unreal",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "remremremre/remabilityutility": {
+    "nameWithOwner": "RemRemRemRe/RemAbilityUtility",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "renamedquery/smartphoneremote_ue5": {
+    "nameWithOwner": "renamedquery/smartphoneremote_ue5",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "repirk/modular-mechanics-toolkit-ue5": {
+    "nameWithOwner": "REPIRK/Modular-Mechanics-Toolkit-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "reshotai/gaussian-splatting-blender-addon": {
+    "nameWithOwner": "ReshotAI/gaussian-splatting-blender-addon",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "retroandchill/unreal-pokemon": {
+    "nameWithOwner": "retroandchill/unreal-pokemon",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "reuttaldev/unreal-simon-game": {
+    "nameWithOwner": "reuttaldev/Unreal-Simon-Game",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "reyhan0173/driftscape": {
+    "nameWithOwner": "reyhan0173/DriftScape",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "rfsheffer/ryhelpfulhelpers": {
+    "nameWithOwner": "rfsheffer/RyHelpfulHelpers",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rhythm-game-utilities/rhythm-game-utilities": {
+    "nameWithOwner": "rhythm-game-utilities/rhythm-game-utilities",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ribin545/sdf_grid_navigation": {
+    "nameWithOwner": "Ribin545/SDF_Grid_Navigation",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ric-fm/btutility": {
+    "nameWithOwner": "ric-fm/BTUtility",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rionix/localizationue4": {
+    "nameWithOwner": "rionix/LocalizationUE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rlewicki/meleetrace": {
+    "nameWithOwner": "rlewicki/MeleeTrace",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rm-noobincoding/unrealrezen": {
+    "nameWithOwner": "rm-NoobInCoding/UnrealReZen",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "robinwood3d/unrealtransformgizmo": {
+    "nameWithOwner": "robinwood3d/UnrealTransformGizmo",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rodzill4/material-maker": {
+    "nameWithOwner": "RodZill4/material-maker",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rokoko/rokoko-studio-live-unreal-engine": {
+    "nameWithOwner": "Rokoko/rokoko-studio-live-unreal-engine",
+    "spdx": "LGPL-3.0",
+    "archived": false
+  },
+  "rooibot/gmasextemplate": {
+    "nameWithOwner": "Rooibot/GMASExTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "roomixer/souls-game-ue-5.7": {
+    "nameWithOwner": "Roomixer/Souls-game-UE-5.7",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "roostermap/rmkit": {
+    "nameWithOwner": "roosterMAP/rmKit",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "rpg3d/filedownload-ue4": {
+    "nameWithOwner": "RPG3D/FileDownload-UE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "rtfkt-ltd/projectphoenix-ue5": {
+    "nameWithOwner": "RTFKT-Ltd/ProjectPhoenix-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "russell-newton/ue5-marching-cubes": {
+    "nameWithOwner": "Russell-Newton/UE5-Marching-Cubes",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ruyo/vrm4u": {
+    "nameWithOwner": "ruyo/VRM4U",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ryan-dowlingsoka/redtecharttools": {
+    "nameWithOwner": "Ryan-DowlingSoka/RedTechArtTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ryanjon2040/unreal-binary-builder": {
+    "nameWithOwner": "ryanjon2040/Unreal-Binary-Builder",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ryanrudes/gvhmr": {
+    "nameWithOwner": "ryanrudes/gvhmr",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ryanwang0521/ue5-spout2": {
+    "nameWithOwner": "ryanwang0521/UE5-Spout2",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ryronz/ue4masterserver": {
+    "nameWithOwner": "RyroNZ/UE4MasterServer",
+    "spdx": "Zlib",
+    "archived": false
+  },
+  "sabredartstudios/foliageshadowimposters": {
+    "nameWithOwner": "SabreDartStudios/FoliageShadowImposters",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sam-tak/blendergamerig": {
+    "nameWithOwner": "SAM-tak/BlenderGameRig",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "sam-tak/gasp-als-r": {
+    "nameWithOwner": "SAM-tak/GASP-ALS-R",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "sarthakkalla/gr00t-unreal-plugin": {
+    "nameWithOwner": "SarthakKalla/GR00T-Unreal-Plugin",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "sasmaster/mp4exporter": {
+    "nameWithOwner": "sasmaster/MP4Exporter",
+    "spdx": "LGPL-2.1",
+    "archived": false
+  },
+  "satisfactorymodding/satisfactorymodloader": {
+    "nameWithOwner": "satisfactorymodding/SatisfactoryModLoader",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "saturday06/vrm-addon-for-blender": {
+    "nameWithOwner": "saturday06/VRM-Addon-for-Blender",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sbcv/blender-addon-photogrammetry-importer": {
+    "nameWithOwner": "SBCV/Blender-Addon-Photogrammetry-Importer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "scaerietale/unreal-engine-4.27.2-templates": {
+    "nameWithOwner": "ScaerieTale/Unreal-Engine-4.27.2-Templates",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "scalesculptor/lyrafirstpersoncamera": {
+    "nameWithOwner": "ScaleSculptor/LyraFirstPersonCamera",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "scenario-labs/skills": {
+    "nameWithOwner": "scenario-labs/skills",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "scientificways/scwabilitysystemextensions": {
+    "nameWithOwner": "ScientificWays/ScWAbilitySystemExtensions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "scottkirvan/ue_quicklaunch": {
+    "nameWithOwner": "ScottKirvan/UE_QuickLaunch",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "scrappycocco/uetrafficgame": {
+    "nameWithOwner": "ScrappyCocco/UETrafficGame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "scylardor/roguelike": {
+    "nameWithOwner": "Scylardor/Roguelike",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sebh/unrealengineskyatmosphere": {
+    "nameWithOwner": "sebh/UnrealEngineSkyAtmosphere",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "seeleai/awesome-unreal-ai-tools": {
+    "nameWithOwner": "SeeleAI/awesome-unreal-ai-tools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "seeleai/awesome-unreal-open-source-games": {
+    "nameWithOwner": "SeeleAI/awesome-unreal-open-source-games",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "segross/unrealimgui": {
+    "nameWithOwner": "segross/UnrealImGui",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "seiko-dev/ui_blooman": {
+    "nameWithOwner": "seiko-dev/UI_Blooman",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "semyanovvisuals/race-multiplayer": {
+    "nameWithOwner": "SemyanovVisuals/race-multiplayer",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sergio2692/rtxgi-ue-5.7-plugin": {
+    "nameWithOwner": "sergio2692/RTXGI-UE-5.7-Plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sha3sha3/ue-dssplugin": {
+    "nameWithOwner": "sha3sha3/UE-DSSPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sha3sha3/ue-easyjwt": {
+    "nameWithOwner": "sha3sha3/UE-EasyJWT",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sha3sha3/ue-easykafka": {
+    "nameWithOwner": "sha3sha3/UE-EasyKafka",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "shaderko/remi-blender-addon": {
+    "nameWithOwner": "shaderko/remi-blender-addon",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "shadertech/ue5niagaracomputeshaderintegration": {
+    "nameWithOwner": "Shadertech/UE5NiagaraComputeShaderIntegration",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "shadertech/ue5shellextensions": {
+    "nameWithOwner": "Shadertech/UE5ShellExtensions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "shaderwitch/asseteditortemplate": {
+    "nameWithOwner": "shaderwitch/AssetEditorTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "shaderwitch/ue4-plugin-resources": {
+    "nameWithOwner": "shaderwitch/UE4-Plugin-Resources",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "shiyatzu/oculuslipsyncplugin-ue5": {
+    "nameWithOwner": "Shiyatzu/OculusLipsyncPlugin-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "shjh3117/ue_cellit": {
+    "nameWithOwner": "shjh3117/UE_CelLit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "shun126/dungeongenerator": {
+    "nameWithOwner": "shun126/DungeonGenerator",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "sideeffects/houdiniengineforunreal": {
+    "nameWithOwner": "sideeffects/HoudiniEngineForUnreal",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "siggig/proceduralmeshdemos": {
+    "nameWithOwner": "SiggiG/ProceduralMeshDemos",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "simulatedflow/ue-plugin-captioncue": {
+    "nameWithOwner": "SimulatedFlow/ue-plugin-CaptionCue",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sinbad/fbxudimunpack": {
+    "nameWithOwner": "sinbad/FbxUdimUnpack",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/spriterecolour": {
+    "nameWithOwner": "sinbad/spriterecolour",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/spud": {
+    "nameWithOwner": "sinbad/SPUD",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/stevesuehelpers": {
+    "nameWithOwner": "sinbad/StevesUEHelpers",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/suds": {
+    "nameWithOwner": "sinbad/SUDS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/sudsexample": {
+    "nameWithOwner": "sinbad/SUDSExample",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sinbad/suqs": {
+    "nameWithOwner": "sinbad/SUQS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/suss": {
+    "nameWithOwner": "sinbad/SUSS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sinbad/uescripts": {
+    "nameWithOwner": "sinbad/UEScripts",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sirjofri/slatestylebrowser": {
+    "nameWithOwner": "sirjofri/SlateStyleBrowser",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sixze/als-refactored": {
+    "nameWithOwner": "Sixze/ALS-Refactored",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "skeskinen/meshwidgets": {
+    "nameWithOwner": "skeskinen/MeshWidgets",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "skeskinen/unrealmimic": {
+    "nameWithOwner": "skeskinen/UnrealMimic",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "skipper0x/coopgame": {
+    "nameWithOwner": "Skipper0X/CoopGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "skyehoefling/puzzlebot": {
+    "nameWithOwner": "SkyeHoefling/PuzzleBot",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "slonopotamus/uest": {
+    "nameWithOwner": "slonopotamus/UEST",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "slowburn-dev/dataconfig": {
+    "nameWithOwner": "slowburn-dev/DataConfig",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "slsne/unreal5-imgui": {
+    "nameWithOwner": "SLSNe/Unreal5-ImGui",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "socaity/py_audio2face": {
+    "nameWithOwner": "SocAIty/py_audio2face",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "softdaddy-o/soft-ue-cli": {
+    "nameWithOwner": "softdaddy-o/soft-ue-cli",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "solicenteam/ueextractor": {
+    "nameWithOwner": "SolicenTEAM/UEExtractor",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "solid-state-games/flow-lod": {
+    "nameWithOwner": "solid-state-games/flow-lod",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sourysk/niagarauirenderer": {
+    "nameWithOwner": "SourySK/NiagaraUIRenderer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "soverance/ethereallegends": {
+    "nameWithOwner": "Soverance/EtherealLegends",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "sparklecatta-lang/xsxb-slash": {
+    "nameWithOwner": "sparklecatta-lang/XSXB-Slash",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "speculativecoder/unrealengine-html5-es3": {
+    "nameWithOwner": "SpeculativeCoder/UnrealEngine-HTML5-ES3",
+    "spdx": "CC-BY-4.0",
+    "archived": false
+  },
+  "spilth/awesome-verse": {
+    "nameWithOwner": "spilth/awesome-verse",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "splash-damage/automatron": {
+    "nameWithOwner": "splash-damage/automatron",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "splash-damage/future-extensions": {
+    "nameWithOwner": "splash-damage/future-extensions",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "srombauts/uegitplugin": {
+    "nameWithOwner": "SRombauts/UEGitPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "st4rman/soulsborne": {
+    "nameWithOwner": "St4rman/Soulsborne",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "stability-ai/stable-point-aware-3d": {
+    "nameWithOwner": "Stability-AI/stable-point-aware-3d",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "stackoverflower92/fightinggame-ue5": {
+    "nameWithOwner": "stackOverflower92/FightingGame-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "startechnology1994/uewebbrowser": {
+    "nameWithOwner": "starTechnology1994/uewebbrowser",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "stenbone/unrealapocalypse": {
+    "nameWithOwner": "StenBone/UnrealApocalypse",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "stereolabs/zed-ue5": {
+    "nameWithOwner": "stereolabs/zed-UE5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "strangergwenn/astralshipwright": {
+    "nameWithOwner": "strangergwenn/AstralShipwright",
+    "spdx": "BSD-3-Clause",
+    "archived": false
+  },
+  "strangergwenn/unrealupdater": {
+    "nameWithOwner": "strangergwenn/UnrealUpdater",
+    "spdx": "LGPL-3.0",
+    "archived": false
+  },
+  "straytrain/simplegameplayabilitysystem": {
+    "nameWithOwner": "strayTrain/SimpleGameplayAbilitySystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "straywriter/networkreplication-ue5": {
+    "nameWithOwner": "straywriter/NetworkReplication-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "studiogobo/uecollisionquerytools": {
+    "nameWithOwner": "StudioGobo/UECollisionQueryTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "studiosyndicatcaius/omegagameframework": {
+    "nameWithOwner": "StudioSyndiCatCaius/OmegaGameFramework",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "studiosyndicatcaius/unrealplugin_actorpreset": {
+    "nameWithOwner": "StudioSyndiCatCaius/UnrealPlugin_ActorPreset",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "studiosyndicatcaius/worldmason": {
+    "nameWithOwner": "StudioSyndiCatCaius/WorldMason",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "succeedhq-innovations/unreal-shooter-base": {
+    "nameWithOwner": "SucceedHQ-innovations/unreal-shooter-base",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sugiany/blender_mmd_tools": {
+    "nameWithOwner": "sugiany/blender_mmd_tools",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "supernerdx/ue5-spider-procedural-locomotion": {
+    "nameWithOwner": "SupernerdX/UE5-Spider-Procedural-Locomotion",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "sylqw/vrm-addon-rigify-custom": {
+    "nameWithOwner": "SYLQW/vrm-addon-rigify-custom",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "synock/ue5inventory": {
+    "nameWithOwner": "Synock/UE5Inventory",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "sysoutch/blender-meshtools-addon": {
+    "nameWithOwner": "sysoutch/blender-meshtools-addon",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "takengrace/gameplaymessagesubsystem": {
+    "nameWithOwner": "TakenGrace/GameplayMessageSubsystem",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tanis2000/unreal-test2dplatformer": {
+    "nameWithOwner": "tanis2000/Unreal-Test2DPlatformer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tanushkrashak/ue5.0_fightinggametemplate": {
+    "nameWithOwner": "KonekoSupremacy/Ue5.0_FightingGameTemplate",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tbarbanti/openfaceue": {
+    "nameWithOwner": "tbarbanti/OpenFaceUE",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "teambeaverstudio/wormholeportal": {
+    "nameWithOwner": "TeamBeaverStudio/WormholePortal",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "teamgravitydev/learning-resources.md": {
+    "nameWithOwner": "teamgravitydev/learning-resources.md",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "temaran/unrealengineshaderplugindemo": {
+    "nameWithOwner": "Temaran/UnrealEngineShaderPluginDemo",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tempo-organization/tempo-cli": {
+    "nameWithOwner": "Tempo-Organization/tempo-cli",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "tempo-sim/tempo": {
+    "nameWithOwner": "tempo-sim/Tempo",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "tempo-sim/tempounrealfestdemo": {
+    "nameWithOwner": "tempo-sim/TempoUnrealFestDemo",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "tencent-hunyuan/hunyuan3d-2": {
+    "nameWithOwner": "Tencent-Hunyuan/Hunyuan3D-2",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent-hunyuan/hunyuan3d-2.1": {
+    "nameWithOwner": "Tencent-Hunyuan/Hunyuan3D-2.1",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent-hunyuan/hunyuan3d-omni": {
+    "nameWithOwner": "Tencent-Hunyuan/Hunyuan3D-Omni",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent-hunyuan/hy-motion-1.0": {
+    "nameWithOwner": "Tencent-Hunyuan/HY-Motion-1.0",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent-hunyuan/hy-world-2.0": {
+    "nameWithOwner": "Tencent-Hunyuan/HY-World-2.0",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent/puerts": {
+    "nameWithOwner": "Tencent/puerts",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent/sluaunreal": {
+    "nameWithOwner": "Tencent/sluaunreal",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tencent/unlua": {
+    "nameWithOwner": "Tencent/UnLua",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "terrehbyte/awesome-ue4": {
+    "nameWithOwner": "terrehbyte/awesome-ue4",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "the-chinese-room/inkpot": {
+    "nameWithOwner": "The-Chinese-Room/Inkpot",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "the-chinese-room/inkpotdemo": {
+    "nameWithOwner": "The-Chinese-Room/InkpotDemo",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "thecapibara/arsa": {
+    "nameWithOwner": "thecapibara/ARSA",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "thedig3/twitchplay": {
+    "nameWithOwner": "TheDiG3/TwitchPlay",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/ueaiextensions": {
+    "nameWithOwner": "TheEmidee/UEAIExtensions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uecoreextensions": {
+    "nameWithOwner": "TheEmidee/UECoreExtensions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uedatavalidationextensions": {
+    "nameWithOwner": "TheEmidee/UEDataValidationExtensions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uegamebaseframework": {
+    "nameWithOwner": "TheEmidee/UEGameBaseFramework",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uegasextensions": {
+    "nameWithOwner": "TheEmidee/UEGASExtensions",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uemissionsystem": {
+    "nameWithOwner": "TheEmidee/UEMissionSystem",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uemodulargameplayactors": {
+    "nameWithOwner": "TheEmidee/UEModularGameplayActors",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uenamingconventionvalidation": {
+    "nameWithOwner": "TheEmidee/UENamingConventionValidation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uesplinefollow": {
+    "nameWithOwner": "TheEmidee/UESplineFollow",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "theemidee/uesvonavigation": {
+    "nameWithOwner": "TheEmidee/UESVONavigation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "thefiftguy/rollback-networking-shooter": {
+    "nameWithOwner": "TheFiftGuy/Rollback-Networking-Shooter",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "thejinchao/turbolink": {
+    "nameWithOwner": "thejinchao/turbolink",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "thekesslereffect/groomlab": {
+    "nameWithOwner": "thekesslereffect/groomlab",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "threatinteractive/prototype-swrt-hard-shadows-for-ue5.7": {
+    "nameWithOwner": "ThreatInteractive/Prototype-SWRT-Hard-Shadows-For-UE5.7",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "threepeatgames/threepeatanimtools": {
+    "nameWithOwner": "threepeatgames/ThreepeatAnimTools",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "thyke/dismemberment": {
+    "nameWithOwner": "Thyke/Dismemberment",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tigershan1130/ue5-active-ragdoll-with-floating-capsule": {
+    "nameWithOwner": "tigershan1130/UE5-active-ragdoll-with-floating-capsule",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "timargv/unrealmcptoolkit": {
+    "nameWithOwner": "timargv/UnrealMCPToolkit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "timmhess/unrealimagecapture": {
+    "nameWithOwner": "TimmHess/UnrealImageCapture",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "timothyvang/awesome-blender-tools": {
+    "nameWithOwner": "TimothyVang/awesome-blender-tools",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "timothyvang/awesome-godot-templates-demos": {
+    "nameWithOwner": "TimothyVang/awesome-godot-templates-demos",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "timothyvang/awesome-unity-templates-samples": {
+    "nameWithOwner": "TimothyVang/awesome-unity-templates-samples",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "tinyalmonds/projectlux": {
+    "nameWithOwner": "TinyAlmonds/ProjectLux",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tirdadmh/survival-horror-game-template": {
+    "nameWithOwner": "TirdadMH/Survival-Horror-Game-Template",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tkclef/fightergame": {
+    "nameWithOwner": "tkclef/FighterGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tombyrer/awesome-unreal-engine": {
+    "nameWithOwner": "tomByrer/awesome-unreal-engine",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tomleelive/openclaw-unreal-plugin": {
+    "nameWithOwner": "TomLeeLive/openclaw-unreal-plugin",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "tomlooman/actionroguelike": {
+    "nameWithOwner": "tomlooman/ActionRoguelike",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tomlooman/epicsurvivalgame": {
+    "nameWithOwner": "tomlooman/EpicSurvivalGame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tomlooman/modsamplegame": {
+    "nameWithOwner": "tomlooman/ModSampleGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tomlooman/simplefpstemplate": {
+    "nameWithOwner": "tomlooman/SimpleFPSTemplate",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tomlooman/ue4-tutorials": {
+    "nameWithOwner": "tomlooman/ue4-tutorials",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tomlooman/vrtemplates": {
+    "nameWithOwner": "tomlooman/VRTemplates",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "tommybazar/tbraymarcherplugin": {
+    "nameWithOwner": "tommybazar/TBRaymarcherPlugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tornlux/unrealbridge": {
+    "nameWithOwner": "TornLux/UnrealBridge",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tranek/gasdocumentation": {
+    "nameWithOwner": "tranek/GASDocumentation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tranek/gasshooter": {
+    "nameWithOwner": "tranek/GASShooter",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "trdwll/steambridge": {
+    "nameWithOwner": "trdwll/SteamBridge",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "triaxis-games/realtimemeshcomponent": {
+    "nameWithOwner": "TriAxis-Games/RealtimeMeshComponent",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "triopstudios/blacklinecontract_pta": {
+    "nameWithOwner": "triopstudios/blacklinecontract_pta",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "trumank/kismet-analyzer": {
+    "nameWithOwner": "trumank/kismet-analyzer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "truong-bui/asyncloadingscreen": {
+    "nameWithOwner": "truong-bui/AsyncLoadingScreen",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "tumourlove/monolith": {
+    "nameWithOwner": "tumourlove/monolith",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "twistedbytes-net/tbcr": {
+    "nameWithOwner": "twistedbytes-net/TBCR",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "typedreammoon/dreamfx": {
+    "nameWithOwner": "TypeDreamMoon/DreamFX",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "typedreammoon/dreamgui": {
+    "nameWithOwner": "TypeDreamMoon/DreamGUI",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "typedreammoon/dreamguidemo": {
+    "nameWithOwner": "TypeDreamMoon/DreamGUIDemo",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "typedreammoon/dreamshader": {
+    "nameWithOwner": "TypeDreamMoon/DreamShader",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ucupumar/ucupaint": {
+    "nameWithOwner": "ucupumar/ucupaint",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "ue4-oceanproject/oceanproject": {
+    "nameWithOwner": "UE4-OceanProject/OceanProject",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ue4ss-re/re-ue4ss": {
+    "nameWithOwner": "UE4SS-RE/RE-UE4SS",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "uebo4ka/glucose": {
+    "nameWithOwner": "UEbo4ka/GLUCOSE",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "uefncentral/uefn-verse-examples": {
+    "nameWithOwner": "uefncentral/uefn-verse-examples",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ufna/birdman": {
+    "nameWithOwner": "ufna/birdman",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ufna/ue-html5": {
+    "nameWithOwner": "ufna/UE-HTML5",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ufna/vacuus": {
+    "nameWithOwner": "ufna/VaCuus",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "ufna/vafogofwar": {
+    "nameWithOwner": "ufna/VaFogOfWar",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "ufna/vakawaseblur": {
+    "nameWithOwner": "ufna/VaKawaseBlur",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ufna/vaoceanmobile": {
+    "nameWithOwner": "ufna/VaOceanMobile",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ufna/varest": {
+    "nameWithOwner": "ufna/VaRest",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ugulay/hardflow": {
+    "nameWithOwner": "ugulay/hardflow",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "ultraleap/unrealplugin": {
+    "nameWithOwner": "ultraleap/UnrealPlugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "umutfarukdilli/motionmatchingreplicated": {
+    "nameWithOwner": "UmutFarukDilli/motionmatchingreplicated",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unamedia/ue5-stereo-panoramic-player-demo": {
+    "nameWithOwner": "UNAmedia/ue5-stereo-panoramic-player-demo",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "undergroundrap/uefn-toolbelt": {
+    "nameWithOwner": "undergroundrap/UEFN-TOOLBELT",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "universaltoolcompiler/utc_liquidshader": {
+    "nameWithOwner": "UniversalToolCompiler/UTC_LiquidShader",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "universaltoolcompiler/utc_shaderlibrary": {
+    "nameWithOwner": "UniversalToolCompiler/UTC_ShaderLibrary",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unraed/dialoguetree": {
+    "nameWithOwner": "unraed/DialogueTree",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unrealcv/unrealcv": {
+    "nameWithOwner": "unrealcv/unrealcv",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unrealenginepersonal/alslyra": {
+    "nameWithOwner": "UnrealEnginePersonal/ALSLyra",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unrealgt/unrealgt": {
+    "nameWithOwner": "unrealgt/unrealgt",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unrealisticdev/rushreborn": {
+    "nameWithOwner": "UnrealisticDev/RushReborn",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "unrealroshan/advanced-dual-weapon-system-ue5": {
+    "nameWithOwner": "unrealroshan/Advanced-Dual-Weapon-System-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "unrealroshan/advanced-parachute-gliding-system-cpp-ue5": {
+    "nameWithOwner": "unrealroshan/Advanced-Parachute-Gliding-System-Cpp-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "unrealsharp/unrealsharp": {
+    "nameWithOwner": "UnrealSharp/UnrealSharp",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unrealsharp/unrealsharp-cropout": {
+    "nameWithOwner": "UnrealSharp/UnrealSharp-Cropout",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "unrealvfx/unrealpostprocessingshaders": {
+    "nameWithOwner": "UnrealVFX/UnrealPostProcessingShaders",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "unrealxu/unrealengine5-skills": {
+    "nameWithOwner": "UnrealXu/UnrealEngine5-Skills",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "urlab-sim/unrealroboticslab": {
+    "nameWithOwner": "URLab-Sim/UnrealRoboticsLab",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "v4c38/ue5-xrcore": {
+    "nameWithOwner": "V4C38/ue5-xrcore",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vaei/predictedmovement": {
+    "nameWithOwner": "Vaei/PredictedMovement",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vahabahmadvand/actionrpg_ue5": {
+    "nameWithOwner": "vahabahmadvand/ActionRPG_UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "valentinkraft/ue4_sortingcomputeshader": {
+    "nameWithOwner": "ValentinKraft/UE4_SortingComputeShader",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "valvesoftware/steamvr_unreal_plugin": {
+    "nameWithOwner": "ValveSoftware/steamvr_unreal_plugin",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "varjocom/varjounrealopenxrexamples": {
+    "nameWithOwner": "varjocom/VarjoUnrealOpenXRExamples",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "vast-ai-research/anigen": {
+    "nameWithOwner": "VAST-AI-Research/AniGen",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "vast-ai-research/detailgen3d": {
+    "nameWithOwner": "VAST-AI-Research/DetailGen3D",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/geosam2": {
+    "nameWithOwner": "VAST-AI-Research/GeoSAM2",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "vast-ai-research/holopart": {
+    "nameWithOwner": "VAST-AI-Research/HoloPart",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/midi-3d": {
+    "nameWithOwner": "VAST-AI-Research/MIDI-3D",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "vast-ai-research/skintokens": {
+    "nameWithOwner": "VAST-AI-Research/SkinTokens",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/triposf": {
+    "nameWithOwner": "VAST-AI-Research/TripoSF",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/triposg": {
+    "nameWithOwner": "VAST-AI-Research/TripoSG",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/triposplat": {
+    "nameWithOwner": "VAST-AI-Research/TripoSplat",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/triposr": {
+    "nameWithOwner": "VAST-AI-Research/TripoSR",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vast-ai-research/unirig": {
+    "nameWithOwner": "VAST-AI-Research/UniRig",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vatsalmandali/survival-prototype-ue5": {
+    "nameWithOwner": "vatsalmandali/survival-prototype-ue5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "vedantrgosavi/ue5-mcp": {
+    "nameWithOwner": "VedantRGosavi/UE5-MCP",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "versemetaverse/unrealverse": {
+    "nameWithOwner": "VerseMetaVerse/UnrealVerse",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vescodes/imgui": {
+    "nameWithOwner": "VesCodes/ImGui",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vhollow/escape-the-room": {
+    "nameWithOwner": "Vhollow/Escape-the-room",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "vibegameengine/hyperreal-starter-kit": {
+    "nameWithOwner": "vibegameengine/hyperreal-starter-kit",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "videofeedback/unreal_engine_serialcom_plugin": {
+    "nameWithOwner": "videofeedback/Unreal_Engine_SerialCOM_Plugin",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "viktor-antonyak/gameplayactionframework": {
+    "nameWithOwner": "Viktor-Antonyak/GameplayActionFramework",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vinfamy-new/lifeplay": {
+    "nameWithOwner": "Vinfamy-New/LifePlay",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "viniciushelder/ovrlipsync-ue5": {
+    "nameWithOwner": "viniciushelder/OVRLipSync-UE5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "vizor-games/infraworldruntime": {
+    "nameWithOwner": "vizor-games/InfraworldRuntime",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "voidware-prohibited/alsxt": {
+    "nameWithOwner": "Voidware-Prohibited/ALSXT",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "voidware-prohibited/targetvector": {
+    "nameWithOwner": "Voidware-Prohibited/TargetVector",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "voit89/provisionfootball": {
+    "nameWithOwner": "Voit89/ProVisionFootball",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "volieteven-end/sekiro-genichiro-ue5": {
+    "nameWithOwner": "volieteven-end/sekiro-genichiro-ue5",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "vortex-basis-llc/unreal-vbg_editorrigtools": {
+    "nameWithOwner": "Vortex-Basis-LLC/Unreal-VBG_EditorRigTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "voxelplugin/voxelpluginfreelegacy": {
+    "nameWithOwner": "VoxelPlugin/VoxelPluginFreeLegacy",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "voyager0001/fsr4-unrealengine5.7": {
+    "nameWithOwner": "Voyager0001/FSR4-UnrealEngine5.7",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "vtx-factory/kosm-classic-fps-template-ue4": {
+    "nameWithOwner": "vtx-factory/Kosm-Classic-FPS-Template-UE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "vz-creates/uefn": {
+    "nameWithOwner": "vz-creates/uefn",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "w-nabe/unreal-livelink-for-blender": {
+    "nameWithOwner": "W-Nabe/Unreal-LiveLink-for-Blender",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "waffle1434/blender-ue4-importer": {
+    "nameWithOwner": "Waffle1434/Blender-UE4-Importer",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "waynekoorts/memorycardgame": {
+    "nameWithOwner": "WayneKoorts/MemoryCardGame",
+    "spdx": "GPL-2.0",
+    "archived": false
+  },
+  "weelcheel/mythos-realm": {
+    "nameWithOwner": "weelcheel/Mythos-Realm",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "weirdframes/ue5-nni-styletransfer": {
+    "nameWithOwner": "WeirdFrames/UE5-NNI-StyleTransfer",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "well-known-game-studio/2dhackslash": {
+    "nameWithOwner": "Well-known-Game-Studio/2DHackSlash",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "whiskerwood-modding/whiskerwood-project": {
+    "nameWithOwner": "Whiskerwood-Modding/Whiskerwood-Project",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "whlee503/ue5_custom_ssgi": {
+    "nameWithOwner": "whlee503/ue5_custom_ssgi",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "whoisellie/fpscore": {
+    "nameWithOwner": "whoisEllie/FPSCore",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "whoisellie/project-isolation": {
+    "nameWithOwner": "whoisEllie/Project-Isolation",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "wildcake/unreal-engine-mcp-codex": {
+    "nameWithOwner": "WildCake/unreal-engine-mcp-codex",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "wilkingames/tower-defense-ue5": {
+    "nameWithOwner": "WilkinGames/tower-defense-ue5",
+    "spdx": "NONE",
+    "archived": true
+  },
+  "willgordon9999/ue-angelscript": {
+    "nameWithOwner": "WillGordon9999/UE-Angelscript",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "willroberts/ue5-hack-and-slash": {
+    "nameWithOwner": "willroberts/ue5-hack-and-slash",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "winyunq/unrealmotiongraphicsmcp": {
+    "nameWithOwner": "winyunq/UnrealMotionGraphicsMCP",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "wistfulhopes/nightskyengine": {
+    "nameWithOwner": "WistfulHopes/NightSkyEngine",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "wivrn/wivrn": {
+    "nameWithOwner": "WiVRn/WiVRn",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "wjakob/instant-meshes": {
+    "nameWithOwner": "wjakob/instant-meshes",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "wjsekrud/mallangphysics": {
+    "nameWithOwner": "wjsekrud/MallangPhysics",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xavier150/blender-for-unrealengine-addons": {
+    "nameWithOwner": "xavier150/Blender-For-UnrealEngine-Addons",
+    "spdx": "GPL-3.0",
+    "archived": false
+  },
+  "xgrids/lcc-3dgs-unreal-plugin": {
+    "nameWithOwner": "xgrids/LCC-3DGS-Unreal-Plugin",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "xistgg/discordgamesample": {
+    "nameWithOwner": "XistGG/DiscordGameSample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xistgg/docker-perforce-server-for-unreal-engine": {
+    "nameWithOwner": "XistGG/docker-perforce-server-for-unreal-engine",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xistgg/masssimple": {
+    "nameWithOwner": "XistGG/MassSimple",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xistgg/masstimegame": {
+    "nameWithOwner": "XistGG/MassTimeGame",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xistgg/ue5-git-init": {
+    "nameWithOwner": "XistGG/UE5-Git-Init",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xistgg/unrealxisttools": {
+    "nameWithOwner": "XistGG/UnrealXistTools",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xistgg/xistcommongamesample": {
+    "nameWithOwner": "XistGG/XistCommonGameSample",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xpol555/unreal-engine-5.7-dlss4": {
+    "nameWithOwner": "XPOL555/unreal-engine-5.7-dlss4",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "xpyct/enhancedcamera": {
+    "nameWithOwner": "XpycT/EnhancedCamera",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "xverse-engine/xscene-ueplugin": {
+    "nameWithOwner": "xverse-engine/XScene-UEPlugin",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "yadhu-s/unrealjolt": {
+    "nameWithOwner": "Yadhu-S/UnrealJolt",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "yarnspinnertool/yarnspinner-unreal-prototype": {
+    "nameWithOwner": "YarnSpinnerTool/YarnSpinner-Unreal-Prototype",
+    "spdx": "MIT",
+    "archived": true
+  },
+  "yasgamesdev/openmoba": {
+    "nameWithOwner": "yasgamesdev/OpenMOBA",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "yclsss/planetmaster": {
+    "nameWithOwner": "yclsss/PlanetMaster",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "yeeeezy/dontwaketheuncle_mytopdowngame": {
+    "nameWithOwner": "yeeeezy/DontWakeTheUncle_MyTopDownGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "yesidfonseca/androidcamera2-unrealengine": {
+    "nameWithOwner": "yesidfonseca/AndroidCamera2-UnrealEngine",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "yilmazfatih6/chess": {
+    "nameWithOwner": "yilmazfatih6/chess",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "ymt3d/ue5-stylizedpostprocess": {
+    "nameWithOwner": "ymt3d/UE5-StylizedPostProcess",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "youn0592/uechessgame": {
+    "nameWithOwner": "youn0592/UEChessGame",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "ysgrathe/sqlitegamedb": {
+    "nameWithOwner": "Ysgrathe/SQLiteGameDb",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "yspcoder/pixeladventure2d-ue5": {
+    "nameWithOwner": "YspCoder/PixelAdventure2D-UE5",
+    "spdx": "CC0-1.0",
+    "archived": false
+  },
+  "yuanbaosmadlab/opensplat4d": {
+    "nameWithOwner": "YuanBaoSMadLab/OpenSplat4D",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "yuuhenr/roadforge-osm-ue5-procedural-city": {
+    "nameWithOwner": "YuuhenR/roadforge-osm-ue5-procedural-city",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zawadali/ue5-steam-multiplayer-racing": {
+    "nameWithOwner": "zawadAli/UE5-Steam-Multiplayer-Racing",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "zcingerman-dev/cyrene-ai-npc-ue5-demo": {
+    "nameWithOwner": "zcingerman-dev/Cyrene-AI-NPC-UE5-Demo",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "zerodaycode/realmofwar": {
+    "nameWithOwner": "zerodaycode/RealmOfWar",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "zfw1226/gym-unrealcv": {
+    "nameWithOwner": "zfw1226/gym-unrealcv",
+    "spdx": "Apache-2.0",
+    "archived": false
+  },
+  "zhengpeng7/birefnet": {
+    "nameWithOwner": "ZhengPeng7/BiRefNet",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zhurong-homostation/ueimgui": {
+    "nameWithOwner": "ZhuRong-HomoStation/UEImgui",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zju3dv/gvhmr": {
+    "nameWithOwner": "zju3dv/GVHMR",
+    "spdx": "NOASSERTION",
+    "archived": false
+  },
+  "zkshao-epicgames/sample-persistencelab": {
+    "nameWithOwner": "ZKShao-EpicGames/Sample-PersistenceLab",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "zompi2/editorcamerapositionue4": {
+    "nameWithOwner": "zompi2/EditorCameraPositionUE4",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zompi2/ue4easylocalizationtool": {
+    "nameWithOwner": "zompi2/UE4EasyLocalizationTool",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zompi2/ue4enhancedcodeflow": {
+    "nameWithOwner": "zompi2/UE4EnhancedCodeFlow",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zselimreborn/movementexhibition": {
+    "nameWithOwner": "zSelimReborn/MovementExhibition",
+    "spdx": "NONE",
+    "archived": false
+  },
+  "zupti/easythumbnailgenerator": {
+    "nameWithOwner": "ZUPTI/EasyThumbnailGenerator",
+    "spdx": "MIT",
+    "archived": false
+  },
+  "zuru33/unrealengine-angelscript-fpsstarter": {
+    "nameWithOwner": "zuru33/UnrealEngine-Angelscript-FpsStarter",
+    "spdx": "NOASSERTION",
+    "archived": false
+  }
+}
