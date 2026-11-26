@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Markdown structure, anchors, SPDX-verified filter views, URL hygiene, and optional live GitHub status."""
+"""Validate Markdown structure, anchors, SPDX/language/UE5.8 filter views, URL hygiene, and optional live GitHub status."""
 
 from __future__ import annotations
 
@@ -35,6 +35,25 @@ PERMISSIVE_SPDX = frozenset({
     "Zlib",
     "BSL-1.0",
 })
+CODE_SOURCE_LANGS = frozenset({
+    "C++",
+    "C",
+    "C#",
+    "Objective-C",
+    "Objective-C++",
+    "Python",
+    "Rust",
+    "JavaScript",
+    "TypeScript",
+    "Lua",
+    "HLSL",
+    "GLSL",
+    "Go",
+    "Java",
+    "Kotlin",
+    "Haxe",
+    "Nim",
+})
 
 IMAGE_MD_RE = re.compile(r"!\[[^\]]*\]\([^)\s]+\)")
 MD_LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)\s]+)\)")
@@ -51,6 +70,18 @@ PUBLIC_RISK_RE = re.compile(
 
 def strip_images(line: str) -> str:
     return IMAGE_MD_RE.sub("BADGE_IMG", line)
+
+
+def gh_repo_key(url: str) -> str | None:
+    sp = urlsplit(url)
+    if sp.netloc.lower() != "github.com":
+        return None
+    parts = [p for p in sp.path.strip("/").split("/") if p]
+    if len(parts) < 2 or parts[0].lower() in ("topics", "orgs", "users"):
+        return None
+    if len(parts) >= 4 and parts[2] == "actions":
+        return None
+    return f"{parts[0].lower()}/{parts[1].lower().removesuffix('.git')}"
 
 
 def gh_slug(heading_text: str) -> str:
@@ -154,7 +185,7 @@ def validate_markdown_links(
                 sp = urlsplit(target)
                 if sp.scheme != "https":
                     errors.append(f"{rel}:{lineno}: non-HTTPS link {target}")
-                if sp.path.endswith("/badge.svg") or "/actions/workflows/" in sp.path or target == "https://awesome.re":
+                if label == "BADGE_IMG" or sp.path.endswith("/badge.svg") or "/actions/workflows/" in sp.path:
                     continue
                 norm = target.rstrip("/").lower()
                 all_urls.add(norm)
@@ -222,7 +253,7 @@ def validate_unreal_notes(text: str, errors: list[str]) -> set[str]:
             if use_case in names:
                 errors.append(f"catalogs/UNREAL.md: duplicate use case '{use_case}'")
             names.add(use_case)
-        links = [t for _, t in MD_LINK_RE.findall(strip_images(line))]
+        links = [t for lbl, t in MD_LINK_RE.findall(strip_images(line)) if lbl != "BADGE_IMG"]
         if not links or any(urlsplit(u).scheme != "https" for u in links):
             errors.append(f"catalogs/UNREAL.md: invalid HTTPS link on loop {idx:02d}")
         for u in links:
@@ -262,28 +293,57 @@ def validate_generated_indexes(spdx_db: dict[str, dict[str, object]], errors: li
         errors.append(f"Generated filter catalogs out of sync: {proc.stderr.strip() or proc.stdout.strip()}")
         return
 
+    referenced_gh_keys: set[str] = set()
+    for doc_path in (README, UNREAL_NOTES):
+        for lineno, line in enumerate(doc_path.read_text(encoding="utf-8").splitlines(), 1):
+            for _, target in MD_LINK_RE.findall(strip_images(line)):
+                key = gh_repo_key(target)
+                if key:
+                    referenced_gh_keys.add(key)
+                    info = spdx_db.get(key)
+                    if not info:
+                        errors.append(f"{doc_path.name}:{lineno}: GitHub repo {key} missing from GITHUB_SPDX.json")
+                    elif str(info.get("nameWithOwner", "")).lower() != key:
+                        errors.append(
+                            f"{doc_path.name}:{lineno}: non-canonical/redirected GitHub URL {key} "
+                            f"(canonical is {info.get('nameWithOwner')})"
+                        )
+    stale_spdx = set(spdx_db) - referenced_gh_keys
+    if stale_spdx:
+        errors.append(f"GITHUB_SPDX.json has {len(stale_spdx)} unreferenced key(s): {sorted(stale_spdx)[:5]}")
+
     for md_path in GENERATED_MD:
         txt = md_path.read_text(encoding="utf-8")
         validate_tables(md_path, txt.splitlines(), errors)
         slugs = collect_slugs(txt)
         validate_markdown_links(md_path, txt, slugs, errors, enforce_sec_dedup=True)
-
-    # Strict semantic audit on MIT_APACHE_COMMERCIAL_SAFE.md against GITHUB_SPDX.json
     safe_txt = (ROOT / "catalogs" / "MIT_APACHE_COMMERCIAL_SAFE.md").read_text(encoding="utf-8")
     for lineno, line in enumerate(safe_txt.splitlines(), 1):
         for _, target in MD_LINK_RE.findall(strip_images(line)):
-            sp = urlsplit(target)
-            if sp.netloc.lower() == "github.com":
-                parts = [p for p in sp.path.strip("/").split("/") if p]
-                if len(parts) >= 2:
-                    key = f"{parts[0].lower()}/{parts[1].lower().removesuffix('.git')}"
-                    info = spdx_db.get(key)
-                    if not info or info.get("spdx") not in PERMISSIVE_SPDX or info.get("archived"):
-                        errors.append(
-                            f"MIT_APACHE_COMMERCIAL_SAFE.md:{lineno}: non-permissive or archived repo {key} ({info})"
-                        )
+            key = gh_repo_key(target)
+            if key:
+                info = spdx_db.get(key)
+                if (
+                    not info
+                    or info.get("spdx") not in PERMISSIVE_SPDX
+                    or info.get("archived")
+                    or info.get("bundledRestriction")
+                ):
+                    errors.append(
+                        f"MIT_APACHE_COMMERCIAL_SAFE.md:{lineno}: non-permissive, restricted, or archived repo {key} ({info})"
+                    )
 
-    # Strict semantic audit on BLUEPRINT_ONLY.md
+    ue58_txt = (ROOT / "catalogs" / "UE58_READY.md").read_text(encoding="utf-8")
+    for lineno, line in enumerate(ue58_txt.splitlines(), 1):
+        for _, target in MD_LINK_RE.findall(strip_images(line)):
+            key = gh_repo_key(target)
+            if key:
+                info = spdx_db.get(key)
+                if not info or not info.get("ue58Verified") or info.get("archived") or info.get("readmeOnly"):
+                    errors.append(
+                        f"UE58_READY.md:{lineno}: unverified UE 5.7/5.8, readmeOnly, or archived repo {key} ({info})"
+                    )
+
     bp_txt = (ROOT / "catalogs" / "BLUEPRINT_ONLY.md").read_text(encoding="utf-8")
     for lineno, line in enumerate(bp_txt.splitlines(), 1):
         if line.startswith("## "):
@@ -294,13 +354,34 @@ def validate_generated_indexes(spdx_db: dict[str, dict[str, object]], errors: li
             low = line.lower()
             if "c++" in low and "no c++" not in low and "zero c++" not in low:
                 errors.append(f"BLUEPRINT_ONLY.md:{lineno}: C++ hybrid leaked into pure-Blueprint view")
+            for _, target in MD_LINK_RE.findall(strip_images(line)):
+                key = gh_repo_key(target)
+                if key:
+                    info = spdx_db.get(key)
+                    langs = (info or {}).get("languages") or []
+                    if not info or info.get("archived") or info.get("readmeOnly") or any(str(l) in CODE_SOURCE_LANGS for l in langs):
+                        errors.append(
+                            f"BLUEPRINT_ONLY.md:{lineno}: code-language or readmeOnly repo {key} leaked (info={info})"
+                        )
 
     if not INDEX_JSON.exists():
         errors.append("Missing catalogs/INDEX.json")
     else:
         data = json.loads(INDEX_JSON.read_text(encoding="utf-8"))
-        if data.get("stats", {}).get("tableBackedSections", 0) < 38 or len(data.get("entries", [])) < 400:
-            errors.append(f"catalogs/INDEX.json stats unexpectedly small: {data.get('stats')}")
+        stats = data.get("stats", {})
+        entries = data.get("entries", [])
+        if stats.get("tableBackedSections", 0) < 38 or len(entries) < 400:
+            errors.append(f"catalogs/INDEX.json stats unexpectedly small: {stats}")
+        for flag_key, stat_key in (
+            ("is_ue58", "ue57_58FilteredEntries"),
+            ("is_commercial_safe", "commercialSafeFilteredEntries"),
+            ("is_blueprint_first", "pureBlueprintFilteredEntries"),
+        ):
+            flag_sum = sum(1 for e in entries if e.get(flag_key))
+            if flag_sum != stats.get(stat_key):
+                errors.append(
+                    f"catalogs/INDEX.json parity mismatch: sum({flag_key})={flag_sum} != stats.{stat_key}={stats.get(stat_key)}"
+                )
 
 
 def verify_github_live(spdx_db: dict[str, dict[str, object]], errors: list[str]) -> int:
@@ -309,22 +390,16 @@ def verify_github_live(spdx_db: dict[str, dict[str, object]], errors: list[str])
         txt = rel.read_text(encoding="utf-8")
         for lineno, line in enumerate(txt.splitlines(), 1):
             for label, target in MD_LINK_RE.findall(strip_images(line)):
-                sp = urlsplit(target)
-                if sp.netloc.lower() == "github.com":
-                    parts = [p for p in sp.path.strip("/").split("/") if p]
-                    if len(parts) >= 2 and parts[0].lower() not in ("topics", "orgs", "users"):
-                        if len(parts) >= 4 and parts[2] == "actions":
-                            continue
-                        owner, name = parts[0], parts[1].removesuffix(".git")
-                        key = f"{owner.lower()}/{name.lower()}"
-                        repo_occurrences.setdefault(key, []).append(
-                            (rel.name, lineno, label, line)
-                        )
+                key = gh_repo_key(target)
+                if key:
+                    repo_occurrences.setdefault(key, []).append(
+                        (rel.name, lineno, label, line)
+                    )
 
     items = [(k, k.split("/", 1)[0], k.split("/", 1)[1]) for k in sorted(repo_occurrences)]
-    batch_size = 40
+    batch_size = 35
     checked = 0
-    live_spdx: dict[str, tuple[str, bool]] = {}
+    live_info: dict[str, tuple[str, bool, list[str]]] = {}
 
     for i in range(0, len(items), batch_size):
         if i > 0:
@@ -334,7 +409,8 @@ def verify_github_live(spdx_db: dict[str, dict[str, object]], errors: list[str])
         for idx, (key, owner, name) in enumerate(chunk):
             q.append(
                 f'r{idx}: repository(owner: {json.dumps(owner)}, name: {json.dumps(name)}) {{ '
-                f'nameWithOwner isArchived isDisabled isEmpty licenseInfo {{ spdxId }} }}'
+                f'nameWithOwner isArchived isDisabled isEmpty licenseInfo {{ spdxId }} '
+                f'languages(first: 10, orderBy: {{field: SIZE, direction: DESC}}) {{ nodes {{ name }} }} }}'
             )
         q.append("}")
         proc = None
@@ -366,17 +442,21 @@ def verify_github_live(spdx_db: dict[str, dict[str, object]], errors: list[str])
                     errors.append(f"Dead GitHub repo {owner}/{name} at {locs}")
                     continue
                 rj = json.loads(rp.stdout)
+                lr = subprocess.run(["gh", "api", f"repos/{owner}/{name}/languages"], capture_output=True, text=True, encoding="utf-8")
+                langs = list(json.loads(lr.stdout).keys()) if lr.returncode == 0 else []
                 node = {
                     "nameWithOwner": rj["full_name"],
                     "isArchived": rj["archived"],
                     "isDisabled": rj.get("disabled", False),
                     "isEmpty": rj.get("size", 1) == 0,
                     "licenseInfo": {"spdxId": (rj.get("license") or {}).get("spdx_id")},
+                    "languages": {"nodes": [{"name": l} for l in langs]},
                 }
             checked += 1
             spdx_id = (node.get("licenseInfo") or {}).get("spdxId") or "NONE"
             is_arch = bool(node.get("isArchived"))
-            live_spdx[key] = (spdx_id, is_arch)
+            langs = [x["name"] for x in ((node.get("languages") or {}).get("nodes") or []) if x and x.get("name")]
+            live_info[key] = (spdx_id, is_arch, langs)
 
             if node.get("isDisabled") or node.get("isEmpty"):
                 locs = ", ".join(f"{f}:{ln}" for f, ln, _, _ in repo_occurrences[key])
@@ -397,24 +477,33 @@ def verify_github_live(spdx_db: dict[str, dict[str, object]], errors: list[str])
     safe_txt = (ROOT / "catalogs" / "MIT_APACHE_COMMERCIAL_SAFE.md").read_text(encoding="utf-8")
     for lineno, line in enumerate(safe_txt.splitlines(), 1):
         for _, target in MD_LINK_RE.findall(strip_images(line)):
-            sp = urlsplit(target)
-            if sp.netloc.lower() == "github.com":
-                parts = [p for p in sp.path.strip("/").split("/") if p]
-                if len(parts) >= 2:
-                    key = f"{parts[0].lower()}/{parts[1].lower().removesuffix('.git')}"
-                    spdx_id, is_arch = live_spdx.get(key, ("UNKNOWN", True))
-                    if spdx_id not in PERMISSIVE_SPDX or is_arch:
-                        errors.append(
-                            f"Live GitHub SPDX check failed on MIT_APACHE_COMMERCIAL_SAFE.md:{lineno}: "
-                            f"{key} has spdx={spdx_id}, archived={is_arch}"
-                        )
+            key = gh_repo_key(target)
+            if key:
+                spdx_id, is_arch, _ = live_info.get(key, ("UNKNOWN", True, []))
+                if spdx_id not in PERMISSIVE_SPDX or is_arch or (spdx_db.get(key) or {}).get("bundledRestriction"):
+                    errors.append(
+                        f"Live GitHub SPDX check failed on MIT_APACHE_COMMERCIAL_SAFE.md:{lineno}: "
+                        f"{key} has spdx={spdx_id}, archived={is_arch}"
+                    )
+
+    bp_txt = (ROOT / "catalogs" / "BLUEPRINT_ONLY.md").read_text(encoding="utf-8")
+    for lineno, line in enumerate(bp_txt.splitlines(), 1):
+        for _, target in MD_LINK_RE.findall(strip_images(line)):
+            key = gh_repo_key(target)
+            if key:
+                _, is_arch, langs = live_info.get(key, ("UNKNOWN", True, ["C++"]))
+                if is_arch or any(l in CODE_SOURCE_LANGS for l in langs):
+                    errors.append(
+                        f"Live GitHub language check failed on BLUEPRINT_ONLY.md:{lineno}: "
+                        f"{key} has languages={langs}, archived={is_arch}"
+                    )
 
     return checked
 
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--verify-github", action="store_true", help="Verify all GitHub repos & SPDX licenses via gh CLI")
+    parser.add_argument("--verify-github", action="store_true", help="Verify all GitHub repos, languages & SPDX licenses via gh CLI")
     args = parser.parse_args()
 
     errors: list[str] = []
@@ -464,7 +553,7 @@ def main() -> int:
         f"{len(combined)} unique resource links + 4 generated filter/JSON views validated cleanly."
     )
     if args.verify_github:
-        msg += f" Live GitHub API verified {gh_checked} unique repositories & SPDX licenses."
+        msg += f" Live GitHub API verified {gh_checked} unique repositories, languages & SPDX licenses."
     print(msg)
     return 0
 

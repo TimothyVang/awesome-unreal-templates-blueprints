@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "stats": {
     "tableBackedSections": 38,
     "proseOrHardwareSections": [
@@ -7,10 +7,10 @@
       26
     ],
     "totalEntries": 699,
-    "uniqueEntryLinks": 1170,
-    "ue57_58FilteredEntries": 60,
-    "commercialSafeFilteredEntries": 404,
-    "pureBlueprintFilteredEntries": 46
+    "uniqueEntryLinks": 1175,
+    "ue57_58FilteredEntries": 56,
+    "commercialSafeFilteredEntries": 409,
+    "pureBlueprintFilteredEntries": 25
   },
   "entries": [
     {
@@ -153,7 +153,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 1,
@@ -189,7 +189,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 1,
@@ -428,7 +428,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -1189,7 +1189,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 3,
@@ -1225,7 +1225,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 3,
@@ -1555,7 +1555,7 @@
       "section_number": 3,
       "section_title": "FPS, Arena, Tactical & Extraction Shooters",
       "name": "U5_FPS_Multiplayer",
-      "meta": "UE5 · BP",
+      "meta": "UE5 · C++/BP",
       "highlights": "Counter-Strike-inspired round-based multiplayer FPS in Blueprints",
       "links_cell": "[GitHub](https://github.com/AlvaroBishop/U5_FPS_Multiplayer)",
       "links": [
@@ -1567,7 +1567,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 3,
@@ -1735,7 +1735,7 @@
         }
       ],
       "is_archived": false,
-      "is_ue58": true,
+      "is_ue58": false,
       "is_commercial_safe": false,
       "is_blueprint_first": false
     },
@@ -1853,11 +1853,11 @@
       "name": "MedivalCombatGame",
       "meta": "UE5 · C++",
       "highlights": "Souls-inspired medieval combat prototype",
-      "links_cell": "[GitHub](https://github.com/KevinRusev/MedivalCombatGame)",
+      "links_cell": "[GitHub](https://github.com/KevinRusev/MedievalCombatGame)",
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/KevinRusev/MedivalCombatGame"
+          "url": "https://github.com/KevinRusev/MedievalCombatGame"
         }
       ],
       "is_archived": false,
@@ -2171,6 +2171,24 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
+      "is_blueprint_first": false
+    },
+    {
+      "section_number": 4,
+      "section_title": "Third-Person Action, Souls-like, Stealth, Parry & Fighting",
+      "name": "WarriOrb (Full Action-Platformer Source)",
+      "meta": "UE · MIT",
+      "highlights": "Complete shipped Dark-Souls-like 3D action-platformer C++/Blueprint game codebase (340+★)",
+      "links_cell": "[GitHub](https://github.com/NotYetGames/WarriOrb)",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/NotYetGames/WarriOrb"
+        }
+      ],
+      "is_archived": false,
+      "is_ue58": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -2535,7 +2553,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 5,
@@ -2592,7 +2610,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -2820,7 +2838,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -2863,13 +2881,13 @@
       "section_number": 7,
       "section_title": "Inventory, Equipment, Quests, Dialogue & Visual Novels",
       "name": "InventorySystem (Hotbar)",
-      "meta": "UE5 · BP",
-      "highlights": "Easy hotbar & inventory system",
-      "links_cell": "[GitHub](https://github.com/finalstack/InventorySystem)",
+      "meta": "UE5 · BP · MIT",
+      "highlights": "Drag-and-drop hotbar & inventory Blueprint starter",
+      "links_cell": "[GitHub](https://github.com/benolimits/InventorySystem)",
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/finalstack/InventorySystem"
+          "url": "https://github.com/benolimits/InventorySystem"
         }
       ],
       "is_archived": false,
@@ -3104,7 +3122,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -3208,24 +3226,6 @@
         {
           "label": "GitHub",
           "url": "https://github.com/Synock/UE5Inventory"
-        }
-      ],
-      "is_archived": false,
-      "is_ue58": false,
-      "is_commercial_safe": true,
-      "is_blueprint_first": false
-    },
-    {
-      "section_number": 7,
-      "section_title": "Inventory, Equipment, Quests, Dialogue & Visual Novels",
-      "name": "benolimits InventorySystem",
-      "meta": "UE5 · MIT",
-      "highlights": "Lightweight drag-and-drop hotbar & inventory starter for UE5",
-      "links_cell": "[GitHub](https://github.com/benolimits/InventorySystem)",
-      "links": [
-        {
-          "label": "GitHub",
-          "url": "https://github.com/benolimits/InventorySystem"
         }
       ],
       "is_archived": false,
@@ -3361,7 +3361,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 8,
@@ -3616,7 +3616,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -3867,11 +3867,11 @@
       "name": "motionmatchingreplicated",
       "meta": "UE5 · MIT",
       "highlights": "Replicated UE5 Motion Matching locomotion sample (198★)",
-      "links_cell": "[GitHub](https://github.com/cenairaclub/motionmatchingreplicated)",
+      "links_cell": "[GitHub](https://github.com/UmutFarukDilli/motionmatchingreplicated)",
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/cenairaclub/motionmatchingreplicated"
+          "url": "https://github.com/UmutFarukDilli/motionmatchingreplicated"
         }
       ],
       "is_archived": false,
@@ -3989,7 +3989,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 9,
@@ -4187,7 +4187,7 @@
         }
       ],
       "is_archived": false,
-      "is_ue58": true,
+      "is_ue58": false,
       "is_commercial_safe": false,
       "is_blueprint_first": false
     },
@@ -4205,9 +4205,9 @@
         }
       ],
       "is_archived": false,
-      "is_ue58": true,
+      "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 10,
@@ -4318,7 +4318,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -4378,7 +4378,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -4458,7 +4458,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -4506,7 +4506,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -5119,7 +5119,7 @@
       "section_number": 13,
       "section_title": "Racing, Vehicles, 6DOF Space Flight & Drone Simulators",
       "name": "UE5 Vehicle Template",
-      "meta": "UE5 · BP",
+      "meta": "UE5 · C++/BP",
       "highlights": "Modular driving mechanics + visual car damage",
       "links_cell": "[GitHub](https://github.com/AnastasisMarinos/UE5-Vehicle-Template)",
       "links": [
@@ -5131,7 +5131,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 13,
@@ -5368,7 +5368,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -5426,7 +5426,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -5578,7 +5578,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -5622,7 +5622,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -5674,14 +5674,14 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
       "section_number": 14,
       "section_title": "Card Games, Board Games & Puzzles",
       "name": "Puzzle Collection Blueprint & PuzzleBot",
-      "meta": "UE5 · BP",
+      "meta": "UE5 · BP / C++",
       "highlights": "Multi-mechanic Blueprint puzzle collection + programmable logic-grid robot puzzle game",
       "links_cell": "[Puzzle Collection BP](https://github.com/camenduru/unreal-engine-puzzle-collection-blueprint) · [PuzzleBot](https://github.com/SkyeHoefling/PuzzleBot)",
       "links": [
@@ -5696,8 +5696,8 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_commercial_safe": true,
+      "is_blueprint_first": false
     },
     {
       "section_number": 15,
@@ -5733,7 +5733,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 15,
@@ -5885,7 +5885,7 @@
       "name": "VaRest / unreal-fetch",
       "meta": "UE4/5 · MIT",
       "highlights": "Blueprint & C++ REST/JSON HTTP clients",
-      "links_cell": "[VaRest](https://github.com/ufna/VaRest) · [unreal-fetch](https://github.com/GameDev4K/unreal-fetch)",
+      "links_cell": "[VaRest](https://github.com/ufna/VaRest) · [unreal-fetch](https://github.com/GDi4K/unreal-fetch)",
       "links": [
         {
           "label": "VaRest",
@@ -5893,7 +5893,7 @@
         },
         {
           "label": "unreal-fetch",
-          "url": "https://github.com/GameDev4K/unreal-fetch"
+          "url": "https://github.com/GDi4K/unreal-fetch"
         }
       ],
       "is_archived": false,
@@ -6049,7 +6049,7 @@
       "section_number": 15,
       "section_title": "Multiplayer, Party, Co-op, Online Services (OSSv2/Steam/PlayFab) & MMO Backends",
       "name": "NetworkReplication-UE5",
-      "meta": "UE 5.6+ · BP",
+      "meta": "UE 5.6+ · C++/BP",
       "highlights": "Blueprint-friendly multiplayer networking & replication monitor without manual RPCs",
       "links_cell": "[GitHub](https://github.com/straywriter/NetworkReplication-UE5)",
       "links": [
@@ -6061,7 +6061,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 15,
@@ -6082,7 +6082,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6159,7 +6159,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 15,
@@ -6180,7 +6180,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6251,7 +6251,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 15,
@@ -6314,7 +6314,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6336,7 +6336,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6358,7 +6358,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6414,8 +6414,8 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_commercial_safe": true,
+      "is_blueprint_first": false
     },
     {
       "section_number": 15,
@@ -6474,7 +6474,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6636,7 +6636,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6684,7 +6684,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6706,8 +6706,8 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
-      "is_blueprint_first": true
+      "is_commercial_safe": true,
+      "is_blueprint_first": false
     },
     {
       "section_number": 16,
@@ -6792,7 +6792,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -6817,7 +6817,7 @@
       "section_number": 17,
       "section_title": "Portals, Physics Sandboxes, Chaos Destruction & Level Builders",
       "name": "Modular Mechanics Toolkit",
-      "meta": "UE 5.7 · MIT",
+      "meta": "UE5 · MIT",
       "highlights": "Grid-free snapping building, tactile inertia physics grabber, Chaos destruction (`BPC_BuildThrowC4`), persistent world save/load",
       "links_cell": "[GitHub](https://github.com/REPIRK/Modular-Mechanics-Toolkit-UE5)",
       "links": [
@@ -6827,7 +6827,7 @@
         }
       ],
       "is_archived": false,
-      "is_ue58": true,
+      "is_ue58": false,
       "is_commercial_safe": true,
       "is_blueprint_first": false
     },
@@ -6865,7 +6865,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 17,
@@ -6930,7 +6930,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -7028,7 +7028,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -7054,7 +7054,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -7076,7 +7076,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -7121,7 +7121,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 17,
@@ -7145,9 +7145,9 @@
       "section_number": 17,
       "section_title": "Portals, Physics Sandboxes, Chaos Destruction & Level Builders",
       "name": "KD-Tree, TransformGizmo & Voxel Tutorials",
-      "meta": "UE5 · MIT / Apache-2.0 / Mixed",
-      "highlights": "Nearest-neighbor `k-d` tree, runtime 3D Transform Gizmo, Voxel mesh tutorials & Legacy VoxelPlugin (1.7k★)",
-      "links_cell": "[UEPlugin-Kdtree](https://github.com/nutti/UEPlugin-Kdtree) · [PhysXInstancedSubsystem](https://github.com/Dragomirson/PhysXInstancedSubsystem) · [UnrealTransformGizmo](https://github.com/robinwood3d/UnrealTransformGizmo) · [UE5VoxelTutorial](https://github.com/BLaZeKiLL/UE5VoxelTutorial) · [VoxelPluginFreeLegacy](https://github.com/VoxelPlugin/VoxelPluginFreeLegacy)",
+      "meta": "UE5 · MIT / Apache-2.0",
+      "highlights": "Nearest-neighbor `k-d` tree, runtime 3D Transform Gizmo & procedural voxel mesh tutorials",
+      "links_cell": "[UEPlugin-Kdtree](https://github.com/nutti/UEPlugin-Kdtree) · [PhysXInstancedSubsystem](https://github.com/Dragomirson/PhysXInstancedSubsystem) · [UnrealTransformGizmo](https://github.com/robinwood3d/UnrealTransformGizmo) · [UE5VoxelTutorial](https://github.com/BLaZeKiLL/UE5VoxelTutorial)",
       "links": [
         {
           "label": "UEPlugin-Kdtree",
@@ -7164,15 +7164,11 @@
         {
           "label": "UE5VoxelTutorial",
           "url": "https://github.com/BLaZeKiLL/UE5VoxelTutorial"
-        },
-        {
-          "label": "VoxelPluginFreeLegacy",
-          "url": "https://github.com/VoxelPlugin/VoxelPluginFreeLegacy"
         }
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -7616,20 +7612,24 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
       "section_number": 18,
       "section_title": "AI, StateTree, 3D Navigation & Mass Entity Crowds",
-      "name": "AIFlowGraph & HAIPro",
+      "name": "AIFlowGraph, CoverGenerator & HAIPro",
       "meta": "UE5 · MIT / OS",
-      "highlights": "Blackboard/AI task extensions for `FlowGraph` + modular perception & Behavior Tree AI plugin",
-      "links_cell": "[AIFlowGraph](https://github.com/LindyHopperGT/AIFlowGraph) · [HAIPro](https://github.com/haktan313/HAIPro) · [FlockAI](https://github.com/parmandorc/FlockAI)",
+      "highlights": "Blackboard/AI `FlowGraph` tasks, dynamic tactical cover-point generator (255+★) & Behavior Tree AI plugins",
+      "links_cell": "[AIFlowGraph](https://github.com/LindyHopperGT/AIFlowGraph) · [CoverGenerator (MIT)](https://github.com/Deams51/CoverGenerator-UE4) · [HAIPro](https://github.com/haktan313/HAIPro) · [FlockAI](https://github.com/parmandorc/FlockAI)",
       "links": [
         {
           "label": "AIFlowGraph",
           "url": "https://github.com/LindyHopperGT/AIFlowGraph"
+        },
+        {
+          "label": "CoverGenerator (MIT)",
+          "url": "https://github.com/Deams51/CoverGenerator-UE4"
         },
         {
           "label": "HAIPro",
@@ -7642,7 +7642,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -7793,11 +7793,11 @@
       "name": "VoxelPlugin",
       "meta": "UE4/5",
       "highlights": "Real-time procedural & destructible voxel worlds",
-      "links_cell": "[GitHub](https://github.com/Phyronnaz/VoxelPlugin)",
+      "links_cell": "[GitHub](https://github.com/VoxelPlugin/VoxelPluginFreeLegacy)",
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/Phyronnaz/VoxelPlugin"
+          "url": "https://github.com/VoxelPlugin/VoxelPluginFreeLegacy"
         }
       ],
       "is_archived": false,
@@ -7811,11 +7811,11 @@
       "name": "OpenLand",
       "meta": "UE4/5",
       "highlights": "Open-source landscape auto-material",
-      "links_cell": "[GitHub](https://github.com/GameDev4K/unreal-open-land)",
+      "links_cell": "[GitHub](https://github.com/GDi4K/unreal-openland)",
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/GameDev4K/unreal-open-land"
+          "url": "https://github.com/GDi4K/unreal-openland"
         }
       ],
       "is_archived": false,
@@ -7855,7 +7855,7 @@
         }
       ],
       "is_archived": false,
-      "is_ue58": true,
+      "is_ue58": false,
       "is_commercial_safe": false,
       "is_blueprint_first": false
     },
@@ -7917,7 +7917,7 @@
       "section_number": 19,
       "section_title": "World, PCG (UE 5.8), Weather, GPU Water, Foliage & 3D Gaussian Splatting",
       "name": "ArcGIS CityEngine for Unreal",
-      "meta": "UE5",
+      "meta": "UE5 · Apache-2.0 / Commercial SDK",
       "highlights": "Procedural urban/architecture modeling rules directly in Unreal",
       "links_cell": "[GitHub](https://github.com/Esri/cityengine_for_unreal)",
       "links": [
@@ -7928,7 +7928,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": true,
+      "is_commercial_safe": false,
       "is_blueprint_first": false
     },
     {
@@ -8182,7 +8182,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8212,7 +8212,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8260,7 +8260,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8282,7 +8282,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8334,7 +8334,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8506,7 +8506,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8749,7 +8749,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 20,
@@ -8898,7 +8898,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8924,7 +8924,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8954,7 +8954,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -8986,14 +8986,18 @@
     {
       "section_number": 20,
       "section_title": "Stylized / Anime Toon Rendering & Audio / MetaSounds DSP",
-      "name": "Shadertoy-to-UE, NNI StyleTransfer, GPU Sort & Audio BPs",
+      "name": "Shadertoy-to-UE, ONNX StyleTransfer, GPU Sort & Audio BPs",
       "meta": "UE5 · MIT / OS",
-      "highlights": "Convert Shadertoy GLSL to HLSL, NNI style transfer, GPU parallel sort compute shader & procedural audio BPs",
-      "links_cell": "[shadertoy-to-ue](https://github.com/Dimev/shadertoy-to-unreal-engine) · [UE5-NNI-StyleTransfer](https://github.com/WeirdFrames/UE5-NNI-StyleTransfer) · [CustomComputeShaders](https://github.com/AyoubKhammassi/CustomComputeShaders) · [ShaderLinking](https://github.com/MaximeDup/UnrealEngine_ShaderLinking) · [SortingComputeShader](https://github.com/ValentinKraft/UE4_SortingComputeShader) · [ArthursAudioBPs](https://github.com/ArthurBarthur/ArthursAudioBPs)",
+      "highlights": "Convert Shadertoy GLSL to HLSL, Microsoft ONNX Runtime & NNI style transfer, GPU sort compute shader & procedural audio BPs",
+      "links_cell": "[shadertoy-to-ue](https://github.com/Dimev/shadertoy-to-unreal-engine) · [OnnxRuntime-UE5 (MIT)](https://github.com/microsoft/OnnxRuntime-UnrealEngine) · [UE5-NNI-StyleTransfer](https://github.com/WeirdFrames/UE5-NNI-StyleTransfer) · [CustomComputeShaders](https://github.com/AyoubKhammassi/CustomComputeShaders) · [ShaderLinking](https://github.com/MaximeDup/UnrealEngine_ShaderLinking) · [SortingComputeShader](https://github.com/ValentinKraft/UE4_SortingComputeShader) · [ArthursAudioBPs](https://github.com/ArthurBarthur/ArthursAudioBPs)",
       "links": [
         {
           "label": "shadertoy-to-ue",
           "url": "https://github.com/Dimev/shadertoy-to-unreal-engine"
+        },
+        {
+          "label": "OnnxRuntime-UE5 (MIT)",
+          "url": "https://github.com/microsoft/OnnxRuntime-UnrealEngine"
         },
         {
           "label": "UE5-NNI-StyleTransfer",
@@ -9018,7 +9022,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9076,7 +9080,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9156,7 +9160,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9519,7 +9523,7 @@
       "is_archived": false,
       "is_ue58": false,
       "is_commercial_safe": true,
-      "is_blueprint_first": true
+      "is_blueprint_first": false
     },
     {
       "section_number": 21,
@@ -9580,7 +9584,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9607,10 +9611,10 @@
       "name": "UE5 AI / MCP Automation Plugins",
       "meta": "UE 5.4–5.8",
       "highlights": "Open-source MCP & CLI bridges for agent-driven Blueprint/editor automation",
-      "links_cell": "[Unreal-MCP](https://github.com/IvanMurzak/Unreal-MCP) · [BlueprintEngine](https://github.com/Blueprint-Engine/BlueprintEngine) · [mcp-unreal](https://github.com/remiphilippe/mcp-unreal) · [NexusLink](https://github.com/bytepine/NexusLink) · [uemcp (MIT)](https://github.com/ATDev-Inc/uemcp) · [soft-ue-cli](https://github.com/softdaddy-o/soft-ue-cli)",
+      "links_cell": "[Unreal-MCP (Apache-2.0 + PolyForm Shield)](https://github.com/IvanMurzak/Unreal-MCP) · [BlueprintEngine](https://github.com/Blueprint-Engine/BlueprintEngine) · [mcp-unreal](https://github.com/remiphilippe/mcp-unreal) · [NexusLink](https://github.com/bytepine/NexusLink) · [uemcp (MIT)](https://github.com/ATDev-Inc/uemcp) · [soft-ue-cli](https://github.com/softdaddy-o/soft-ue-cli)",
       "links": [
         {
-          "label": "Unreal-MCP",
+          "label": "Unreal-MCP (Apache-2.0 + PolyForm Shield)",
           "url": "https://github.com/IvanMurzak/Unreal-MCP"
         },
         {
@@ -9721,7 +9725,7 @@
       "name": "Deep-Cut Open-Source Genre Projects",
       "meta": "UE5",
       "highlights": "Football (LAN/Steam MP), Local MP Golf, Skateboarding Sim, 2.5D Metroidvania, Cozy Open World, Fighting Template",
-      "links_cell": "[ProVisionFootball](https://github.com/Voit89/ProVisionFootball) · [Golf-Mania](https://github.com/ChaseZardezed/Golf-Mania-Case-Study) · [Skateboard-Sim](https://github.com/omar94hamza/Skateboard-Sim-Prototype) · [ProjectLux](https://github.com/TinyAlmonds/ProjectLux) · [CozyTales](https://github.com/AndromeDIE/CozyTales) · [FightingTemplate](https://github.com/TanushKrashak/Ue5.0_FightingGameTemplate)",
+      "links_cell": "[ProVisionFootball](https://github.com/Voit89/ProVisionFootball) · [Golf-Mania](https://github.com/ChaseZardezed/Golf-Mania-Case-Study) · [Skateboard-Sim](https://github.com/omar94hamza/Skateboard-Sim-Prototype) · [ProjectLux](https://github.com/TinyAlmonds/ProjectLux) · [CozyTales](https://github.com/AndromeDIE/CozyTales) · [FightingTemplate](https://github.com/KonekoSupremacy/Ue5.0_FightingGameTemplate)",
       "links": [
         {
           "label": "ProVisionFootball",
@@ -9745,12 +9749,12 @@
         },
         {
           "label": "FightingTemplate",
-          "url": "https://github.com/TanushKrashak/Ue5.0_FightingGameTemplate"
+          "url": "https://github.com/KonekoSupremacy/Ue5.0_FightingGameTemplate"
         }
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9772,7 +9776,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9794,7 +9798,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9856,7 +9860,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -9934,7 +9938,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -10028,7 +10032,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -10162,7 +10166,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -10822,7 +10826,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": true,
+      "is_commercial_safe": false,
       "is_blueprint_first": false
     },
     {
@@ -10840,7 +10844,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": true,
+      "is_commercial_safe": false,
       "is_blueprint_first": false
     },
     {
@@ -10929,7 +10933,7 @@
         }
       ],
       "is_archived": false,
-      "is_ue58": false,
+      "is_ue58": true,
       "is_commercial_safe": false,
       "is_blueprint_first": false
     },
@@ -10966,7 +10970,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": true,
+      "is_commercial_safe": false,
       "is_blueprint_first": false
     },
     {
@@ -11028,7 +11032,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": true,
+      "is_commercial_safe": false,
       "is_blueprint_first": false
     },
     {
@@ -11230,7 +11234,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11588,7 +11592,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11628,7 +11632,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11650,7 +11654,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11672,7 +11676,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11710,7 +11714,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11826,7 +11830,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11884,7 +11888,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -11983,11 +11987,11 @@
       "name": "Anime-Tools",
       "meta": "Open Source",
       "highlights": "Anime character & shading utilities targeting Blender 4.5 LTS",
-      "links_cell": "[GitHub](https://github.com/AtomaHuro/Anime-Tools)",
+      "links_cell": "[GitHub](https://github.com/Kraxziss/Anime-Tools)",
       "links": [
         {
           "label": "GitHub",
-          "url": "https://github.com/AtomaHuro/Anime-Tools"
+          "url": "https://github.com/Kraxziss/Anime-Tools"
         }
       ],
       "is_archived": false,
@@ -12400,7 +12404,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12448,7 +12452,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12474,7 +12478,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12540,7 +12544,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12562,7 +12566,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12674,7 +12678,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12798,7 +12802,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12892,20 +12896,28 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
       "section_number": 33,
       "section_title": "Blueprint Graph Formatters, Editor Productivity, Source Control & Build/CI DevOps",
-      "name": "RedTalaria (CDPR), Hermes, ProjectExodus & clangd",
+      "name": "RedTalaria (CDPR), octobuild, ProjectExodus & clangd",
       "meta": "UE5 · MIT / BSD-3 / Mixed",
-      "highlights": "CD Projekt Red Hermes deep-links, Unity-to-Unreal scene transfer (500+★), VS Code `clangd`, lightmap & nav exporters",
-      "links_cell": "[RedTalaria (CDPR)](https://github.com/cdpred/RedTalaria) · [Hermes](https://github.com/jorgenpt/Hermes) · [ProjectExodus](https://github.com/NegInfinity/ProjectExodus) · [unreal-clangd](https://github.com/boocs/unreal-clangd) · [Auto-Lightmap-Adjuster](https://github.com/alexismorin/Auto-Lightmap-Adjuster) · [export-nav-data](https://github.com/hxhb/ue4-export-nav-data) · [EditorCameraPosition](https://github.com/zompi2/EditorCameraPositionUE4) · [Game-Settings-Master](https://github.com/MikeSaito/Game-Settings-Master) · [UEImgui](https://github.com/ZhuRong-HomoStation/UEImgui)",
+      "highlights": "CD Projekt Red Hermes deep-links, Rust Unreal C++ compiler cache (`octobuild`), `ue4cli`, Unity-to-Unreal scene transfer (500+★) & `clangd`",
+      "links_cell": "[RedTalaria (CDPR)](https://github.com/cdpred/RedTalaria) · [octobuild](https://github.com/octobuild/octobuild) · [ue4cli](https://github.com/adamrehn/ue4cli) · [Hermes](https://github.com/jorgenpt/Hermes) · [ProjectExodus](https://github.com/NegInfinity/ProjectExodus) · [unreal-clangd](https://github.com/boocs/unreal-clangd) · [Auto-Lightmap-Adjuster](https://github.com/alexismorin/Auto-Lightmap-Adjuster) · [export-nav-data](https://github.com/hxhb/ue4-export-nav-data) · [EditorCameraPosition](https://github.com/zompi2/EditorCameraPositionUE4) · [Game-Settings-Master](https://github.com/MikeSaito/Game-Settings-Master) · [UEImgui](https://github.com/ZhuRong-HomoStation/UEImgui)",
       "links": [
         {
           "label": "RedTalaria (CDPR)",
           "url": "https://github.com/cdpred/RedTalaria"
+        },
+        {
+          "label": "octobuild",
+          "url": "https://github.com/octobuild/octobuild"
+        },
+        {
+          "label": "ue4cli",
+          "url": "https://github.com/adamrehn/ue4cli"
         },
         {
           "label": "Hermes",
@@ -12942,7 +12954,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -12968,7 +12980,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13074,7 +13086,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13122,7 +13134,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13152,7 +13164,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13262,7 +13274,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13310,7 +13322,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13340,20 +13352,24 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
       "section_number": 35,
       "section_title": "Robotics, Autonomous Vehicles, Drones, ROS2 & Synthetic Vision Simulation",
-      "name": "GR00T-Unreal (UE 5.4–5.8), Semantic Capture & MindMaker",
+      "name": "GR00T-Unreal (UE 5.4–5.8), EasySynth & MindMaker",
       "meta": "**UE 5.4–5.8** · MIT / OS",
-      "highlights": "NVIDIA GR00T humanoid bridge, semantic RGB/mask capture (260+★), TensorFlow examples & RL MindMaker",
-      "links_cell": "[GR00T-Unreal-Plugin](https://github.com/SarthakKalla/GR00T-Unreal-Plugin) · [UnrealImageCapture](https://github.com/TimmHess/UnrealImageCapture) · [TensorFlow-Examples](https://github.com/getnamo/TensorFlow-Unreal-Examples) · [MindMaker](https://github.com/krumiaa/MindMaker)",
+      "highlights": "NVIDIA GR00T humanoid bridge, synthetic CV camera/depth dataset plugin (`EasySynth`), semantic capture & RL MindMaker",
+      "links_cell": "[GR00T-Unreal-Plugin](https://github.com/SarthakKalla/GR00T-Unreal-Plugin) · [EasySynth (MIT)](https://github.com/ydrive/EasySynth) · [UnrealImageCapture](https://github.com/TimmHess/UnrealImageCapture) · [TensorFlow-Examples](https://github.com/getnamo/TensorFlow-Unreal-Examples) · [MindMaker](https://github.com/krumiaa/MindMaker)",
       "links": [
         {
           "label": "GR00T-Unreal-Plugin",
           "url": "https://github.com/SarthakKalla/GR00T-Unreal-Plugin"
+        },
+        {
+          "label": "EasySynth (MIT)",
+          "url": "https://github.com/ydrive/EasySynth"
         },
         {
           "label": "UnrealImageCapture",
@@ -13370,7 +13386,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13410,7 +13426,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13476,7 +13492,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13550,7 +13566,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13606,7 +13622,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13640,7 +13656,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13674,7 +13690,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13742,7 +13758,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13780,7 +13796,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13806,7 +13822,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13866,7 +13882,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -13888,7 +13904,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14026,7 +14042,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14090,7 +14106,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14140,7 +14156,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14174,7 +14190,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14214,14 +14230,22 @@
     {
       "section_number": 39,
       "section_title": "Modding, Pak/IoStore Inspection, Asset Serialization, Runtime BPs & Live SDK Debugging",
-      "name": "kismet-analyzer & gvas-converter",
+      "name": "kismet-analyzer, uesave, retoc & gvas-converter",
       "meta": "UE4/5 · MIT",
-      "highlights": "Blueprint Kismet bytecode CFG/disassembly analyzer + `.sav` GVAS SaveGame <-> JSON converter",
-      "links_cell": "[kismet-analyzer](https://github.com/trumank/kismet-analyzer) · [gvas-converter](https://github.com/13xforever/gvas-converter)",
+      "highlights": "Blueprint Kismet bytecode CFG analyzer, Rust `.sav` SaveGame CLI (`uesave`, 490+★), IoStore `.ucas`/`.utoc` CLI (`retoc`) & GVAS converter",
+      "links_cell": "[kismet-analyzer](https://github.com/trumank/kismet-analyzer) · [uesave (MIT)](https://github.com/trumank/uesave) · [retoc (MIT)](https://github.com/trumank/retoc) · [gvas-converter](https://github.com/13xforever/gvas-converter)",
       "links": [
         {
           "label": "kismet-analyzer",
           "url": "https://github.com/trumank/kismet-analyzer"
+        },
+        {
+          "label": "uesave (MIT)",
+          "url": "https://github.com/trumank/uesave"
+        },
+        {
+          "label": "retoc (MIT)",
+          "url": "https://github.com/trumank/retoc"
         },
         {
           "label": "gvas-converter",
@@ -14289,7 +14313,7 @@
       "name": "CliqueSync, DevOps Scripts, MySQL & BYG Localization",
       "meta": "UE4/5 · MIT / BSD-3",
       "highlights": "Team binary/engine sync, PowerShell build tools, engine update tracker, MySQL, Lobby, TTS & CSV localization",
-      "links_cell": "[CliqueSync](https://github.com/ProjectBorealis/CliqueSync) · [UnrealXistTools](https://github.com/XistGG/UnrealXistTools) · [UpdateTracker](https://github.com/pafuhana1213/UnrealEngine-UpdateTracker) · [mp-downloader](https://github.com/Allar/ue4-mp-downloader) · [MySQLConnector](https://github.com/KhArtNJava/MySQLConnectorUE4Plugin) · [ServerAndLobby](https://github.com/gizmolunchbox/ServerAndLobbySystem) · [Umut MotionMatching](https://github.com/UmutFarukDilli/motionmatchingreplicated) · [BYGLocalization](https://github.com/BraceYourselfGames/UE-BYGLocalization) · [UnrealMimic TTS](https://github.com/skeskinen/UnrealMimic) · [UE-HTML5](https://github.com/ufna/UE-HTML5)",
+      "links_cell": "[CliqueSync](https://github.com/ProjectBorealis/CliqueSync) · [UnrealXistTools](https://github.com/XistGG/UnrealXistTools) · [UpdateTracker](https://github.com/pafuhana1213/UnrealEngine-UpdateTracker) · [mp-downloader](https://github.com/Allar/ue4-mp-downloader) · [MySQLConnector](https://github.com/KhArtNJava/MySQLConnectorUE4Plugin) · [ServerAndLobby](https://github.com/gizmolunchbox/ServerAndLobbySystem) · [BYGLocalization](https://github.com/BraceYourselfGames/UE-BYGLocalization) · [UnrealMimic TTS](https://github.com/skeskinen/UnrealMimic) · [UE-HTML5](https://github.com/ufna/UE-HTML5)",
       "links": [
         {
           "label": "CliqueSync",
@@ -14314,10 +14338,6 @@
         {
           "label": "ServerAndLobby",
           "url": "https://github.com/gizmolunchbox/ServerAndLobbySystem"
-        },
-        {
-          "label": "Umut MotionMatching",
-          "url": "https://github.com/UmutFarukDilli/motionmatchingreplicated"
         },
         {
           "label": "BYGLocalization",
@@ -14382,7 +14402,7 @@
       ],
       "is_archived": false,
       "is_ue58": true,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14404,7 +14424,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14434,7 +14454,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14490,7 +14510,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     },
     {
@@ -14520,7 +14540,7 @@
       ],
       "is_archived": false,
       "is_ue58": false,
-      "is_commercial_safe": false,
+      "is_commercial_safe": true,
       "is_blueprint_first": false
     }
   ]

@@ -16,6 +16,8 @@ GITHUB_SPDX_PATH = CATALOGS / "GITHUB_SPDX.json"
 
 LINK_RE = re.compile(r"\[([^\]]+)\]\((https://[^)\s]+)\)")
 SECTION_RE = re.compile(r"^## (\d+)\.\s+(.+?)\s*$")
+DELIMITER_CELL_RE = re.compile(r"^:?-{3,}:?$")
+
 PERMISSIVE_SPDX = frozenset({
     "MIT",
     "Apache-2.0",
@@ -38,11 +40,49 @@ VERIFIED_CC0_DOMAINS = frozenset({
 VERIFIED_CC0_URLS = frozenset({
     "https://itch.io/game-assets/assets-cc0/free",
 })
-UE58_TOKEN_RE = re.compile(
-    r"\b5\.[78](?:\.\d+)?\b|5\.\d+[–-]5\.[78]|5\.x[–-]5\.[78]|4\.\d+[–-]5\.[78]"
+CODE_SOURCE_LANGS = frozenset({
+    "C++",
+    "C",
+    "C#",
+    "Objective-C",
+    "Objective-C++",
+    "Python",
+    "Rust",
+    "JavaScript",
+    "TypeScript",
+    "Lua",
+    "HLSL",
+    "GLSL",
+    "Go",
+    "Java",
+    "Kotlin",
+    "Haxe",
+    "Nim",
+})
+PURE_BP_EPIC_SAMPLES = frozenset({
+    "Stack-O-Bot",
+    "Cropout Sample Project",
+    "Multiplayer Shootout",
+    "Epic Blueprints Showcase",
+})
+CODE_LANG_RE = re.compile(
+    r"(?i)(?:(?<!\w)c\+\+|\bcpp\b|(?<!\w)c#|\bpython\b|\brust\b|\bangelscript\b|\bmcp\b|\bhlsl\b)"
 )
-CODE_LANG_RE = re.compile(r"(?i)(?:(?<!\w)c\+\+|\bcpp\b|(?<!\w)c#|\bpython\b|\brust\b|\bangelscript\b|\bmcp\b|\bhlsl\b)")
 NO_CPP_RE = re.compile(r"(?i)\b(?:no|zero)\s+c\+\+")
+
+
+@dataclasses.dataclass(frozen=True)
+class RawRow:
+    section_number: int
+    section_title: str
+    name_raw: str
+    name: str
+    source_col: str
+    meta: str
+    highlights: str
+    links_cell: str
+    links: list[dict[str, str]]
+    is_archived: bool
 
 
 @dataclasses.dataclass(frozen=True)
@@ -96,29 +136,55 @@ def link_permissive_spdx(url: str, spdx_db: dict[str, dict[str, object]]) -> str
     key = gh_repo_key(url)
     if key and key in spdx_db:
         info = spdx_db[key]
-        if not info.get("archived"):
+        if not info.get("archived") and not info.get("bundledRestriction"):
             spdx = str(info.get("spdx") or "")
             if spdx in PERMISSIVE_SPDX:
                 return spdx
     return None
 
 
+def is_link_ue58_verified(url: str, spdx_db: dict[str, dict[str, object]]) -> bool:
+    key = gh_repo_key(url)
+    if not key or key not in spdx_db:
+        return False
+    info = spdx_db[key]
+    return bool(info.get("ue58Verified")) and not bool(info.get("archived")) and not bool(info.get("readmeOnly"))
+
+
+def is_link_pure_blueprint(
+    url: str,
+    section_number: int,
+    entry_name: str,
+    spdx_db: dict[str, dict[str, object]],
+) -> bool:
+    key = gh_repo_key(url)
+    if key:
+        info = spdx_db.get(key)
+        if not info or info.get("archived") or info.get("readmeOnly"):
+            return False
+        langs = info.get("languages") or []
+        return not any(str(lang) in CODE_SOURCE_LANGS for lang in langs)
+    if section_number == 1:
+        return entry_name in PURE_BP_EPIC_SAMPLES
+    return 2 <= section_number <= 21
+
+
 def format_links(links: list[dict[str, str]]) -> str:
     return " · ".join(f"[{lk['label']}]({lk['url']})" for lk in links)
 
 
-def parse_readme_entries(
+def parse_raw_rows(
     readme_text: str,
     spdx_db: dict[str, dict[str, object]],
-) -> list[CatalogEntry]:
-    entries: list[CatalogEntry] = []
+) -> list[RawRow]:
+    rows: list[RawRow] = []
     cur_num = 0
     cur_title = ""
     in_fence = False
     header_cols: list[str] = []
     table_row_idx = 0
 
-    for raw_line in readme_text.splitlines():
+    for lineno, raw_line in enumerate(readme_text.splitlines(), 1):
         line = raw_line.strip()
         if line.startswith("```"):
             in_fence = not in_fence
@@ -144,6 +210,8 @@ def parse_readme_entries(
                 table_row_idx = 1
                 continue
             if table_row_idx == 1:
+                if not all(DELIMITER_CELL_RE.match(c) for c in cells):
+                    raise ValueError(f"README.md:{lineno}: missing or invalid Markdown table delimiter row")
                 table_row_idx = 2
                 continue
 
@@ -152,7 +220,9 @@ def parse_readme_entries(
                 continue
 
             name_raw = cells[0]
+            source_col = ""
             if len(cells) == 5:
+                source_col = cells[1]
                 if "license" in header_cols[1]:
                     meta = f"{cells[2]} · {cells[1]}"
                 else:
@@ -178,56 +248,25 @@ def parse_readme_entries(
             active_links = [
                 lk for lk in links if not is_link_archived(lk, spdx_db, row_name_archived)
             ]
-            is_archived = len(active_links) == 0
-
-            meta_has_ue58 = bool(UE58_TOKEN_RE.search(meta))
-            single_highlight_ue58 = len(links) == 1 and bool(UE58_TOKEN_RE.search(highlights))
-            link_has_ue58 = any(UE58_TOKEN_RE.search(lk["label"]) for lk in active_links)
-            is_ue58 = (
-                not is_archived
-                and cur_num not in (22, 23, 25, 27, 28, 29, 30, 31, 32)
-                and (meta_has_ue58 or single_highlight_ue58 or link_has_ue58)
-            )
-
-            all_active_permissive = (
-                not is_archived
-                and cur_num not in (1, 22, 23)
-                and all(link_permissive_spdx(lk["url"], spdx_db) is not None for lk in active_links)
-            )
-
-            combined_text = f"{meta} {highlights}"
-            mentions_code = bool(CODE_LANG_RE.search(combined_text)) and not bool(NO_CPP_RE.search(combined_text))
-            has_bp_signal = (
-                bool(re.search(r"(?<![/\w])BP(?![/\w])", meta))
-                or "blueprint" in highlights.lower()
-            )
-            is_bp = (
-                not is_archived
-                and 1 <= cur_num <= 21
-                and has_bp_signal
-                and not mentions_code
-            )
-
-            entries.append(
-                CatalogEntry(
+            rows.append(
+                RawRow(
                     section_number=cur_num,
                     section_title=cur_title,
+                    name_raw=name_raw,
                     name=clean_md(name_raw),
+                    source_col=source_col,
                     meta=meta,
                     highlights=highlights,
                     links_cell=cells[-1],
                     links=links,
-                    is_archived=is_archived,
-                    is_ue58=is_ue58,
-                    is_commercial_safe=all_active_permissive,
-                    is_blueprint_first=is_bp,
+                    is_archived=(len(active_links) == 0),
                 )
             )
         else:
             header_cols = []
             table_row_idx = 0
 
-    return entries
+    return rows
 
 
 def dedup_links(links: list[dict[str, str]], seen_urls: set[str]) -> list[dict[str, str]]:
@@ -267,103 +306,147 @@ def render_filtered_markdown(
     return "\n".join(lines).rstrip() + "\n"
 
 
-def build_outputs(
+def compile_catalog(
     readme_text: str,
     spdx_db: dict[str, dict[str, object]],
-) -> dict[pathlib.Path, str]:
-    entries = parse_readme_entries(readme_text, spdx_db)
+) -> tuple[list[CatalogEntry], dict[pathlib.Path, str]]:
+    raw_rows = parse_raw_rows(readme_text, spdx_db)
 
     ue58_sec: dict[tuple[int, str], list[tuple[str, str, str, list[dict[str, str]]]]] = {}
     ue58_seen: set[str] = set()
-    for e in entries:
-        if e.is_archived or e.section_number in (22, 23, 25, 27, 28, 29, 30, 31, 32):
-            continue
-        row_arch = "archived" in e.name.lower()
-        active = [lk for lk in e.links if not is_link_archived(lk, spdx_db, row_arch)]
-        if UE58_TOKEN_RE.search(e.meta) or (len(e.links) == 1 and UE58_TOKEN_RE.search(e.highlights)):
-            chosen = dedup_links(active, ue58_seen)
-        else:
-            tagged = [lk for lk in active if UE58_TOKEN_RE.search(lk["label"])]
-            chosen = dedup_links(tagged, ue58_seen)
-        if chosen:
-            meta_out = e.meta if UE58_TOKEN_RE.search(e.meta) else "UE 5.7–5.8"
-            ue58_sec.setdefault((e.section_number, e.section_title), []).append(
-                (e.name, meta_out, e.highlights, chosen)
-            )
+    emitted_ue58: set[int] = set()
 
     safe_sec: dict[tuple[int, str], list[tuple[str, str, str, list[dict[str, str]]]]] = {}
     safe_seen: set[str] = set()
-    for e in entries:
-        if e.is_archived or e.section_number in (1, 22, 23, 25):
-            continue
-        row_arch = "archived" in e.name.lower()
-        perm_links: list[dict[str, str]] = []
-        perm_licenses: list[str] = []
-        for lk in e.links:
-            if is_link_archived(lk, spdx_db, row_arch):
-                continue
-            spdx = link_permissive_spdx(lk["url"], spdx_db)
-            if spdx is not None:
-                perm_links.append(lk)
-                if spdx not in perm_licenses:
-                    perm_licenses.append(spdx)
-        chosen = dedup_links(perm_links, safe_seen)
-        if chosen:
-            lic_badge = " / ".join(perm_licenses)
-            safe_sec.setdefault((e.section_number, e.section_title), []).append(
-                (e.name, lic_badge, e.highlights, chosen)
-            )
+    emitted_safe: set[int] = set()
 
     bp_sec: dict[tuple[int, str], list[tuple[str, str, str, list[dict[str, str]]]]] = {}
     bp_seen: set[str] = set()
-    for e in entries:
-        if not e.is_blueprint_first:
+    emitted_bp: set[int] = set()
+
+    for idx, r in enumerate(raw_rows):
+        if r.is_archived:
             continue
-        row_arch = "archived" in e.name.lower()
-        active = [lk for lk in e.links if not is_link_archived(lk, spdx_db, row_arch)]
-        chosen = dedup_links(active, bp_seen)
-        if chosen:
-            bp_sec.setdefault((e.section_number, e.section_title), []).append(
-                (e.name, e.meta, e.highlights, chosen)
+        row_arch = "archived" in r.name_raw.lower()
+        active = [lk for lk in r.links if not is_link_archived(lk, spdx_db, row_arch)]
+
+        # 1. Per-link upstream-verified UE 5.7 / 5.8 filter
+        if r.section_number not in (22, 23, 27, 28, 29, 30, 31, 32):
+            ue58_links = [lk for lk in active if is_link_ue58_verified(lk["url"], spdx_db)]
+            chosen_ue58 = dedup_links(ue58_links, ue58_seen)
+            if chosen_ue58:
+                emitted_ue58.add(idx)
+                meta_out = r.meta if ("5.7" in r.meta or "5.8" in r.meta) else "UE 5.7–5.8"
+                ue58_sec.setdefault((r.section_number, r.section_title), []).append(
+                    (r.name, meta_out, r.highlights, chosen_ue58)
+                )
+
+        # 2. Per-link SPDX & bundled-restriction verified Commercial-Safe filter
+        if r.section_number not in (1, 22, 23):
+            perm_links: list[dict[str, str]] = []
+            perm_licenses: list[str] = []
+            for lk in active:
+                spdx = link_permissive_spdx(lk["url"], spdx_db)
+                if spdx is not None:
+                    perm_links.append(lk)
+                    if spdx not in perm_licenses:
+                        perm_licenses.append(spdx)
+            chosen_safe = dedup_links(perm_links, safe_seen)
+            if chosen_safe:
+                emitted_safe.add(idx)
+                safe_sec.setdefault((r.section_number, r.section_title), []).append(
+                    (r.name, " / ".join(perm_licenses), r.highlights, chosen_safe)
+                )
+
+        # 3. Per-link GitHub-language-verified Pure-Blueprint filter (Sections 1..21)
+        if 1 <= r.section_number <= 21 and "docs" not in r.source_col.lower():
+            combined_text = f"{r.name_raw} {r.meta} {r.highlights}"
+            mentions_code = bool(CODE_LANG_RE.search(combined_text)) and not bool(NO_CPP_RE.search(combined_text))
+            has_bp_signal = (
+                bool(re.search(r"(?<![/\w])BP(?![/\w])", r.meta))
+                or "blueprint" in r.highlights.lower()
             )
+            if has_bp_signal and not mentions_code:
+                pure_bp_links = [
+                    lk for lk in active
+                    if is_link_pure_blueprint(lk["url"], r.section_number, r.name, spdx_db)
+                ]
+                chosen_bp = dedup_links(pure_bp_links, bp_seen)
+                if chosen_bp:
+                    emitted_bp.add(idx)
+                    bp_sec.setdefault((r.section_number, r.section_title), []).append(
+                        (r.name, r.meta, r.highlights, chosen_bp)
+                    )
+
+    entries = [
+        CatalogEntry(
+            section_number=r.section_number,
+            section_title=r.section_title,
+            name=r.name,
+            meta=r.meta,
+            highlights=r.highlights,
+            links_cell=r.links_cell,
+            links=r.links,
+            is_archived=r.is_archived,
+            is_ue58=(idx in emitted_ue58),
+            is_commercial_safe=(idx in emitted_safe),
+            is_blueprint_first=(idx in emitted_bp),
+        )
+        for idx, r in enumerate(raw_rows)
+    ]
 
     all_urls = {lk["url"].rstrip("/").lower() for e in entries for lk in e.links}
-    ue58_count = sum(len(v) for v in ue58_sec.values())
-    safe_count = sum(len(v) for v in safe_sec.values())
-    bp_count = sum(len(v) for v in bp_sec.values())
-
     index_payload = {
-        "schemaVersion": 2,
+        "schemaVersion": 3,
         "stats": {
             "tableBackedSections": len({e.section_number for e in entries}),
             "proseOrHardwareSections": [24, 26],
             "totalEntries": len(entries),
             "uniqueEntryLinks": len(all_urls),
-            "ue57_58FilteredEntries": ue58_count,
-            "commercialSafeFilteredEntries": safe_count,
-            "pureBlueprintFilteredEntries": bp_count,
+            "ue57_58FilteredEntries": len(emitted_ue58),
+            "commercialSafeFilteredEntries": len(emitted_safe),
+            "pureBlueprintFilteredEntries": len(emitted_bp),
         },
         "entries": [dataclasses.asdict(e) for e in entries],
     }
 
-    return {
+    outputs = {
         CATALOGS / "UE58_READY.md": render_filtered_markdown(
             "UE 5.7 & UE 5.8 Verified Templates, Plugins & Tooling",
-            "Filtered view of active Unreal Engine resources explicitly targeting **UE 5.7 or UE 5.8**",
+            "Filtered view of active Unreal Engine repositories verified upstream (`.uproject`/`.uplugin`/README) for **UE 5.7 or UE 5.8**",
             ue58_sec,
         ),
         CATALOGS / "MIT_APACHE_COMMERCIAL_SAFE.md": render_filtered_markdown(
             "Commercial-Safe Open-Source Stack (SPDX-Verified Permissive Licenses)",
-            "Filtered view of active links verified via GitHub's License API (`MIT`, `Apache-2.0`, `BSD-2-Clause`, `BSD-3-Clause`, `0BSD`, `ISC`, `CC0-1.0`, `Unlicense`, `Zlib`, `BSL-1.0`) or pure `CC0` asset hubs — always verify third-party bundled content separately",
+            "Filtered view of active links verified via GitHub's License API (`MIT`, `Apache-2.0`, `BSD-2-Clause`, `BSD-3-Clause`, `0BSD`, `ISC`, `CC0-1.0`, `Unlicense`, `Zlib`, `BSL-1.0`, excluding bundled commercial/PolyForm restrictions) or pure `CC0` asset hubs — always verify third-party bundled content separately",
             safe_sec,
         ),
         CATALOGS / "BLUEPRINT_ONLY.md": render_filtered_markdown(
-            "Pure-Blueprint Templates, Kits & Node Libraries (No C++ Required)",
-            "Filtered view of active **pure-Blueprint** gameplay starter templates, kits, and visual scripting libraries in Sections 1–21",
+            "Pure-Blueprint Templates & Kits (No C++ Required)",
+            "Filtered view of active **pure-Blueprint** starter templates and gameplay kits in Sections 1–21 verified with zero C++/C#/Python/Rust source modules on GitHub",
             bp_sec,
         ),
         CATALOGS / "INDEX.json": json.dumps(index_payload, indent=2, ensure_ascii=False) + "\n",
     }
+    return entries, outputs
+
+
+def parse_readme_entries(
+    readme_text: str,
+    spdx_db: dict[str, dict[str, object]] | None = None,
+) -> list[CatalogEntry]:
+    if spdx_db is None:
+        spdx_db = json.loads(GITHUB_SPDX_PATH.read_text(encoding="utf-8"))
+    entries, _ = compile_catalog(readme_text, spdx_db)
+    return entries
+
+
+def build_outputs(
+    readme_text: str,
+    spdx_db: dict[str, dict[str, object]],
+) -> dict[pathlib.Path, str]:
+    _, outputs = compile_catalog(readme_text, spdx_db)
+    return outputs
 
 
 def main() -> int:
