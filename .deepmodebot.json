@@ -1,0 +1,4 @@
+{
+  "check": "python3 -B scripts/validate_catalog.py",
+  "autonomousMerge": true
+}

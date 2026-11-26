@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Markdown structure, anchors, URL hygiene, and optional live GitHub status."""
+"""Validate Markdown structure, anchors, generated filter views, URL hygiene, and optional live GitHub status."""
 
 from __future__ import annotations
 
@@ -15,9 +15,14 @@ from urllib.parse import urlsplit
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 README = ROOT / "README.md"
 UNREAL_NOTES = ROOT / "catalogs" / "UNREAL.md"
+GENERATED_MD = (
+    ROOT / "catalogs" / "UE58_READY.md",
+    ROOT / "catalogs" / "MIT_APACHE_COMMERCIAL_SAFE.md",
+    ROOT / "catalogs" / "BLUEPRINT_ONLY.md",
+)
+INDEX_JSON = ROOT / "catalogs" / "INDEX.json"
 
 MD_LINK_RE = re.compile(r"(?<!!)\[([^\]]+)\]\(([^)\s]+)\)")
-RAW_URL_RE = re.compile(r"https?://[^\s\)\]>\"']+")
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 PUBLIC_RISK_RE = re.compile(
     r"(?i)(?:[a-z]:[\\/](?:users|windows)[\\/]|"
@@ -56,19 +61,60 @@ def parse_table_blocks(lines: list[str]) -> list[tuple[int, list[str]]]:
 
 
 def validate_tables(path: pathlib.Path, lines: list[str], errors: list[str]) -> None:
+    rel = path.relative_to(ROOT).as_posix()
     for start_line, rows in parse_table_blocks(lines):
         if len(rows) < 3:
-            errors.append(f"{path.name}:{start_line}: table has fewer than 3 rows")
+            errors.append(f"{rel}:{start_line}: table has fewer than 3 rows")
             continue
         header_cols = len(rows[0].strip("|").split("|"))
         for offset, row in enumerate(rows):
             cells = [c.strip() for c in row.strip("|").split("|")]
             if len(cells) != header_cols:
                 errors.append(
-                    f"{path.name}:{start_line + offset}: expected {header_cols} columns, got {len(cells)}"
+                    f"{rel}:{start_line + offset}: expected {header_cols} columns, got {len(cells)}"
                 )
             if offset != 1 and any(c == "" for c in cells):
-                errors.append(f"{path.name}:{start_line + offset}: empty table cell")
+                errors.append(f"{rel}:{start_line + offset}: empty table cell")
+
+
+def validate_markdown_links(path: pathlib.Path, text: str, slugs: set[str], errors: list[str], enforce_sec_dedup: bool) -> set[str]:
+    rel = path.relative_to(ROOT).as_posix()
+    current_section = "header"
+    sec_urls: dict[str, set[str]] = {current_section: set()}
+    all_urls: set[str] = set()
+    in_fence = False
+
+    for lineno, line in enumerate(text.splitlines(), 1):
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if line.startswith("## "):
+            current_section = line.strip()
+            sec_urls.setdefault(current_section, set())
+
+        for label, target in MD_LINK_RE.findall(line):
+            if target.startswith("#"):
+                anchor = target[1:]
+                if anchor not in slugs:
+                    errors.append(f"{rel}:{lineno}: broken anchor ({target}) on [{label}]")
+            elif target.startswith(("http://", "https://")):
+                sp = urlsplit(target)
+                if sp.scheme != "https":
+                    errors.append(f"{rel}:{lineno}: non-HTTPS link {target}")
+                norm = target.rstrip("/").lower()
+                all_urls.add(norm)
+                if enforce_sec_dedup and current_section.startswith("## ") and re.match(r"^## \d+\.", current_section):
+                    if norm in sec_urls[current_section]:
+                        errors.append(f"{rel}:{lineno}: duplicate URL in {current_section}: {target}")
+                    sec_urls[current_section].add(norm)
+            else:
+                rel_target = (path.parent / target.split("#")[0]).resolve()
+                if not rel_target.exists():
+                    errors.append(f"{rel}:{lineno}: missing relative file target {target}")
+
+    return all_urls
 
 
 def validate_readme(text: str, errors: list[str]) -> set[str]:
@@ -78,7 +124,6 @@ def validate_readme(text: str, errors: list[str]) -> set[str]:
 
     validate_tables(README, lines, errors)
 
-    # Collect heading slugs
     slugs: set[str] = set()
     numbered_sections: list[int] = []
     in_fence = False
@@ -97,47 +142,10 @@ def validate_readme(text: str, errors: list[str]) -> set[str]:
                 numbered_sections.append(int(sm.group(1)))
 
     expected_nums = list(range(1, len(numbered_sections) + 1))
-    if numbered_sections != expected_nums or len(numbered_sections) < 32:
-        errors.append(f"README.md: numbered sections out of sequence: {numbered_sections}")
+    if numbered_sections != expected_nums or len(numbered_sections) < 40:
+        errors.append(f"README.md: expected >= 40 sequential sections, got {numbered_sections}")
 
-    # Validate internal anchors and HTTPS links
-    current_section = "header"
-    sec_urls: dict[str, set[str]] = {current_section: set()}
-    all_urls: set[str] = set()
-
-    in_fence = False
-    for lineno, line in enumerate(lines, 1):
-        if line.strip().startswith("```"):
-            in_fence = not in_fence
-            continue
-        if in_fence:
-            continue
-        if line.startswith("## "):
-            current_section = line.strip()
-            sec_urls.setdefault(current_section, set())
-
-        for label, target in MD_LINK_RE.findall(line):
-            if target.startswith("#"):
-                anchor = target[1:]
-                if anchor not in slugs:
-                    errors.append(f"README.md:{lineno}: broken anchor ({target}) on [{label}]")
-            elif target.startswith(("http://", "https://")):
-                sp = urlsplit(target)
-                if sp.scheme != "https":
-                    errors.append(f"README.md:{lineno}: non-HTTPS link {target}")
-                norm = target.rstrip("/").lower()
-                all_urls.add(norm)
-                if current_section.startswith("## ") and re.match(r"^## \d+\.", current_section):
-                    # Allow same-section link only if not already in this section
-                    if norm in sec_urls[current_section]:
-                        errors.append(f"README.md:{lineno}: duplicate URL in {current_section}: {target}")
-                    sec_urls[current_section].add(norm)
-            else:
-                rel_target = ROOT / target.split("#")[0]
-                if not rel_target.exists():
-                    errors.append(f"README.md:{lineno}: missing relative file target {target}")
-
-    return all_urls
+    return validate_markdown_links(README, text, slugs, errors, enforce_sec_dedup=True)
 
 
 def validate_unreal_notes(text: str, errors: list[str]) -> set[str]:
@@ -149,8 +157,8 @@ def validate_unreal_notes(text: str, errors: list[str]) -> set[str]:
         errors.append("catalogs/UNREAL.md: missing back-link to ../README.md")
 
     loop_rows = [l for l in lines if re.match(r"^\|\s*\d{2}\s*\|", l)]
-    if len(loop_rows) < 20:
-        errors.append(f"catalogs/UNREAL.md: expected >= 20 loop rows, got {len(loop_rows)}")
+    if len(loop_rows) < 60:
+        errors.append(f"catalogs/UNREAL.md: expected >= 60 loop rows, got {len(loop_rows)}")
 
     urls: set[str] = set()
     names: set[str] = set()
@@ -171,6 +179,37 @@ def validate_unreal_notes(text: str, errors: list[str]) -> set[str]:
     return urls
 
 
+def validate_generated_indexes(errors: list[str]) -> None:
+    proc = subprocess.run(
+        [sys.executable, "-B", str(ROOT / "scripts" / "build_indexes.py"), "--check"],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+    )
+    if proc.returncode != 0:
+        errors.append(f"Generated filter catalogs out of sync: {proc.stderr.strip() or proc.stdout.strip()}")
+        return
+
+    for md_path in GENERATED_MD:
+        txt = md_path.read_text(encoding="utf-8")
+        if PUBLIC_RISK_RE.search(txt):
+            errors.append(f"{md_path.name}: contains private path, token, or localhost URL")
+        validate_tables(md_path, txt.splitlines(), errors)
+        slugs = {
+            gh_slug(m.group(2))
+            for l in txt.splitlines()
+            if (m := HEADING_RE.match(l))
+        }
+        validate_markdown_links(md_path, txt, slugs, errors, enforce_sec_dedup=False)
+
+    if not INDEX_JSON.exists():
+        errors.append("Missing catalogs/INDEX.json")
+    else:
+        data = json.loads(INDEX_JSON.read_text(encoding="utf-8"))
+        if data.get("stats", {}).get("sections", 0) < 38 or len(data.get("entries", [])) < 400:
+            errors.append(f"catalogs/INDEX.json stats unexpectedly small: {data.get('stats')}")
+
+
 def verify_github_live(errors: list[str]) -> int:
     repo_occurrences: dict[tuple[str, str], list[tuple[str, int, str, str]]] = {}
     for rel in (README, UNREAL_NOTES):
@@ -181,7 +220,6 @@ def verify_github_live(errors: list[str]) -> int:
                 if sp.netloc.lower() == "github.com":
                     parts = [p for p in sp.path.strip("/").split("/") if p]
                     if len(parts) >= 2 and parts[0].lower() not in ("topics", "orgs", "users"):
-                        # Skip workflow badge self-links if repo workflow isn't pushed yet
                         if len(parts) >= 4 and parts[2] == "actions":
                             continue
                         owner, name = parts[0], parts[1].removesuffix(".git")
@@ -215,8 +253,8 @@ def verify_github_live(errors: list[str]) -> int:
             if proc.returncode == 0 or proc.stdout.strip().startswith("{"):
                 break
             time.sleep(2.0 * (attempt + 1))
-        if proc.returncode != 0 and not proc.stdout.strip().startswith("{"):
-            errors.append(f"GitHub GraphQL call failed: {proc.stderr[:200]}")
+        if proc is None or (proc.returncode != 0 and not proc.stdout.strip().startswith("{")):
+            errors.append(f"GitHub GraphQL call failed: {(proc.stderr if proc else '')[:200]}")
             break
         data = (json.loads(proc.stdout).get("data") or {})
         for idx, (key, _, owner, name) in enumerate(chunk):
@@ -267,12 +305,22 @@ def main() -> int:
     readme_text = README.read_text(encoding="utf-8")
     notes_text = UNREAL_NOTES.read_text(encoding="utf-8")
 
-    if "](catalogs/UNREAL.md)" not in readme_text:
-        errors.append("README.md: missing link to catalogs/UNREAL.md")
+    for req_link in (
+        "catalogs/UNREAL.md",
+        "catalogs/UE58_READY.md",
+        "catalogs/MIT_APACHE_COMMERCIAL_SAFE.md",
+        "catalogs/BLUEPRINT_ONLY.md",
+        "catalogs/INDEX.json",
+    ):
+        if f"]({req_link})" not in readme_text:
+            errors.append(f"README.md: missing link to {req_link}")
 
     r_urls = validate_readme(readme_text, errors)
     u_urls = validate_unreal_notes(notes_text, errors)
+    validate_generated_indexes(errors)
     combined = r_urls | u_urls
+    if len(combined) < 1180:
+        errors.append(f"Expected >= 1180 unique verified HTTPS links matching badge claim, got {len(combined)}")
 
     gh_checked = 0
     if args.verify_github:
@@ -287,7 +335,7 @@ def main() -> int:
     msg = (
         f"OK: README.md ({len(r_urls)} unique HTTPS links) + "
         f"catalogs/UNREAL.md ({len(u_urls)} unique HTTPS links) = "
-        f"{len(combined)} unique links validated cleanly."
+        f"{len(combined)} unique links + 4 generated filter/JSON views validated cleanly."
     )
     if args.verify_github:
         msg += f" Live GitHub API verified {gh_checked} unique repositories."

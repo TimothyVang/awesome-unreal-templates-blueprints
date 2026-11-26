@@ -1,6 +1,6 @@
 # Contributing to Awesome Unreal Templates, Blueprints & Pro Frameworks
 
-Contributions of high-signal Unreal Engine 5 templates, Blueprint systems, open-source C++/GAS plugins, and Blender ↔ UE5 pipeline tools are welcome!
+Contributions of high-signal Unreal Engine 5 templates, Blueprint systems, open-source C++/GAS plugins, UEFN/Verse libraries, and Blender ↔ UE5 pipeline tools are welcome!
 
 ## Quality & Inclusion Criteria
 
@@ -12,16 +12,19 @@ Contributions of high-signal Unreal Engine 5 templates, Blueprint systems, open-
 3. **Engine Version Context:** When a project's `.uproject` or `.uplugin` explicitly targets a modern version (such as **UE 5.7** or **UE 5.8**), note it in the `UE / License` column.
 4. **No Same-Section Duplicates:** Each resource should appear once in its primary category (cross-references in pipeline architecture overviews are fine).
 
-## Formatting & Local Validation
+## Regenerating Filter Views & Validating Locally
 
-Before opening a Pull Request, run the zero-dependency Python 3 validator from the repository root:
+`README.md` is the single source of truth for the auto-generated filter catalogs (`catalogs/UE58_READY.md`, `catalogs/MIT_APACHE_COMMERCIAL_SAFE.md`, `catalogs/BLUEPRINT_ONLY.md`) and `catalogs/INDEX.json`.
+
+After editing `README.md`, regenerate the filter views and run the zero-dependency Python 3 validator:
 
 ```bash
-python3 scripts/validate_catalog.py
+python3 -B scripts/build_indexes.py
+python3 -B scripts/validate_catalog.py
 ```
 
-If you have the GitHub CLI (`gh`) authenticated locally, you can also verify all GitHub repositories against the live GraphQL API (checking for 404s, disabled/empty repos, and unmarked archived repos):
+If you have the GitHub CLI (`gh`) authenticated locally, verify all GitHub repositories against the live GraphQL API (checking for 404s, disabled/empty repos, and unmarked archived repos):
 
 ```bash
-python3 scripts/validate_catalog.py --verify-github
+python3 -B scripts/validate_catalog.py --verify-github
 ```
